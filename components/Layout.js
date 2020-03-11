@@ -58,7 +58,6 @@ const Layout = props => {
 
         .social-network .clocks {
           font-family: 'Quantico', sans-serif;
-
           margin-right: 60px;
           font-size: 13px;
           display: inline-flex;
