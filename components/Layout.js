@@ -9,9 +9,8 @@ const Layout = props => {
     <Fragment>
       <Head>
         <link rel='icon' href='/favicon.ico' />
-        <meta charset='utf-8' />
+        <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta name='theme-color' content='#000000' />
         <meta name='description' content='Web site created using NextJS' />
         <title>U-Berlin Logistics</title>
         <link
@@ -79,7 +78,6 @@ const Layout = props => {
       <script src='assets/js/jquery.fancybox.pack.js'></script>
       <script src='assets/js/jquery.fancybox-media.js'></script>
       <script src='assets/js/animate.js'></script>
-      {/* Vendor Scripts */}
       <script src='assets/js/modernizr.custom.js'></script>
       <script src='assets/js/jquery.isotope.min.js'></script>
       <script src='assets/js/jquery.magnific-popup.min.js'></script>
