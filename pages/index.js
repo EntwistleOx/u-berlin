@@ -1,203 +1,140 @@
-import Head from 'next/head'
+import { Fragment } from 'react';
+import Layout from '../components/Layout';
+import Slider from 'react-slick';
 
-const Home = () => (
-  <div className="container">
-    <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+const Home = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 3000
+  };
 
-    <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+  return (
+    <Layout>
+      <Fragment>
+        <Slider {...settings}>
+          <div>
+            <img
+              src='images/slides/air-cargo.jpg'
+              className='img-responsive'
+              alt='aereo'
+            />
+          </div>
+          <div>
+            <img
+              src='images/slides/sea-cargo.jpg'
+              className='img-responsive'
+              alt='maritimo'
+            />
+          </div>
+          <div>
+            <img
+              src='images/slides/truck-cargo.jpg'
+              className='img-responsive'
+              alt='terrestre'
+            />
+          </div>
+        </Slider>
 
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
+        <section className='dishes'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-md-12'>
+                <div className='aligncenter'>
+                  <h2 className='aligncenter'>Soluciones</h2>
+                  Nos especializamos en transportes marítimo, aéreos y
+                  terrestre, carga de proyectos específicos y su logística. Esto
+                  lo hacemos a través de un equipo humano y profesional
+                  altamente capacitado en cada una de las áreas de gestión y
+                  operaciones que permiten entregar un servicio óptimo.
+                </div>
+                <br />
+              </div>
+            </div>
 
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+            <div className='row service-v1 margin-bottom-40'>
+              <div className='col-md-3 md-margin-bottom-40'>
+                <div className='card small'>
+                  <div className='card-image'>
+                    <img
+                      className='img-responsive'
+                      src='images/service1.jpg'
+                      alt=''
+                    />
+                    <span className='card-title'>Transporte Maritimo</span>
+                  </div>
+                  <div className='card-content'>
+                    <p className='text-center'>
+                      Amplia experiencia en transporte marítimo internacional de
+                      cargas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-md-3 md-margin-bottom-40'>
+                <div className='card small'>
+                  <div className='card-image'>
+                    <img
+                      className='img-responsive'
+                      src='images/service2.jpg'
+                      alt=''
+                    />
+                    <span className='card-title'>
+                      &nbsp;&nbsp;Transporte Aereo&nbsp;&nbsp;
+                    </span>
+                  </div>
+                  <div className='card-content'>
+                    <p className='text-center'>
+                      Diseñamos soluciones flexibles mediante transporte aereo
+                      de carga.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-md-3 md-margin-bottom-40'>
+                <div className='card small'>
+                  <div className='card-image'>
+                    <img
+                      className='img-responsive'
+                      src='images/service3.jpg'
+                      alt=''
+                    />
+                    <span className='card-title'>Transporte Terretre</span>
+                  </div>
+                  <div className='card-content'>
+                    <p className='text-center'>
+                      Transporte de carga via terrestre a nivel nacional como
+                      internacional.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-md-3 md-margin-bottom-40'>
+                <div className='card small'>
+                  <div className='card-image'>
+                    <img
+                      className='img-responsive'
+                      src='images/service4.jpg'
+                      alt=''
+                    />
+                    <span className='card-title'>Cargas de Proyecto</span>
+                  </div>
+                  <div className='card-content'>
+                    <p className='text-center'>
+                      Diseñamos e implementamos soluciones para diferentes
+                      industrias.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </Fragment>
+    </Layout>
+  );
+};
 
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-          href="https://zeit.co/new?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
-          </p>
-        </a>
-      </div>
-    </main>
-
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
-
-    <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      main {
-        padding: 5rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
-
-      .title,
-      .description {
-        text-align: center;
-      }
-
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
-
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
-      }
-
-      .card {
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        color: inherit;
-        text-decoration: none;
-        border: 1px solid #eaeaea;
-        border-radius: 10px;
-        transition: color 0.15s ease, border-color 0.15s ease;
-      }
-
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
-      }
-
-      .card h3 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
-      }
-
-      .card p {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5;
-      }
-
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
-        }
-      }
-    `}</style>
-
-    <style jsx global>{`
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-    `}</style>
-  </div>
-)
-
-export default Home
+export default Home;
