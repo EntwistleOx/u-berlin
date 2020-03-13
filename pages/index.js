@@ -1,9 +1,74 @@
-import { Fragment } from 'react';
+import { useState, Fragment } from 'react';
 import Layout from '../components/Layout';
+import uuid from 'uuid/v4';
+import axios from 'axios';
 import Slider from 'react-slick';
 
-const Home = () => {
-  var settings = {
+const Home = ({ data }) => {
+  // let data = [
+  //   {
+  //     id: uuid(),
+  //     title: 'FOB',
+  //     price: 'USD 3,55',
+  //     unit: '/ KV',
+  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: 'FOB',
+  //     price: 'USD 3,55',
+  //     unit: '/ KV',
+  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: 'FOB',
+  //     price: 'USD 3,55',
+  //     unit: '/ KV',
+  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: 'FOB',
+  //     price: 'USD 3,55',
+  //     unit: '/ KV',
+  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: 'FOB',
+  //     price: 'USD 3,55',
+  //     unit: '/ KV',
+  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: 'FOB',
+  //     price: 'USD 3,55',
+  //     unit: '/ KV',
+  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: 'FOB',
+  //     price: 'USD 3,55',
+  //     unit: '/ KV',
+  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
+  //   },
+  //   {
+  //     id: uuid(),
+  //     title: 'FOB',
+  //     price: 'USD 3,55',
+  //     unit: '/ KV',
+  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
+  //   }
+  // ];
+
+  const [results, setResults] = useState(data);
+
+  console.log(results);
+
+  const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
@@ -55,198 +120,31 @@ const Home = () => {
             </div>
 
             <div className='row service-v1 margin-bottom-40'>
-              <div className='col-md-3 md-margin-bottom-40 text-center'>
-                <div className='card'>
-                  <div className='card-header'>
-                    <h4 className='my-0 font-weight-normal'>Free</h4>
+              {results.map((tariff, index) => {
+                return (
+                  <div
+                    key={tariff._id}
+                    className='col-md-3 md-margin-bottom-40 text-center'
+                  >
+                    <div className='card'>
+                      <div className='card-header'>
+                        <h4 className='my-0 font-weight-normal'>
+                          {tariff.title}
+                        </h4>
+                      </div>
+                      <div className='card-body'>
+                        <h1 className='card-title pricing-card-title'>
+                          {tariff.price}{' '}
+                          {/* <small className='text-muted'>{tariff.unit}</small> */}
+                        </h1>
+                        <div className='mt-3 mb-4'>
+                          <p>{tariff.content}</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className='card-body'>
-                    <h1 className='card-title pricing-card-title'>
-                      $15 <small className='text-muted'>/ mo</small>
-                    </h1>
-                    <ul className='list-unstyled mt-3 mb-4'>
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
-                    </ul>
-                    <button
-                      type='button'
-                      className='btn btn-primary waves-effect waves-dark'
-                    >
-                      Get started
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className='col-md-3 md-margin-bottom-40 text-center'>
-                <div className='card'>
-                  <div className='card-header'>
-                    <h4 className='my-0 font-weight-normal'>Free</h4>
-                  </div>
-                  <div className='card-body'>
-                    <h1 className='card-title pricing-card-title'>
-                      $15 <small className='text-muted'>/ mo</small>
-                    </h1>
-                    <ul className='list-unstyled mt-3 mb-4'>
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
-                    </ul>
-                    <button
-                      type='button'
-                      className='btn btn-primary waves-effect waves-dark'
-                    >
-                      Get started
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className='col-md-3 md-margin-bottom-40 text-center'>
-                <div className='card'>
-                  <div className='card-header'>
-                    <h4 className='my-0 font-weight-normal'>Free</h4>
-                  </div>
-                  <div className='card-body'>
-                    <h1 className='card-title pricing-card-title'>
-                      $15 <small className='text-muted'>/ mo</small>
-                    </h1>
-                    <ul className='list-unstyled mt-3 mb-4'>
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
-                    </ul>
-                    <button
-                      type='button'
-                      className='btn btn-primary waves-effect waves-dark'
-                    >
-                      Get started
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className='col-md-3 md-margin-bottom-40 text-center'>
-                <div className='card'>
-                  <div className='card-header'>
-                    <h4 className='my-0 font-weight-normal'>Free</h4>
-                  </div>
-                  <div className='card-body'>
-                    <h1 className='card-title pricing-card-title'>
-                      $15 <small className='text-muted'>/ mo</small>
-                    </h1>
-                    <ul className='list-unstyled mt-3 mb-4'>
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
-                    </ul>
-                    <button
-                      type='button'
-                      className='btn btn-primary waves-effect waves-dark'
-                    >
-                      Get started
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className='col-md-3 md-margin-bottom-40 text-center'>
-                <div className='card'>
-                  <div className='card-header'>
-                    <h4 className='my-0 font-weight-normal'>Free</h4>
-                  </div>
-                  <div className='card-body'>
-                    <h1 className='card-title pricing-card-title'>
-                      $15 <small className='text-muted'>/ mo</small>
-                    </h1>
-                    <ul className='list-unstyled mt-3 mb-4'>
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
-                    </ul>
-                    <button
-                      type='button'
-                      className='btn btn-primary waves-effect waves-dark'
-                    >
-                      Get started
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className='col-md-3 md-margin-bottom-40 text-center'>
-                <div className='card'>
-                  <div className='card-header'>
-                    <h4 className='my-0 font-weight-normal'>Free</h4>
-                  </div>
-                  <div className='card-body'>
-                    <h1 className='card-title pricing-card-title'>
-                      $15 <small className='text-muted'>/ mo</small>
-                    </h1>
-                    <ul className='list-unstyled mt-3 mb-4'>
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
-                    </ul>
-                    <button
-                      type='button'
-                      className='btn btn-primary waves-effect waves-dark'
-                    >
-                      Get started
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className='col-md-3 md-margin-bottom-40 text-center'>
-                <div className='card'>
-                  <div className='card-header'>
-                    <h4 className='my-0 font-weight-normal'>Free</h4>
-                  </div>
-                  <div className='card-body'>
-                    <h1 className='card-title pricing-card-title'>
-                      $15 <small className='text-muted'>/ mo</small>
-                    </h1>
-                    <ul className='list-unstyled mt-3 mb-4'>
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
-                    </ul>
-                    <button
-                      type='button'
-                      className='btn btn-primary waves-effect waves-dark'
-                    >
-                      Get started
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className='col-md-3 md-margin-bottom-40 text-center'>
-                <div className='card'>
-                  <div className='card-header'>
-                    <h4 className='my-0 font-weight-normal'>Free</h4>
-                  </div>
-                  <div className='card-body'>
-                    <h1 className='card-title pricing-card-title'>
-                      $15 <small className='text-muted'>/ mo</small>
-                    </h1>
-                    <ul className='list-unstyled mt-3 mb-4'>
-                      <li>20 users included</li>
-                      <li>10 GB of storage</li>
-                      <li>Priority email support</li>
-                      <li>Help center access</li>
-                    </ul>
-                    <button
-                      type='button'
-                      className='btn btn-primary waves-effect waves-dark'
-                    >
-                      Get started
-                    </button>
-                  </div>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -298,6 +196,12 @@ const Home = () => {
       </div>
     </Layout>
   );
+};
+
+Home.getInitialProps = async () => {
+  const res = await axios('http://localhost:3000/api/tariffs');
+  const json = await res.data;
+  return { data: json };
 };
 
 export default Home;
