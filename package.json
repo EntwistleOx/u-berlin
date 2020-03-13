@@ -9,11 +9,15 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "axios": "^0.19.2",
+    "mongodb": "^3.5.5",
     "next": "9.2.2",
+    "next-connect": "^0.6.0",
     "react": "16.13.0",
     "react-country-flag": "^2.0.1",
     "react-dom": "^16.13.0",
     "react-live-clock": "^4.0.3",
-    "react-slick": "^0.25.2"
+    "react-slick": "^0.25.2",
+    "uuid": "^7.0.2"
   }
 }
