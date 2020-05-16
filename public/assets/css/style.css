@@ -167,21 +167,22 @@ header .navbar {
 
 .topbar ul.info i {
   color: #003c4e;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   margin-right: 8px;
   display: inline-block;
   position: relative;
-  top: 4px;
+  /* top: 4px; */
+  margin-left: 15px;
 }
 
-.topbar ul.info span {
-  /* line-height: 42px; */
-  /* display: inline-block; */
-}
+/* .topbar ul.info span {
+  line-height: 42px;
+  display: inline-block;
+} */
 
 .topbar ul.info li {
-  float: right;
+  float: right !important;
   padding-left: 0;
   color: #4e4e4e;
   font-size: 13px;
@@ -194,8 +195,9 @@ header .navbar {
   font-family: 'Rpboto', sans-serif;
   font-weight: 400;
   line-height: 50px;
-  padding-left: 18px;
+  /* padding-left: 18px; */
 }
+
 .navbar-default {
   border: none;
 }

@@ -13,14 +13,15 @@ const Layout = props => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='description' content='Web site created using NextJS' />
         <title>U-Berlin Logistics</title>
+
         <link
           href='https://fonts.googleapis.com/css?family=Quantico&display=swap'
           rel='stylesheet'
         />
-        <link
+        {/* <link
           href='https://fonts.googleapis.com/icon?family=Material+Icons'
           rel='stylesheet'
-        />
+        /> */}
         <link
           rel='stylesheet'
           href='assets/materialize/css/materialize.min.css'

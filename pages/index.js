@@ -4,72 +4,11 @@ import uuid from 'uuid/v4';
 import axios from 'axios';
 import Slider from 'react-slick';
 
-const Home = ({ data }) => {
-  // let data = [
-  //   {
-  //     id: uuid(),
-  //     title: 'FOB',
-  //     price: 'USD 3,55',
-  //     unit: '/ KV',
-  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
-  //   },
-  //   {
-  //     id: uuid(),
-  //     title: 'FOB',
-  //     price: 'USD 3,55',
-  //     unit: '/ KV',
-  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
-  //   },
-  //   {
-  //     id: uuid(),
-  //     title: 'FOB',
-  //     price: 'USD 3,55',
-  //     unit: '/ KV',
-  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
-  //   },
-  //   {
-  //     id: uuid(),
-  //     title: 'FOB',
-  //     price: 'USD 3,55',
-  //     unit: '/ KV',
-  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
-  //   },
-  //   {
-  //     id: uuid(),
-  //     title: 'FOB',
-  //     price: 'USD 3,55',
-  //     unit: '/ KV',
-  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
-  //   },
-  //   {
-  //     id: uuid(),
-  //     title: 'FOB',
-  //     price: 'USD 3,55',
-  //     unit: '/ KV',
-  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
-  //   },
-  //   {
-  //     id: uuid(),
-  //     title: 'FOB',
-  //     price: 'USD 3,55',
-  //     unit: '/ KV',
-  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
-  //   },
-  //   {
-  //     id: uuid(),
-  //     title: 'FOB',
-  //     price: 'USD 3,55',
-  //     unit: '/ KV',
-  //     content: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
-  //   }
-  // ];
-
-  const [results, setResults] = useState(data);
-
-  console.log(results);
+const Home = ({ json }) => {
+  const [results, setResults] = useState(json.data);
 
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     autoplay: true,
     speed: 1000,
@@ -120,7 +59,7 @@ const Home = ({ data }) => {
             </div>
 
             <div className='row service-v1 margin-bottom-40'>
-              {results.map((tariff, index) => {
+              {results.map(tariff => {
                 return (
                   <div
                     key={tariff._id}
@@ -201,7 +140,7 @@ const Home = ({ data }) => {
 Home.getInitialProps = async () => {
   const res = await axios('http://localhost:3000/api/tariffs');
   const json = await res.data;
-  return { data: json };
+  return { json };
 };
 
 export default Home;

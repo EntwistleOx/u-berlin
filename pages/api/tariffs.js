@@ -1,17 +1,28 @@
 import nextConnect from 'next-connect';
-import middleware from '../../middlewares/database';
+import withMiddleware from '../../middlewares/withMiddleware';
+// import withDatabase from '../../middlewares/withDatabase';
 
 const handler = nextConnect();
 
-handler.use(middleware);
+handler.use(withMiddleware);
+// handler.use(withDatabase);
 
 handler.get(async (req, res) => {
-  let doc = await req.db
-    .collection('tariffs')
-    .find({})
-    .toArray();
-  console.log(doc);
-  res.json(doc);
+  try {
+    const tariffs = await req.db
+      .collection('tariffs')
+      .find({})
+      .toArray();
+    res.json({
+      ok: true,
+      data: tariffs
+    });
+  } catch (error) {
+    res.json({
+      ok: false,
+      message: error.toString()
+    });
+  }
 });
 
 export default handler;
