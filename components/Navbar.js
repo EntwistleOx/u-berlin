@@ -5,44 +5,71 @@ const Navbar = () => {
   const router = useRouter();
   return (
     <header>
-      <div className='navbar navbar-default navbar-static-top'>
-        <div className='container'>
-          <div className='navbar-header'>
-            <button
-              type='button'
-              className='navbar-toggle'
-              data-toggle='collapse'
-              data-target='.navbar-collapse'
-            >
-              <span className='icon-bar'></span>
-              <span className='icon-bar'></span>
-              <span className='icon-bar'></span>
-            </button>
-            <Link href='/'>
-              <a className='navbar-brand'>
-                <img
-                  alt='u-berlin'
-                  src='images/logo.png'
-                  className='img-responsive logo-uberlin'
-                />
-              </a>
-            </Link>
-          </div>
-          <div className='navbar-collapse collapse '>
-            <ul className='nav navbar-nav'>
-              <li className={router.pathname === '/' ? 'active' : ''}>
-                <Link href='/'>
-                  <a className='waves-effect waves-dark'>Home</a>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container">
+          <a className="navbar-brand" href="#">
+            <img
+              alt="u-berlin"
+              src="images/logo.png"
+              className="img-responsive"
+              width="155"
+            />
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div></div>
+            {/* <ul className="navbar-nav mr-auto">
+              <li className="nav-item active">
+                <a className="nav-link" href="#">
+                  Home <span className="sr-only">(current)</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Link
+                </a>
+              </li>
+            </ul> */}
+
+            <ul className="nav navbar-nav ml-auto">
+              <li
+                className={
+                  router.pathname === '/' ? 'nav-item active' : 'nav-item'
+                }
+              >
+                <Link href="/">
+                  <a className="nav-link">Home</a>
                 </Link>
               </li>
-              <li className={router.pathname === '/about' ? 'active' : ''}>
-                <Link href='/about'>
-                  <a className='waves-effect waves-dark'>Nosotros</a>
+              <li
+                className={
+                  router.pathname === '/about' ? 'nav-item active' : 'nav-item'
+                }
+              >
+                <Link href="/about">
+                  <a className="nav-link">Nosotros</a>
                 </Link>
               </li>
-              <li className={router.pathname === '/services' ? 'active' : ''}>
-                <Link href='/services'>
-                  <a className='waves-effect waves-dark'>Servicios</a>
+              <li
+                className={
+                  router.pathname === '/services'
+                    ? 'nav-item active'
+                    : 'nav-item'
+                }
+              >
+                <Link href="/services">
+                  <a className="nav-link">Servicios</a>
                 </Link>
               </li>
               <li
@@ -50,33 +77,31 @@ const Navbar = () => {
                   router.pathname === '/solutions-import' ||
                   router.pathname === '/solutions-export' ||
                   router.pathname === '/solutions-buy'
-                    ? 'dropdown active'
-                    : 'dropdown '
+                    ? 'nav-item dropdown active'
+                    : 'nav-item dropdown '
                 }
               >
                 <a
-                  href='#'
-                  data-toggle='dropdown'
-                  className='dropdown-toggle waves-effect waves-dark'
+                  href="#"
+                  data-toggle="dropdown"
+                  className="dropdown-toggle nav-link"
                 >
-                  Soluciones <b className='caret'></b>
+                  Soluciones <b className="caret"></b>
                 </a>
-                <ul className='dropdown-menu'>
+                <ul className="dropdown-menu">
                   <li>
-                    <Link href='/solutions-import'>
-                      <a className='waves-effect waves-dark'>Importar</a>
+                    <Link href="/solutions-import">
+                      <a className="nav-link">Importar</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='/solutions-export'>
-                      <a className='waves-effect waves-dark'>Exportar</a>
+                    <Link href="/solutions-export">
+                      <a className="nav-link">Exportar</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='/solutions-buy'>
-                      <a className='waves-effect waves-dark'>
-                        Compras por Internet
-                      </a>
+                    <Link href="/solutions-buy">
+                      <a className="nav-link">Compras por Internet</a>
                     </Link>
                   </li>
                 </ul>
@@ -87,53 +112,51 @@ const Navbar = () => {
                   router.pathname === '/tools-agreements' ||
                   router.pathname === '/tools-containers' ||
                   router.pathname === '/tools-incoterms'
-                    ? 'dropdown active'
-                    : 'dropdown '
+                    ? 'nav-item dropdown active'
+                    : 'nav-item dropdown '
                 }
               >
                 <a
-                  href='#'
-                  data-toggle='dropdown'
-                  className='dropdown-toggle waves-effect waves-dark'
+                  href="#"
+                  data-toggle="dropdown"
+                  className="dropdown-toggle nav-link"
                 >
-                  Herramientas <b className='caret'></b>
+                  Herramientas <b className="caret"></b>
                 </a>
-                <ul className='dropdown-menu'>
+                <ul className="dropdown-menu">
                   <li>
-                    <Link href='/tools-tariff'>
-                      <a className='waves-effect waves-dark'>
-                        Arancel Aduanero
-                      </a>
+                    <Link href="/tools-tariff">
+                      <a className="nav-link">Arancel Aduanero</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='/tools-agreements'>
-                      <a className='waves-effect waves-dark'>
+                    <Link href="/tools-agreements">
+                      <a className="nav-link">
                         Acuerdos y Tratados Internacionales
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='/tools-containers'>
-                      <a className='waves-effect waves-dark'>Contenedores</a>
+                    <Link href="/tools-containers">
+                      <a className="nav-link">Contenedores</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='/tools-incoterms'>
-                      <a className='waves-effect waves-dark'>Incoterms</a>
+                    <Link href="/tools-incoterms">
+                      <a className="nav-link">Incoterms</a>
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className={router.pathname === '/contact' ? 'active' : ''}>
-                <Link href='/contact'>
-                  <a className='waves-effect waves-dark'>Contacto</a>
+                <Link href="/contact">
+                  <a className="nav-link">Contacto</a>
                 </Link>
               </li>
             </ul>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
   );
 };

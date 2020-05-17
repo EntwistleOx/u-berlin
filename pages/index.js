@@ -2,92 +2,66 @@ import { useState, Fragment } from 'react';
 import Layout from '../components/Layout';
 import uuid from 'uuid/v4';
 import axios from 'axios';
-import Slider from 'react-slick';
 
 const Home = ({ json }) => {
   const [results, setResults] = useState(json.data);
 
-  const settings = {
-    // dots: true,
-    infinite: true,
-    autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 3000
-  };
-
   return (
     <Layout>
-      <div>
-        <Slider {...settings}>
-          <div>
-            <img
-              src='images/slides/air-cargo.jpg'
-              className='img-responsive'
-              alt='aereo'
-            />
-          </div>
-          <div>
-            <img
-              src='images/slides/sea-cargo.jpg'
-              className='img-responsive'
-              alt='maritimo'
-            />
-          </div>
-          <div>
-            <img
-              src='images/slides/truck-cargo.jpg'
-              className='img-responsive'
-              alt='terrestre'
-            />
-          </div>
-        </Slider>
-
-        <section className='dishes'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-md-12'>
-                <div className='aligncenter'>
-                  <h2 className='aligncenter'>Tarifas</h2>
-                  Nos especializamos en transportes marítimo, aéreos y
-                  terrestre, carga de proyectos específicos y su logística. Esto
-                  lo hacemos a través de un equipo humano y profesional
-                  altamente capacitado en cada una de las áreas de gestión y
-                  operaciones que permiten entregar un servicio óptimo.
-                </div>
-                <br />
-              </div>
+      <header className="masthead text-white text-center">
+        <canvas className="overlay"></canvas>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-12 text-center">
+              <h1>U-Berlin</h1>
+              <p>
+                En U-Berlin nos especializamos en transportes marítimo, aéreos y
+                terrestre, carga de proyectos específicos y su logística. Revisa
+                nuestras tarifas!
+              </p>
             </div>
+          </div>
+        </div>
+      </header>
 
-            <div className='row service-v1 margin-bottom-40'>
-              {results.map(tariff => {
-                return (
+      <section className="tarrifs bg-light">
+        <div className="container">
+          <div className="row ">
+            {results.map((tariff) => {
+              return (
+                <div key={tariff._id} className="col-lg-4 text-center">
                   <div
-                    key={tariff._id}
-                    className='col-md-3 md-margin-bottom-40 text-center'
+                    className="card mb-5 mx-auto"
+                    style={{ maxWidth: '18rem', height: '23rem' }}
                   >
-                    <div className='card'>
-                      <div className='card-header'>
-                        <h4 className='my-0 font-weight-normal'>
-                          {tariff.title}
-                        </h4>
-                      </div>
-                      <div className='card-body'>
-                        <h1 className='card-title pricing-card-title'>
-                          {tariff.price}{' '}
-                          {/* <small className='text-muted'>{tariff.unit}</small> */}
-                        </h1>
-                        <div className='mt-3 mb-4'>
-                          <p>{tariff.content}</p>
-                        </div>
-                      </div>
+                    <div class="card-body">
+                      <h4 class="card-title mt-4">{tariff.title}</h4>
+                      <h2 class="card-text my-4">
+                        {' '}
+                        {tariff.price}{' '}
+                        <small className="text-muted">{tariff.unit}</small>
+                      </h2>
+                      <p
+                        class="card-text text-center mb-4"
+                        style={{
+                          maxWidth: '8rem',
+                          margin: 'auto',
+                        }}
+                      >
+                        {tariff.content}
+                      </p>
+                      <button type="button" class="btn btn-success">
+                        Contactanos!
+                      </button>
                     </div>
                   </div>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
           </div>
-        </section>
-        <style jsx>{`
+        </div>
+      </section>
+      {/* <style jsx>{`
           .card {
             position: relative;
             display: -ms-flexbox;
@@ -131,8 +105,7 @@ const Home = ({ json }) => {
             margin-top: 0;
             margin-bottom: 1.6rem;
           }
-        `}</style>
-      </div>
+        `}</style> */}
     </Layout>
   );
 };

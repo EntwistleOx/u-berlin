@@ -1,0 +1,152 @@
+/* @import url(https://fonts.googleapis.com/css?family=Nunito); */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+#topbar {
+  background-color: #01aafc !important;
+}
+
+#topbar .top-contact a {
+  font-size: 14px;
+}
+
+#topbar .top-contact a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 1rem 0.7rem;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+  background: #01aafc;
+  color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  background: #01aafc;
+  color: #ffffff;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #01aafc;
+  /* background: url('../images/aerial-photography-of-container-van-lot-3063470.jpg') no-repeat center center; */
+  background: url('../images/aerial-view-of-cargo-ship-1554646.jpg') no-repeat center center cover;
+  padding-top: 5rem;
+  padding-bottom: 12rem;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #0173b5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+header.masthead h1 {
+  font-size: 3rem;
+}
+
+header.masthead p {
+  font-size: 1.25rem;
+}
+
+.tarrifs {
+  margin-top: -150px;
+}
+
+.tarrifs .card {
+  max-width: '18rem';
+  height: '20rem';
+}
+
+.tarrifs h2 {
+  font-size: 40px;
+}
+
+.tarrifs small {
+  font-size: 17px;
+}
+
+.tarrifs .tariff-content {
+  max-width: '8rem';
+  margin: 'auto';
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background: #1E1E1E;
+  font-size: 14px;
+  color: rgba(255, 255, 255, .5);
+}
+
+footer .footer-title {
+  color: #01aafc;
+}
+
+footer a {
+  color: rgba(255, 255, 255, .5);
+}
+
+footer a:hover {
+  color: #ddd;
+}
+
+footer .subfooter {
+  border-top: 1px solid #3e3e3e;
+}
+
+#pages-header .page-title {
+  color: #01aafc;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
+.text-color {
+  color: #01aafc;
+}
+
+.about-showcase {
+  background-image: url('/images/business-cargo-cargo-container-city-262353.jpg') center center cover;
+
+}
