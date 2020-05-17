@@ -30,9 +30,7 @@ const Footer = () => {
             <h5 className="footer-title">Links</h5>
             <ul>
               <li>
-                <a fff href="https://www.aduana.cl/">
-                  Aduana de Chile
-                </a>
+                <a href="https://www.aduana.cl/">Aduana de Chile</a>
               </li>
               <li>
                 <a href="https://www.sag.gob.cl/">
