@@ -1,31 +1,28 @@
 import { Fragment } from 'react';
 import Layout from '../components/Layout';
+import PagesHeader from '../components/PagesHeader';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
 const SolutionsImport = () => {
   return (
     <Layout>
       <Fragment>
-        <section id='inner-headline'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-12'>
-                <h2 className='pageTitle'>¿Como Importar?</h2>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id='content'>
-          <section className='section-padding'>
-            <div className='container'>
-              <div className='row showcase-section'>
-                <div className='col-md-12'>
-                  <div className='about-text text-justify'>
+        <PagesHeader title={'¿Como Importar?'} />
+
+        <section id="solutions-import">
+          <section className="py-4">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="text-justify">
                     <p>
-                      Se puede importarse cualquier mercancía, salvo aquellas
-                      que se encuentren expresamente prohibidas por la
-                      legislación vigente, como por ejemplo: vehículos y
-                      motocicletas usadas, asbesto en cualquiera de sus formas,
-                      pornografía, desechos industriales tóxicos, entre otras.
+                      Se puede importar cualquier mercancía, salvo aquellas que
+                      se encuentren expresamente prohibidas por la legislación
+                      vigente, como por ejemplo: vehículos y motocicletas
+                      usadas, asbesto en cualquiera de sus formas, pornografía,
+                      desechos industriales tóxicos, entre otras.
                     </p>
 
                     <p>
@@ -36,7 +33,7 @@ const SolutionsImport = () => {
                       organismo.{' '}
                     </p>
 
-                    <table className='table table-striped'>
+                    <table className="table table-striped">
                       <thead>
                         <tr>
                           <th>Mercancia</th>
@@ -223,32 +220,34 @@ const SolutionsImport = () => {
                       No se pueden importar los siguientes productos:
                     </strong>
 
-                    <ul className='withArrow'>
+                    <ul>
                       <li>
-                        <span className='fa fa-angle-right'></span>Vehículos
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Vehículos
                         usados (sin perjuicio de las franquicias establecidas en
                         la normas vigentes).
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Motos usadas.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Motos
+                        usadas.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Neumáticos
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Neumáticos
                         usados y recauchados.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Asbesto en
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Asbesto en
                         cualquiera de sus formas.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Pornografía.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} />{' '}
+                        Pornografía.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Desechos
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Desechos
                         industriales tóxicos.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Mercancías
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Mercancías
                         que sean peligrosas para los animales, para la
                         agricultura o la salud humana (por ejemplo; algunos
                         plaguicidas de uso agrícola, juguetes y artículos de uso
@@ -258,7 +257,7 @@ const SolutionsImport = () => {
                         Ministerio de Agricultura y otros organismos del Estado.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Otras
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Otras
                         mercancías, que de acuerdo a la legislación vigente, se
                         encuentren con prohibición de importar.
                       </li>
@@ -284,24 +283,24 @@ const SolutionsImport = () => {
                       documentos:
                     </p>
 
-                    <ul className='withArrow'>
+                    <ul>
                       <li>
-                        <span className='fa fa-angle-right'></span>Documento de
-                        transporte (BL, AWB o CRT).
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Documento
+                        de transporte (BL, AWB o CRT).
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Factura
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Factura
                         comercial.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Poder
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Poder
                         notarial del dueño o consignatario para un despacho
                         determinado, en los casos en que la persona que trámite
                         sea un tercero.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Vistos Buenos
-                        o Certificaciones si son necesarias.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Vistos
+                        Buenos o Certificaciones si son necesarias.
                       </li>
                     </ul>
 
@@ -323,25 +322,25 @@ const SolutionsImport = () => {
                       siguientes:
                     </p>
 
-                    <ul className='withArrow'>
+                    <ul>
                       <li>
-                        <span className='fa fa-angle-right'></span>Conocimiento
-                        de embarque original(BL), CRT o guía aérea(AWB), que
-                        acredite el dominio de la mercancía por parte del
-                        consignatario.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} />{' '}
+                        Conocimiento de embarque original(BL), CRT o guía
+                        aérea(AWB), que acredite el dominio de la mercancía por
+                        parte del consignatario.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Factura
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Factura
                         comercial original, que acredite la mercancía objeto de
                         compraventa y sus valores.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Declaración
-                        Jurada del importador sobre el precio de las mercancías,
-                        formulario que entrega el agente de aduanas.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} />{' '}
+                        Declaración Jurada del importador sobre el precio de las
+                        mercancías, formulario que entrega el agente de aduanas.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Mandato
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Mandato
                         constituido por el sólo endoso del original del
                         conocimiento de embarque.
                       </li>
@@ -353,30 +352,30 @@ const SolutionsImport = () => {
                       siguientes:
                     </p>
 
-                    <ul className='withArrow'>
+                    <ul>
                       <li>
-                        <span className='fa fa-angle-right'></span>Certificado
-                        de Origen , en caso que la importación se acoja a alguna
-                        preferencia arancelaria, en virtud de un Acuerdo
-                        Comercial.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} />{' '}
+                        Certificado de Origen , en caso que la importación se
+                        acoja a alguna preferencia arancelaria, en virtud de un
+                        Acuerdo Comercial.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Lista de
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Lista de
                         empaque, cuando proceda, correspondiendo siempre en caso
                         de mercancías acondicionadas en contenedores.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Certificado
-                        de seguros, cuando el valor de la prima no se encuentre
-                        consignado en la factura comercial.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} />{' '}
+                        Certificado de seguros, cuando el valor de la prima no
+                        se encuentre consignado en la factura comercial.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Nota de
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Nota de
                         Gastos, cuando éstos no estén incluidos en la factura
                         comercial.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Permisos,
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Permisos,
                         visaciones, certificaciones o vistos buenos, cuando
                         proceda.
                       </li>
@@ -392,21 +391,21 @@ const SolutionsImport = () => {
 
                     <p>EJEMPLO DE CÁLCULO:</p>
 
-                    <ul className='withArrow'>
+                    <ul>
                       <li>
-                        <span className='fa fa-angle-right'></span>Valor CIF US
-                        $1.000,00
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Valor CIF
+                        US $1.000,00
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Derecho ad
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Derecho ad
                         valorem (6% de 1.000) US $ 60,00
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>IVA (19%)
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> IVA (19%)
                         (sobre 1.060,00) US $ 201,40
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>TOTAL
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> TOTAL
                         TRIBUTOS ADUANEROS US $ 261,40
                       </li>
                     </ul>
@@ -441,34 +440,34 @@ const SolutionsImport = () => {
                       de la mercancía + derecho ad valorem):{' '}
                     </p>
 
-                    <ul className='withArrow'>
+                    <ul>
                       <li>
-                        <span className='fa fa-angle-right'></span>Artículos de
-                        oro, platino y marfil.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Artículos
+                        de oro, platino y marfil.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Joyas,
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Joyas,
                         piedras preciosas naturales o sintéticas.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span> Alfombras
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Alfombras
                         finas y tapices finos Alfombras finas, tapices finos y
                         cualquier otro artículo de similar naturaleza;
                         calificados como tales por el Servicio de Impuestos
                         Internos.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Pieles finas,
-                        calificadas como tales por el Servicio de Impuestos
-                        Internos, manufacturadas o no.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Pieles
+                        finas, calificadas como tales por el Servicio de
+                        Impuestos Internos, manufacturadas o no.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Conservas de
-                        caviar y sus sucedáneos.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Conservas
+                        de caviar y sus sucedáneos.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Armas de aire
-                        o gas comprimido, sus accesorios y proyectiles, con
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Armas de
+                        aire o gas comprimido, sus accesorios y proyectiles, con
                         excepción de las de caza submarina.
                       </li>
                     </ul>
@@ -487,7 +486,7 @@ const SolutionsImport = () => {
                       adicionales, según producto:
                     </p>
 
-                    <table className='table table-striped'>
+                    <table className="table table-striped">
                       <thead>
                         <tr>
                           <th>Producto</th>
@@ -521,7 +520,7 @@ const SolutionsImport = () => {
                       impuestos, según su variedad:
                     </p>
 
-                    <table className='table table-striped'>
+                    <table className="table table-striped">
                       <thead>
                         <tr>
                           <th>Producto</th>

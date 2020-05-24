@@ -1,32 +1,23 @@
 import { Fragment } from 'react';
 import Layout from '../components/Layout';
+import PagesHeader from '../components/PagesHeader';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
 const ToolsAgreements = () => {
   return (
     <Layout>
       <Fragment>
-        <section id='inner-headline'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-12'>
-                <h2 className='pageTitle'>Acuerdos y Tratados</h2>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id='content'>
-          <section className='section-padding'>
-            <div className='container'>
-              <div className='row showcase-section'>
-                <div className='col-md-6'>
-                  <img
-                    className='img-responsive'
-                    src='images/acuerdos.jpg'
-                    alt=''
-                  />
-                </div>
-                <div className='col-md-6'>
-                  <div className='about-text text-justify'>
+        <PagesHeader title={'Acuerdos Internacionales'} />
+
+        <section id="tools-agreements">
+          <section className="py-4">
+            <div className="container">
+              <div className="row pt-4">
+                <div className="col-lg-6 agreements-showcase"></div>
+                <div className="col-lg-6">
+                  <div className="text-justify p-2 ">
                     <p>
                       Desde fines de la década de 1990, Chile se ha adherido a
                       una serie de tratados de libre comercio (TLC) y Acuerdos
@@ -63,9 +54,9 @@ const ToolsAgreements = () => {
                   </div>
                 </div>
               </div>
-              <div className='row'>
-                <div className='col-md-12 text-justify'>
-                  <table className='table table-striped'>
+              <div className="row">
+                <div className="col-md-12 text-justify mt-4">
+                  <table className="table table-striped">
                     <thead>
                       <tr>
                         <th>Parte signataria</th>
@@ -241,27 +232,27 @@ const ToolsAgreements = () => {
                       </tr>
                     </tbody>
                   </table>
-                  <ul className='withArrow'>
+                  <ul>
                     <li>
-                      <span className='fa fa-angle-right'></span>(1)
+                      <FontAwesomeIcon icon={faAngleDoubleRight} /> (1)
                       Centroamérica: Costa Rica, El Salvador, Guatemala,
                       Honduras y Nicaragua.
                     </li>
                     <li>
-                      <span className='fa fa-angle-right'></span>(2) EFTA:
+                      <FontAwesomeIcon icon={faAngleDoubleRight} /> (2) EFTA:
                       Islandia, Liechtenstein, Noruega y Suiza.
                     </li>
                     <li>
-                      <span className='fa fa-angle-right'></span>(3) Mercosur:
-                      Integrado por Argentina, Paraguay, Brasil y Uruguay. Chile
-                      participa como país asociado.
+                      <FontAwesomeIcon icon={faAngleDoubleRight} /> (3)
+                      Mercosur: Integrado por Argentina, Paraguay, Brasil y
+                      Uruguay. Chile participa como país asociado.
                     </li>
                     <li>
-                      <span className='fa fa-angle-right'></span>(4) P4: Chile,
-                      Nueva Zelandia, Singapur y Brunei Darussalam.
+                      <FontAwesomeIcon icon={faAngleDoubleRight} /> (4) P4:
+                      Chile, Nueva Zelandia, Singapur y Brunei Darussalam.
                     </li>
                     <li>
-                      <span className='fa fa-angle-right'></span>(5) Unión
+                      <FontAwesomeIcon icon={faAngleDoubleRight} /> (5) Unión
                       Europea: Alemania, Austria, Bélgica, Bulgaria, Chipre,
                       Croacia, Dinamarca, Eslovaquia, Eslovenia, España,
                       Estonia, Finlandia, Francia, Grecia, Hungría, Irlanda,

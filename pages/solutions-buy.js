@@ -1,25 +1,22 @@
 import { Fragment } from 'react';
 import Layout from '../components/Layout';
+import PagesHeader from '../components/PagesHeader';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
 const SolutionsBuy = () => {
   return (
     <Layout>
       <Fragment>
-        <section id='inner-headline'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-12'>
-                <h2 className='pageTitle'>Compras por Internet</h2>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id='content'>
-          <section className='section-padding'>
-            <div className='container'>
-              <div className='row showcase-section'>
-                <div className='col-md-12'>
-                  <div className='about-text text-justify'>
+        <PagesHeader title={'Compras por Internet'} />
+
+        <section id="solutions-buy">
+          <section className="py-4">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="text-justify">
                     <p>
                       Cuando compras en el extranjero estás haciendo una
                       importación, por lo que tu compra debe cumplir las normas
@@ -82,13 +79,13 @@ const SolutionsBuy = () => {
                       ¿Qué documentos necesito para la importación?
                     </strong>
 
-                    <ul className='withArrow'>
+                    <ul>
                       <li>
-                        <span className='fa fa-angle-right'></span>La Guía
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> La Guía
                         Courier.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>La factura
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> La factura
                         comercial, boleta de compraventa; facturas pro-forma o
                         comprobante de transacción electrónica. En este tipo de
                         documentos debe estar consignado el tipo, descripción, y
@@ -98,8 +95,8 @@ const SolutionsBuy = () => {
                         de impuestos y gravámenes.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Vistos buenos
-                        o certificados cuando corresponda.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Vistos
+                        buenos o certificados cuando corresponda.
                       </li>
                     </ul>
 
@@ -139,12 +136,12 @@ const SolutionsBuy = () => {
                       deberás pagar, en caso de que corresponda.
                     </p>
 
-                    <div className='row showcase-section'>
-                      <div className='col-md-12'>
+                    <div className="row">
+                      <div className="col-md-12">
                         <img
-                          className='img-responsive'
-                          src='images/compras_web.jpg'
-                          alt=''
+                          className="img-responsive"
+                          src="images/compras_web.jpg"
+                          alt="internet"
                         />
                       </div>
                     </div>

@@ -55,11 +55,10 @@ a:hover {
 header.masthead {
   position: relative;
   background-color: #01aafc;
-  /* background: url('../images/aerial-photography-of-container-van-lot-3063470.jpg') no-repeat center center; */
-  background: url('../images/aerial-view-of-cargo-ship-1554646.jpg') no-repeat center center cover;
+  background: url('../images/aerial-view-of-cargo-ship-1554646.jpg') no-repeat center center;
   padding-top: 5rem;
   padding-bottom: 12rem;
-  height: 50vh;
+  height: 70vh;
   display: flex;
   align-items: center;
 }
@@ -75,7 +74,7 @@ header.masthead .overlay {
 }
 
 header.masthead h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 header.masthead p {
@@ -146,7 +145,38 @@ footer .subfooter {
   color: #01aafc;
 }
 
-.about-showcase {
-  background-image: url('/images/business-cargo-cargo-container-city-262353.jpg') center center cover;
+#about .about-showcase {
+  background-image: url('../images/business-cargo-cargo-container-city-262353.jpg');
+  background-position: center;
+  background-size: cover;
+}
 
+#services .service1-showcase {
+  background-image: url('../images/service1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#services .service2-showcase {
+  background-image: url('../images/service2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#services .service3-showcase {
+  background-image: url('../images/service3.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#services .service4-showcase {
+  background-image: url('../images/service4.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#tools-agreements .agreements-showcase {
+  background-image: url('../images/photo-of-people-doing-handshakes-3183197.jpg');
+  background-position: center;
+  background-size: cover;
 }

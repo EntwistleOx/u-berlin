@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import {
+  faEnvelope,
+  faPhoneAlt,
+  faTerminal,
+} from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
@@ -18,12 +22,12 @@ const Footer = () => {
                 <br />
                 of. 206, Pudahuel, Chile.
               </address>
-              <contact>
+              <div>
                 <FontAwesomeIcon icon={faPhoneAlt} />{' '}
                 <span className="ml-2">+56 2 2944 0554</span> <br />
                 <FontAwesomeIcon icon={faEnvelope} />{' '}
                 <span className="ml-2">info@u-berlin.co</span>m
-              </contact>
+              </div>
             </div>
           </div>
           <div className="col-lg-3 mb-4">
@@ -73,7 +77,10 @@ const Footer = () => {
         <div className="subfooter">
           <div className="row py-4">
             <div className="col-lg-6">
-              <p>&copy; EntwistleOx</p>
+              <p>
+                {' '}
+                <FontAwesomeIcon icon={faTerminal} /> JDev{' '}
+              </p>
             </div>
             <div className="col-lg-6 d-flex justify-content-end">
               <div>

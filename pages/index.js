@@ -16,8 +16,8 @@ const Home = ({ json }) => {
               <h1>U-Berlin</h1>
               <p>
                 En U-Berlin nos especializamos en transportes marítimo, aéreos y
-                terrestre, carga de proyectos específicos y su logística. Revisa
-                nuestras tarifas!
+                terrestre, carga de proyectos específicos y su logística.{' '}
+                <strong>Revisa nuestras tarifas!</strong>
               </p>
             </div>
           </div>
@@ -34,15 +34,15 @@ const Home = ({ json }) => {
                     className="card mb-5 mx-auto"
                     style={{ maxWidth: '18rem', height: '23rem' }}
                   >
-                    <div class="card-body">
-                      <h4 class="card-title mt-4">{tariff.title}</h4>
-                      <h2 class="card-text my-4">
+                    <div className="card-body">
+                      <h4 className="card-title mt-4">{tariff.title}</h4>
+                      <h2 className="card-text my-4">
                         {' '}
                         {tariff.price}{' '}
                         <small className="text-muted">{tariff.unit}</small>
                       </h2>
                       <p
-                        class="card-text text-center mb-4"
+                        className="card-text text-center mb-4"
                         style={{
                           maxWidth: '8rem',
                           margin: 'auto',
@@ -50,7 +50,7 @@ const Home = ({ json }) => {
                       >
                         {tariff.content}
                       </p>
-                      <button type="button" class="btn btn-success">
+                      <button type="button" className="btn btn-success">
                         Contactanos!
                       </button>
                     </div>
@@ -61,51 +61,6 @@ const Home = ({ json }) => {
           </div>
         </div>
       </section>
-      {/* <style jsx>{`
-          .card {
-            position: relative;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            min-width: 0;
-            word-wrap: break-word;
-            background-color: #fff;
-            background-clip: border-box;
-            border: 1px solid rgba(0, 0, 0, 0.125);
-            border-radius: 0.25rem;
-          }
-
-          .card-header {
-            padding: 0.75rem 1.25rem;
-            margin-bottom: 0;
-            background-color: rgba(0, 0, 0, 0.03);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-          }
-
-          .card-header h4 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-          }
-
-          .card-body {
-            flex: 1 1 auto;
-            padding: 1.25rem;
-          }
-
-          .card-body .card-title {
-            text-transform: none !important;
-            font-size: 3.5rem;
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-          }
-
-          ul,
-          ol {
-            margin-top: 0;
-            margin-bottom: 1.6rem;
-          }
-        `}</style> */}
     </Layout>
   );
 };

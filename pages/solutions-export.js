@@ -1,25 +1,22 @@
 import { Fragment } from 'react';
 import Layout from '../components/Layout';
+import PagesHeader from '../components/PagesHeader';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
 const SolutionsExport = () => {
   return (
     <Layout>
       <Fragment>
-        <section id='inner-headline'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-12'>
-                <h2 className='pageTitle'>¿Como Exportar?</h2>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id='content'>
-          <section className='section-padding'>
-            <div className='container'>
-              <div className='row showcase-section'>
-                <div className='col-md-12'>
-                  <div className='about-text text-justify'>
+        <PagesHeader title={'¿Como Exportar?'} />
+
+        <section id="solutions-export">
+          <section className="py-4">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="text-justify">
                     <p>
                       En Chile cualquier persona natural, jurídica o extranjeros
                       con residencia en nuestro país, puede constituirse como
@@ -91,27 +88,27 @@ const SolutionsExport = () => {
                       estarán dadas por los siguientes puntos:
                     </p>
 
-                    <ul className='withArrow'>
+                    <ul>
                       <li>
-                        <span className='fa fa-angle-right'></span>Estudios de
-                        Mercado en un determinado país.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Estudios
+                        de Mercado en un determinado país.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Aranceles en
-                        el país de destino.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Aranceles
+                        en el país de destino.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Existencia de
-                        Preferencias arancelarias derivadas de acuerdos y/o
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Existencia
+                        de Preferencias arancelarias derivadas de acuerdos y/o
                         barreras comerciales, normativas, homologaciones o
                         requisitos específicos del mercado.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Información
-                        sobre agentes o distribuidores disponibles.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} />{' '}
+                        Información sobre agentes o distribuidores disponibles.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Costos
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Costos
                         involucrados en una exportación.
                       </li>
                     </ul>
@@ -163,29 +160,29 @@ const SolutionsExport = () => {
                       productos.
                     </p>
 
-                    <ul className='withArrow'>
+                    <ul>
                       <li>
-                        <span className='fa fa-angle-right'></span>Ley N° 18.480
-                        – Establece Sistema Simplificado de Reintegro a
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Ley N°
+                        18.480 – Establece Sistema Simplificado de Reintegro a
                         Exportadores.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Ley 18.634 –
-                        Pago Diferido de Derechos de Aduana, Crédito Fiscal y
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Ley 18.634
+                        – Pago Diferido de Derechos de Aduana, Crédito Fiscal y
                         Otros Beneficios de Carácter Aduanero.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Ley Nº 20.269
-                        – Rebaja de los Aranceles para la Importación de Bienes
-                        de Capital.
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Ley Nº
+                        20.269 – Rebaja de los Aranceles para la Importación de
+                        Bienes de Capital.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Ley 18.708 –
-                        Sistema de Reintegro de Derechos y Demás Gravámenes
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Ley 18.708
+                        – Sistema de Reintegro de Derechos y Demás Gravámenes
                         Aduaneros.
                       </li>
                       <li>
-                        <span className='fa fa-angle-right'></span>Ley 825,
+                        <FontAwesomeIcon icon={faAngleDoubleRight} /> Ley 825,
                         Decreto 348 – Recuperación I.V.A. Exportador.
                       </li>
                     </ul>
