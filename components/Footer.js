@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEnvelope,
@@ -12,8 +12,8 @@ const Footer = () => {
     <footer className="text-white-50">
       <div className="container">
         <div className="row pt-5">
-          <div className="col-lg-3 mb-4">
-            <div className="widget">
+          <div className="col-md-3 mb-4">
+            <div>
               <h5 className="footer-title">Contactate</h5>
               <address>
                 U-Berlin Logistics
@@ -30,7 +30,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 mb-4">
+          <div className="col-md-3 mb-4">
             <h5 className="footer-title">Links</h5>
             <ul>
               <li>
@@ -54,35 +54,28 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-lg-3 mb-4">
+          <div className="col-md-3 mb-4">
             <div className="text-center">
-              <img
-                className="img-responsive"
-                src="images/iatalogo.png"
-                alt=""
-              />
+              <Image fluid src="images/footer/iatalogo.png" alt="Iata" />
             </div>
           </div>
-          <div className="col-lg-3 mb-4">
+          <div className="col-md-3 mb-4">
             <div className="text-center">
-              <img
-                className="img-responsive"
-                src="images/aduanachile.png"
-                alt=""
+              <Image
+                fluid
+                src="images/footer/aduanachile.png"
+                alt="Aduana Chile"
               />
             </div>
           </div>
         </div>
 
         <div className="subfooter">
-          <div className="row py-4">
-            <div className="col-lg-6">
-              <p>
-                {' '}
-                <FontAwesomeIcon icon={faTerminal} /> JDev{' '}
-              </p>
+          <div className="d-flex align-items-center justify-content-between py-4">
+            <div>
+              <FontAwesomeIcon icon={faTerminal} /> JDev{' '}
             </div>
-            <div className="col-lg-6 d-flex justify-content-end">
+            <div className="d-flex justify-content-end">
               <div>
                 <a href="#">
                   <FontAwesomeIcon icon={faFacebookF} />

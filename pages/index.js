@@ -1,16 +1,16 @@
-import { useState, Fragment } from 'react';
+import { useState } from 'react';
+import Link from 'next/link';
 import Layout from '../components/Layout';
-import uuid from 'uuid/v4';
+import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 import axios from 'axios';
 
 const Home = ({ json }) => {
-  const [results, setResults] = useState(json.data);
-
   return (
     <Layout>
       <header className="masthead text-white text-center">
         <canvas className="overlay"></canvas>
-        <div className="container">
+        <Container>
           <div className="row align-items-center">
             <div className="col-lg-12 text-center">
               <h1>U-Berlin</h1>
@@ -21,18 +21,18 @@ const Home = ({ json }) => {
               </p>
             </div>
           </div>
-        </div>
+        </Container>
       </header>
 
       <section className="tarrifs bg-light">
-        <div className="container">
+        <Container>
           <div className="row ">
-            {results.map((tariff) => {
+            {json.data.map((tariff) => {
               return (
-                <div key={tariff._id} className="col-lg-4 text-center">
+                <div key={tariff._id} className="col-md-4 text-center">
                   <div
                     className="card mb-5 mx-auto"
-                    style={{ maxWidth: '18rem', height: '23rem' }}
+                    style={{ maxWidth: '18rem', height: '24rem' }}
                   >
                     <div className="card-body">
                       <h4 className="card-title mt-4">{tariff.title}</h4>
@@ -50,16 +50,16 @@ const Home = ({ json }) => {
                       >
                         {tariff.content}
                       </p>
-                      <button type="button" className="btn btn-success">
-                        Contactanos!
-                      </button>
+                      <Link href="contact">
+                        <Button variant="success">Contactanos!</Button>
+                      </Link>
                     </div>
                   </div>
                 </div>
               );
             })}
           </div>
-        </div>
+        </Container>
       </section>
     </Layout>
   );

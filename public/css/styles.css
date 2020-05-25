@@ -1,5 +1,3 @@
-/* @import url(https://fonts.googleapis.com/css?family=Nunito); */
-
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -17,7 +15,6 @@ a {
 a:hover {
   text-decoration: none;
 }
-
 
 #topbar {
   background-color: #01aafc !important;
@@ -48,14 +45,14 @@ a:hover {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  background: #01aafc;
+  background: #80d4fd;
   color: #ffffff;
 }
 
 header.masthead {
   position: relative;
   background-color: #01aafc;
-  background: url('../images/aerial-view-of-cargo-ship-1554646.jpg') no-repeat center center;
+  background: url('../images/header/header.jpg') no-repeat center center;
   padding-top: 5rem;
   padding-bottom: 12rem;
   height: 70vh;
@@ -70,7 +67,7 @@ header.masthead .overlay {
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 header.masthead h1 {
@@ -145,38 +142,53 @@ footer .subfooter {
   color: #01aafc;
 }
 
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
 #about .about-showcase {
-  background-image: url('../images/business-cargo-cargo-container-city-262353.jpg');
+  background-image: url('../images/about/about.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #services .service1-showcase {
-  background-image: url('../images/service1.jpg');
+  background-image: url('../images/services/service1.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #services .service2-showcase {
-  background-image: url('../images/service2.jpg');
+  background-image: url('../images/services/service2.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #services .service3-showcase {
-  background-image: url('../images/service3.jpg');
+  background-image: url('../images/services/service3.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #services .service4-showcase {
-  background-image: url('../images/service4.jpg');
+  background-image: url('../images/services/service4.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #tools-agreements .agreements-showcase {
-  background-image: url('../images/photo-of-people-doing-handshakes-3183197.jpg');
+  background-image: url('../images/tools/agreements.jpg');
   background-position: center;
   background-size: cover;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #01aafc;
+}
+
+.btn-primary {
+  background-color: #01aafc !important;
+  border-color: #01aafc !important;
 }

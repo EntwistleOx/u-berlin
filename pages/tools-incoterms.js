@@ -1,28 +1,19 @@
 import { Fragment } from 'react';
 import Layout from '../components/Layout';
+import PagesHeader from '../components/PagesHeader';
+import Image from 'react-bootstrap/Image';
 
 const ToolsIncoterms = () => {
   return (
     <Layout>
       <Fragment>
-        <section id='inner-headline'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-12'>
-                <h2 className='pageTitle'>Incoterms</h2>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id='content'>
-          <div className='container'>
-            <div className='row showcase-section'>
-              <div className='col-md-12'>
-                <img
-                  className='img-responsive'
-                  src='images/incoterms.png'
-                  alt=''
-                />
+        <PagesHeader title={'Incoterms'} />
+
+        <section id="incoterms" className="overflow-hidden">
+          <div className="container py-4">
+            <div className="row">
+              <div className="col-md-12">
+                <Image fluid src="images/incoterms.png" alt="Incoterms" />
               </div>
             </div>
           </div>

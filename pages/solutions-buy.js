@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
+import Image from 'react-bootstrap/Image';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
@@ -138,8 +139,8 @@ const SolutionsBuy = () => {
 
                     <div className="row">
                       <div className="col-md-12">
-                        <img
-                          className="img-responsive"
+                        <Image
+                          fluid
                           src="images/compras_web.jpg"
                           alt="internet"
                         />

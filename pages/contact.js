@@ -1,16 +1,13 @@
 import { Fragment } from 'react';
+import Button from 'react-bootstrap/Button';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
   return (
     <Layout>
       <Fragment>
         <PagesHeader title={'Contacto'} />
-
         <section id="contact">
           <div className="container py-4">
             <div className="row">
@@ -67,7 +64,7 @@ const Contact = () => {
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="message"> Message </label>
+                    <label htmlFor="message">Mensaje</label>
                     <textarea
                       id="message"
                       name="message"
@@ -79,9 +76,9 @@ const Contact = () => {
                     ></textarea>
                   </div>
                   <div id="success"></div>
-                  <button type="submit" className="btn btn-primary pull-right">
-                    Send
-                  </button>
+                  <Button type="submit" variant="primary">
+                    Enviar
+                  </Button>
                 </form>
               </div>
             </div>

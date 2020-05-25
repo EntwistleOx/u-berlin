@@ -5,10 +5,10 @@ const About = () => {
   return (
     <Layout>
       <PagesHeader title={'nosotros'} />
-      <section id="about">
+      <section id="about" className="showcase">
         <div className="container">
           <div className="row py-4">
-            <div className="col-lg-6 about-showcase"></div>
+            <div className="col-lg-6 about-showcase showcase-img"></div>
             <div className="col-lg-6">
               <div className="text-justify p-2 ">
                 <h3>
