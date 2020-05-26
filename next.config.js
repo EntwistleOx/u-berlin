@@ -1,8 +1,10 @@
-require('dotenv').config();
-
 module.exports = {
-  env: {
-    MONGODB_URI: process.env.MONGODB_URI,
-    DB_NAME: process.env.DB_NAME
-  }
+  webpack: (cfg) => {
+    cfg.module.rules.push({
+      test: /\.md$/,
+      loader: 'frontmatter-markdown-loader',
+      options: { mode: ['react-component'] },
+    });
+    return cfg;
+  },
 };

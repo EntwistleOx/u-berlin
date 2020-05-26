@@ -5,7 +5,11 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
 
-const Home = ({ json }) => {
+import { attributes, react as HomeContent } from '../content/tariffs.md';
+
+const Home = () => {
+  let { title, cats } = attributes;
+
   return (
     <Layout>
       <header className="masthead text-white text-center">
@@ -27,7 +31,19 @@ const Home = ({ json }) => {
       <section className="tarrifs bg-light">
         <Container>
           <div className="row ">
-            {json.data.map((tariff) => {
+            <article>
+              <h1>{title}</h1>
+              <HomeContent />
+              <ul>
+                {cats.map((cat, k) => (
+                  <li key={k}>
+                    <h2>{cat.name}</h2>
+                    <p>{cat.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </article>
+            {/* {json.data.map((tariff) => {
               return (
                 <div key={tariff._id} className="col-md-4 text-center">
                   <div
@@ -57,7 +73,7 @@ const Home = ({ json }) => {
                   </div>
                 </div>
               );
-            })}
+            })} */}
           </div>
         </Container>
       </section>
@@ -66,8 +82,9 @@ const Home = ({ json }) => {
 };
 
 Home.getInitialProps = async () => {
-  const res = await axios('http://localhost:3000/api/tariffs');
-  const json = await res.data;
+  // const res = await axios('http://localhost:3000/api/tariffs');
+  // const json = await res.data;
+  const json = { title: 'titulo' };
   return { json };
 };
 
