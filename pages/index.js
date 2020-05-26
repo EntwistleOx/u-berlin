@@ -1,14 +1,10 @@
-import { useState } from 'react';
 import Link from 'next/link';
 import Layout from '../components/Layout';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import axios from 'axios';
-
-import { attributes, react as HomeContent } from '../content/tariffs.md';
 
 const Home = () => {
-  let { tariffs, cats } = attributes;
+  let { tariffs } = attributes;
 
   return (
     <Layout>
@@ -31,21 +27,9 @@ const Home = () => {
       <section className="tarrifs bg-light">
         <Container>
           <div className="row ">
-            <article>
-              <h1>{title}</h1>
-              <HomeContent />
-              <ul>
-                {cats.map((cat, k) => (
-                  <li key={k}>
-                    <h2>{cat.name}</h2>
-                    <p>{cat.description}</p>
-                  </li>
-                ))}
-              </ul>
-            </article>
-            {/* {json.data.map((tariff) => {
+            {tariffs.map((tariff, index) => {
               return (
-                <div key={tariff._id} className="col-md-4 text-center">
+                <div key={index} className="col-md-4 text-center">
                   <div
                     className="card mb-5 mx-auto"
                     style={{ maxWidth: '18rem', height: '24rem' }}
@@ -64,7 +48,7 @@ const Home = () => {
                           margin: 'auto',
                         }}
                       >
-                        {tariff.content}
+                        {tariff.description}
                       </p>
                       <Link href="contact">
                         <Button variant="success">Contactanos!</Button>
@@ -73,19 +57,12 @@ const Home = () => {
                   </div>
                 </div>
               );
-            })} */}
+            })}
           </div>
         </Container>
       </section>
     </Layout>
   );
-};
-
-Home.getInitialProps = async () => {
-  // const res = await axios('http://localhost:3000/api/tariffs');
-  // const json = await res.data;
-  const json = { title: 'titulo' };
-  return { json };
 };
 
 export default Home;
