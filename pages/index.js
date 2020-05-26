@@ -3,6 +3,8 @@ import Layout from '../components/Layout';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 
+import { attributes } from '../content/tariffs.md';
+
 const Home = () => {
   let { tariffs } = attributes;
 
