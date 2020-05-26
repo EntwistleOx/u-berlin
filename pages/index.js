@@ -8,7 +8,7 @@ import axios from 'axios';
 import { attributes, react as HomeContent } from '../content/tariffs.md';
 
 const Home = () => {
-  let { title, cats } = attributes;
+  let { tariffs, cats } = attributes;
 
   return (
     <Layout>
