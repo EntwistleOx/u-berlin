@@ -4,7 +4,7 @@ import TopNav from './TopNav';
 import Footer from '../components/Footer';
 import { Fragment } from 'react';
 
-const Layout = () => {
+const Layout = ({ props }) => {
   return (
     <Fragment>
       <Head>
