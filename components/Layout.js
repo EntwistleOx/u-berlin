@@ -4,9 +4,7 @@ import TopNav from './TopNav';
 import Footer from '../components/Footer';
 import { Fragment } from 'react';
 
-const Layout = (props) => {
-  console.log(props.title);
-
+const Layout = () => {
   return (
     <Fragment>
       <Head>
@@ -15,13 +13,8 @@ const Layout = (props) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="U-Berlin Logistics" />
         <title>U-Berlin Logistics</title>
-        <link href="css/styles.css" rel="stylesheet" />
-        <link
-          rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-          crossOrigin="anonymous"
-        />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/styles.css" />
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
       <Topbar />
