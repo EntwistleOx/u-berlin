@@ -2,6 +2,11 @@ import Clock from 'react-live-clock';
 import ReactCountryFlag from 'react-country-flag';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false;
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faUser,
