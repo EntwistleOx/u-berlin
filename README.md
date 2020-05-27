@@ -1,3 +1,3 @@
 ## U-Berlin Website
 
-NextJS, MongoDb and Bootstrap
+This page is built with NextJS, Bootstrap 4 and the content is managed with Netlify CMS.

@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import { attributes } from '../content/tariffs.md';
 
 const Home = () => {
-  let { tariffs } = attributes;
+  let { title, subtitle, tariffs } = attributes;
 
   return (
     <Layout>
@@ -15,12 +15,8 @@ const Home = () => {
         <Container>
           <div className="row align-items-center">
             <div className="col-lg-12 text-center">
-              <h1>U-Berlin</h1>
-              <p>
-                En U-Berlin nos especializamos en transportes marítimo, aéreos y
-                terrestre, carga de proyectos específicos y su logística.{' '}
-                <strong>Revisa nuestras tarifas!</strong>
-              </p>
+              <h1>{title}</h1>
+              <p>{subtitle}</p>
             </div>
           </div>
         </Container>

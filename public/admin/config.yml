@@ -6,16 +6,19 @@ public_folder: '/images/uploads'
 site_url: https://u-berlin.netlify.app/
 display_url: https://u-berlin.netlify.app/
 logo_url: https://u-berlin.netlify.app/images/logo.png
-
 collections:
-  - name: 'tariffs'
-    label: 'Tariffs'
-    file: 'content/tariffs.md'
-    widget: list
-    description: Agrega las Tarifas del index aca
-    create: true
+  - name: 'index'
+    label: 'Index'
+    file: 'content/index.md'
+    description: 'Aca puedes editar los elementos del index de la pagina.'
     fields:
       - { label: 'Titulo', name: 'title', widget: 'string' }
-      - { label: 'Descripcion', name: 'description', widget: 'text' }
-      - { label: 'Precio', name: 'price', widget: 'text' }
-      - { label: 'Unidad', name: 'unit', widget: 'text' }
+      - { label: 'Subtitulo', name: 'subtitle', widget: 'text' }
+      - name: 'tariffs'
+      - label: 'Tariffs'
+      - widget: list
+      - fields:
+          - { label: 'Titulo', name: 'title', widget: 'string' }
+          - { label: 'Descripcion', name: 'description', widget: 'text' }
+          - { label: 'Precio', name: 'price', widget: 'string' }
+          - { label: 'Unidad', name: 'unit', widget: 'string' }
