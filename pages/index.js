@@ -30,7 +30,7 @@ const Home = () => {
                 <div key={index} className="col-md-4 text-center">
                   <div
                     className="card mb-5 mx-auto"
-                    style={{ maxWidth: '18rem', height: '24rem' }}
+                    style={{ maxWidth: '18rem', height: '19.5rem' }}
                   >
                     <div className="card-body">
                       <h4 className="card-title mt-4">{tariff.title}</h4>
@@ -40,7 +40,7 @@ const Home = () => {
                         <small className="text-muted">{tariff.unit}</small>
                       </h2>
                       <p
-                        className="card-text text-center mb-4"
+                        className="card-text text-center"
                         style={{
                           maxWidth: '8rem',
                           margin: 'auto',
@@ -48,9 +48,6 @@ const Home = () => {
                       >
                         {tariff.description}
                       </p>
-                      <Link href="contact">
-                        <Button variant="success">Contactanos!</Button>
-                      </Link>
                     </div>
                   </div>
                 </div>

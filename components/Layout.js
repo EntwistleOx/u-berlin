@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import Topbar from '../components/Topbar';
+import Topbar from './Topbar';
+import ClocksBar from './ClocksBar';
 import TopNav from './TopNav';
 import Footer from '../components/Footer';
 import { Fragment } from 'react';
@@ -18,6 +19,7 @@ const Layout = (props) => {
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
       <Topbar />
+      {/* <ClocksBar /> */}
       <TopNav />
       {props.children}
       <Footer />

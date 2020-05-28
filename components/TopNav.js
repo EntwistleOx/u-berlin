@@ -12,7 +12,7 @@ const TopNav = () => {
 
   return (
     <header>
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="md">
         <Container>
           <Navbar.Brand href="/">
             <Image
