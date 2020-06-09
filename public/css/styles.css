@@ -223,3 +223,7 @@ footer .subfooter {
   background-color: var(--primary) !important;
   border-color: var(--primary) !important;
 }
+
+#success {
+  min-height: 510px;
+}

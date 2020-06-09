@@ -1,6 +1,5 @@
 import { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
-// import Head from 'next/head';
 import TopBar from './TopBar';
 import TopNav from './TopNav';
 import Footer from '../components/Footer';
@@ -14,10 +13,6 @@ const Layout = (props) => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="U-Berlin Logistics" />
-        <meta
-          http-equiv="Content-Security-Policy"
-          content="default-src https:"
-        />
         <link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="css/styles.css" />
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

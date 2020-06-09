@@ -45,7 +45,14 @@ const Contact = () => {
 
             <Row>
               <Col md={12} className="mt-4">
-                <Form name="contactForm" id="contactForm">
+                <Form
+                  name="contact"
+                  id="contact"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                  method="POST"
+                  action="success"
+                >
                   <div className="form-group">
                     <label htmlFor="name">Nombre</label>
                     <input
