@@ -49,7 +49,6 @@ const Contact = () => {
                   name="contact"
                   id="contact"
                   data-netlify="true"
-                  data-netlify-honeypot="bot-field"
                   method="POST"
                   action="success"
                 >
