@@ -83,7 +83,7 @@ const Contact = () => {
                       style={{ resize: 'none' }}
                     ></textarea>
                   </div>
-                  <div id="success"></div>
+                  {/* <div id="success"></div> */}
                   <Button type="submit" variant="primary">
                     Enviar
                   </Button>
