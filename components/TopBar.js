@@ -2,7 +2,7 @@ import Clock from 'react-live-clock';
 import ReactCountryFlag from 'react-country-flag';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-
+import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faUser,
@@ -11,52 +11,26 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
-{
-  /* 
-<div class="container">
-  <div class="row justify-content-md-center">
-    <div class="col col-lg-2">
-      1 of 3
-    </div>
-    <div class="col-md-auto">
-      Variable width content
-    </div>
-    <div class="col col-lg-2">
-      3 of 3
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col-md-auto">
-      Variable width content
-    </div>
-    <div class="col col-lg-2">
-      3 of 3
-    </div>
-  </div>
-</div> 
-*/
-}
-
-const Topbar = () => {
+const TopBar = () => {
   return (
     <section id="topbar">
-      <Container className="text-dark">
-        <div className="topbar-row row">
-          <div className="top-icons col-md-4 align-self-center d-flex justify-content-start">
-            <div className=" mr-4">
+      <Container className="text-dark py-1">
+        <Row className="topbar-row">
+          <Col
+            md={4}
+            className="top-icons align-self-center d-flex justify-content-start"
+          >
+            <div className="mr-4">
               <a href="#" className="text-dark">
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
             </div>
-            <div className=" mr-4">
+            <div className="mr-4">
               <a href="#" className="text-dark">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </div>
-            <div className=" mr-4">
+            <div className="mr-4">
               <a
                 href="https://u-berlin.netlify.app/admin"
                 className="text-dark"
@@ -64,9 +38,12 @@ const Topbar = () => {
                 <FontAwesomeIcon icon={faUser} />
               </a>
             </div>
-          </div>
+          </Col>
 
-          <div className="top-clocks col-md-4 align-self-center d-flex justify-content-center">
+          <Col
+            md={4}
+            className="top-clocks align-self-center d-flex justify-content-around"
+          >
             <div className="clocks">
               <ReactCountryFlag countryCode="CL" svg />
               <Clock
@@ -87,27 +64,33 @@ const Topbar = () => {
                 timezone={'Europe/London'}
               />
             </div>
-          </div>
+            <div className="clocks">
+              <ReactCountryFlag countryCode="US" svg />
+              <Clock format={'HH:mm'} ticking={true} timezone={'US/Pacific'} />
+            </div>
+          </Col>
 
-          <div className="top-contact col-md-4 align-self-center d-flex justify-content-md-end justify-content-sm-center">
+          <Col
+            md={4}
+            className="top-contact align-self-center d-flex justify-content-md-end justify-content-sm-center"
+          >
             <div className="ml-3">
               <a href="#" className="text-dark">
                 <FontAwesomeIcon icon={faEnvelope} />
                 <span className="ml-2">info@u-berlin.com</span>
               </a>
             </div>
-
             <div className="ml-3">
               <a href="#" className="text-dark">
                 <FontAwesomeIcon icon={faPhoneAlt} />
                 <span className="ml-1">+56 2 2944 0554</span>
               </a>
             </div>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </Container>
     </section>
   );
 };
 
-export default Topbar;
+export default TopBar;

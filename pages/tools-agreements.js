@@ -1,9 +1,11 @@
 import { Fragment } from 'react';
-import Layout from '../components/Layout';
-import PagesHeader from '../components/PagesHeader';
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
+import Layout from '../components/Layout';
+import PagesHeader from '../components/PagesHeader';
 
 const ToolsAgreements = () => {
   return (
@@ -13,10 +15,10 @@ const ToolsAgreements = () => {
 
         <section id="tools-agreements">
           <section className="py-4">
-            <div className="container">
-              <div className="row pt-4">
-                <div className="col-lg-6 agreements-showcase"></div>
-                <div className="col-lg-6">
+            <Container>
+              <Row className="pt-4">
+                <Col lg={6} className="agreements-showcase"></Col>
+                <Col lg={6}>
                   <div className="text-justify p-2 ">
                     <p>
                       Desde fines de la década de 1990, Chile se ha adherido a
@@ -52,10 +54,10 @@ const ToolsAgreements = () => {
                       India (firmado en 2006 y ratificado en 2007).
                     </p>
                   </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-12 text-justify mt-4">
+                </Col>
+              </Row>
+              <Row>
+                <Col md={12} className="text-justify mt-4">
                   <table className="table table-striped">
                     <thead>
                       <tr>
@@ -261,9 +263,9 @@ const ToolsAgreements = () => {
                       Rumania, Suecia.
                     </li>
                   </ul>
-                </div>
-              </div>
-            </div>
+                </Col>
+              </Row>
+            </Container>
           </section>
         </section>
       </Fragment>

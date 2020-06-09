@@ -1,4 +1,7 @@
 import { Fragment } from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
 import Image from 'react-bootstrap/Image';
@@ -10,13 +13,13 @@ const ToolsContainers = () => {
         <PagesHeader title={'Contenedores'} />
 
         <section id="containers" className="overflow-hidden">
-          <div className="py-4">
-            <div className="row">
-              <div className="col-md-12">
+          <Container className="py-4">
+            <Row>
+              <Col md={12}>
                 <Image fluid src="images/contenedores.jpg" alt="contenedores" />
-              </div>
-            </div>
-          </div>
+              </Col>
+            </Row>
+          </Container>
         </section>
       </Fragment>
     </Layout>

@@ -1,21 +1,22 @@
 import { Fragment } from 'react';
-import Layout from '../components/Layout';
-import PagesHeader from '../components/PagesHeader';
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
+import Layout from '../components/Layout';
+import PagesHeader from '../components/PagesHeader';
 
 const SolutionsImport = () => {
   return (
     <Layout>
       <Fragment>
         <PagesHeader title={'¿Como Importar?'} />
-
         <section id="solutions-import">
           <section className="py-4">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-12">
+            <Container>
+              <Row>
+                <Col md={12}>
                   <div className="text-justify">
                     <p>
                       Se puede importar cualquier mercancía, salvo aquellas que
@@ -216,9 +217,11 @@ const SolutionsImport = () => {
                       </tbody>
                     </table>
 
-                    <strong>
-                      No se pueden importar los siguientes productos:
-                    </strong>
+                    <p>
+                      <strong>
+                        No se pueden importar los siguientes productos:
+                      </strong>
+                    </p>
 
                     <ul>
                       <li>
@@ -579,9 +582,9 @@ const SolutionsImport = () => {
                       signatarios, o que sean de publicidad.
                     </p>
                   </div>
-                </div>
-              </div>
-            </div>
+                </Col>
+              </Row>
+            </Container>
           </section>
         </section>
       </Fragment>

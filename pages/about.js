@@ -1,3 +1,6 @@
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
 
@@ -6,10 +9,10 @@ const About = () => {
     <Layout>
       <PagesHeader title={'nosotros'} />
       <section id="about" className="showcase">
-        <div className="container">
-          <div className="row py-4">
-            <div className="col-lg-6 about-showcase showcase-img"></div>
-            <div className="col-lg-6">
+        <Container>
+          <Row className="py-4">
+            <Col lg={6} className="about-showcase showcase-img"></Col>
+            <Col lg={6} className="d-flex align-items-center">
               <div className="text-justify p-2 ">
                 <h3>
                   Nuestra <span className="text-color">Compañia</span>
@@ -41,9 +44,9 @@ const About = () => {
                   operaciones que permiten entregar un servicio óptimo.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
     </Layout>
   );

@@ -1,4 +1,7 @@
 import Image from 'react-bootstrap/Image';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEnvelope,
@@ -10,9 +13,9 @@ import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
   return (
     <footer className="text-white-50">
-      <div className="container">
-        <div className="row pt-5">
-          <div className="col-md-3 mb-4">
+      <Container>
+        <Row className="pt-5">
+          <Col md={3} className="mb-4">
             <div>
               <h5 className="footer-title">Contactate</h5>
               <address>
@@ -29,8 +32,8 @@ const Footer = () => {
                 <span className="ml-2">info@u-berlin.co</span>m
               </div>
             </div>
-          </div>
-          <div className="col-md-3 mb-4">
+          </Col>
+          <Col md={3} className="mb-4">
             <h5 className="footer-title">Links</h5>
             <ul>
               <li>
@@ -53,13 +56,13 @@ const Footer = () => {
                 <a href="https://www.subtel.cl/">Subtel</a>
               </li>
             </ul>
-          </div>
-          <div className="col-md-3 mb-4">
+          </Col>
+          <Col md={3} className="mb-4">
             <div className="text-center">
               <Image fluid src="images/footer/iatalogo.png" alt="Iata" />
             </div>
-          </div>
-          <div className="col-md-3 mb-4">
+          </Col>
+          <Col md={3} className="mb-4">
             <div className="text-center">
               <Image
                 fluid
@@ -67,8 +70,8 @@ const Footer = () => {
                 alt="Aduana Chile"
               />
             </div>
-          </div>
-        </div>
+          </Col>
+        </Row>
 
         <div className="subfooter">
           <div className="d-flex align-items-center justify-content-between py-4">
@@ -89,7 +92,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 };

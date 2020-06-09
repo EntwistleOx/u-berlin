@@ -1,7 +1,9 @@
 import { Fragment } from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -10,13 +12,12 @@ const Services = () => {
     <Layout>
       <Fragment>
         <PagesHeader title={'Nuestros Servicios'} />
-
         <section id="services">
-          <div className="container">
+          <Container>
             {/* Sea Cargo */}
-            <div className="row pt-4">
-              <div className="col-lg-6 service1-showcase"></div>
-              <div className="col-lg-6">
+            <Row className="pt-4 showcase">
+              <Col lg={6} className="service1-showcase"></Col>
+              <Col lg={6} className="d-flex align-items-center">
                 <div className="text-justify p-2 ">
                   <h3>
                     Transporte <span className="text-color">Maritimo</span>
@@ -39,11 +40,11 @@ const Services = () => {
                     importación como exportación.
                   </p>
                 </div>
-              </div>
-            </div>
+              </Col>
+            </Row>
             {/* Air Cargo */}
-            <div className="row">
-              <div className="col-lg-6">
+            <Row className="showcase">
+              <Col lg={6} className="d-flex align-items-center">
                 <div className="text-justify p-2 ">
                   <h3>
                     Transporte <span className="text-color">Aereo</span>
@@ -71,13 +72,13 @@ const Services = () => {
                     deben ser enviados por avion.
                   </p>
                 </div>
-              </div>
+              </Col>
               <div className="col-lg-6 service2-showcase"></div>
-            </div>
+            </Row>
             {/* Ground Cargo */}
-            <div className="row">
-              <div className="col-lg-6 service3-showcase"></div>
-              <div className="col-lg-6">
+            <Row className="showcase">
+              <Col lg={6} className="service3-showcase"></Col>
+              <Col lg={6} className="d-flex align-items-center">
                 <div className="text-justify p-2 ">
                   <h3>
                     Transporte <span className="text-color">Terrestre</span>
@@ -91,7 +92,7 @@ const Services = () => {
                     carga incluyen:
                   </p>
 
-                  <ul className="withArrow">
+                  <ul className="mb-3">
                     <li>
                       <FontAwesomeIcon icon={faAngleDoubleRight} /> Carga
                       Suelta.
@@ -105,9 +106,8 @@ const Services = () => {
                       Refrigerada.
                     </li>
                   </ul>
-
                   <p>Transporte internacional terrestre a:</p>
-                  <ul className="withArrow">
+                  <ul>
                     <li>
                       <FontAwesomeIcon icon={faAngleDoubleRight} /> Argentina.
                     </li>
@@ -128,11 +128,11 @@ const Services = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
-            </div>
+              </Col>
+            </Row>
             {/* Projects */}
-            <div className="row pb-4">
-              <div className="col-lg-6">
+            <Row className="pb-4 showcase">
+              <Col lg={6} className="d-flex align-items-center">
                 <div className="text-justify p-2 ">
                   <h3>
                     Cargas de <span className="text-color">Proyectos</span>
@@ -153,7 +153,7 @@ const Services = () => {
                     Diseñamos e implementamos soluciones adaptadas a diferentes
                     industrias:
                   </p>
-                  <ul className="withArrow">
+                  <ul>
                     <li>
                       <FontAwesomeIcon icon={faAngleDoubleRight} /> Ingeniería,
                       aprovisionamiento y construcción.
@@ -178,10 +178,10 @@ const Services = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div className="col-lg-6 service4-showcase"></div>
-            </div>
-          </div>
+              </Col>
+              <Col lg={6} className="service4-showcase"></Col>
+            </Row>
+          </Container>
         </section>
       </Fragment>
     </Layout>

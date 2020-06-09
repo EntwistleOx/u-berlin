@@ -1,7 +1,8 @@
-import Link from 'next/link';
-import Layout from '../components/Layout';
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Layout from '../components/Layout';
 
 import { attributes } from '../content/index.md';
 
@@ -13,47 +14,47 @@ const Home = () => {
       <header className="masthead text-white text-center">
         <canvas className="overlay"></canvas>
         <Container>
-          <div className="row align-items-center">
-            <div className="col-lg-12 text-center">
+          <Row className="align-items-center">
+            <Col lg={12} className="text-center">
               <h1>{title}</h1>
               <p>{subtitle}</p>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </Container>
       </header>
 
       <section className="tarrifs bg-light">
         <Container>
-          <div className="row ">
+          <Row>
             {tariffs.map((tariff, index) => {
               return (
-                <div key={index} className="col-md-4 text-center">
-                  <div
-                    className="card mb-5 mx-auto"
+                <Col md={4} key={index} className="text-center">
+                  <Card
+                    className="mb-5 mx-auto"
                     style={{ maxWidth: '18rem', height: '19.5rem' }}
                   >
-                    <div className="card-body">
-                      <h4 className="card-title mt-4">{tariff.title}</h4>
+                    <Card.Body>
+                      <Card.Title className="mt-4">{tariff.title}</Card.Title>
                       <h2 className="card-text my-4">
                         {' '}
                         {tariff.price}{' '}
                         <small className="text-muted">{tariff.unit}</small>
                       </h2>
-                      <p
-                        className="card-text text-center"
+                      <Card.Text
+                        className="text-center"
                         style={{
                           maxWidth: '8rem',
                           margin: 'auto',
                         }}
                       >
                         {tariff.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
               );
             })}
-          </div>
+          </Row>
         </Container>
       </section>
     </Layout>

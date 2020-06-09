@@ -1,9 +1,11 @@
 import { Fragment } from 'react';
-import Layout from '../components/Layout';
-import PagesHeader from '../components/PagesHeader';
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import Layout from '../components/Layout';
+import PagesHeader from '../components/PagesHeader';
 
 const Tariff = () => {
   return (
@@ -12,9 +14,9 @@ const Tariff = () => {
         <PagesHeader title={'Arancel Aduanero'} />
 
         <section id="tools-tariff">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
+          <Container>
+            <Row>
+              <Col md={12}>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">
                     {' '}
@@ -278,9 +280,9 @@ const Tariff = () => {
                     <p>Objetos de arte o colección y antigüedades.</p>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
+              </Col>
+            </Row>
+          </Container>
         </section>
       </Fragment>
     </Layout>

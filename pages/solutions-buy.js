@@ -1,22 +1,23 @@
 import { Fragment } from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
 import Image from 'react-bootstrap/Image';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
 const SolutionsBuy = () => {
   return (
     <Layout>
       <Fragment>
         <PagesHeader title={'Compras por Internet'} />
-
         <section id="solutions-buy">
           <section className="py-4">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-12">
+            <Container>
+              <Row>
+                <Col md={12}>
                   <div className="text-justify">
                     <p>
                       Cuando compras en el extranjero estás haciendo una
@@ -137,19 +138,19 @@ const SolutionsBuy = () => {
                       deberás pagar, en caso de que corresponda.
                     </p>
 
-                    <div className="row">
-                      <div className="col-md-12">
+                    <Row>
+                      <Col md={12}>
                         <Image
                           fluid
                           src="images/compras_web.jpg"
                           alt="internet"
                         />
-                      </div>
-                    </div>
+                      </Col>
+                    </Row>
                   </div>
-                </div>
-              </div>
-            </div>
+                </Col>
+              </Row>
+            </Container>
           </section>
         </section>
       </Fragment>

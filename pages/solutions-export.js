@@ -1,9 +1,11 @@
 import { Fragment } from 'react';
-import Layout from '../components/Layout';
-import PagesHeader from '../components/PagesHeader';
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
+import Layout from '../components/Layout';
+import PagesHeader from '../components/PagesHeader';
 
 const SolutionsExport = () => {
   return (
@@ -13,9 +15,9 @@ const SolutionsExport = () => {
 
         <section id="solutions-export">
           <section className="py-4">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-12">
+            <Container>
+              <Row>
+                <Col md={12}>
                   <div className="text-justify">
                     <p>
                       En Chile cualquier persona natural, jurídica o extranjeros
@@ -187,9 +189,9 @@ const SolutionsExport = () => {
                       </li>
                     </ul>
                   </div>
-                </div>
-              </div>
-            </div>
+                </Col>
+              </Row>
+            </Container>
           </section>
         </section>
       </Fragment>
