@@ -78,7 +78,7 @@ time {
 header.masthead {
   background-color: var(--secondary);
   position: relative;
-  background: url('../images/header/header.jpg') no-repeat center center;
+  background: url('../../public/images/header/header.jpg') no-repeat center center;
   padding-top: 5rem;
   padding-bottom: 12rem;
   height: 70vh;
@@ -175,7 +175,7 @@ footer .subfooter {
 }
 
 #about .about-showcase {
-  background-image: url('../images/about/about.jpg');
+  background-image: url('../../public/images/about/about.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -185,31 +185,31 @@ footer .subfooter {
 }
 
 #services .service1-showcase {
-  background-image: url('../images/services/service1.jpg');
+  background-image: url('../../public/images/services/service1.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #services .service2-showcase {
-  background-image: url('../images/services/service2.jpg');
+  background-image: url('../../public/images/services/service2.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #services .service3-showcase {
-  background-image: url('../images/services/service3.jpg');
+  background-image: url('../../public/images/services/service3.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #services .service4-showcase {
-  background-image: url('../images/services/service4.jpg');
+  background-image: url('../../public/images/services/service4.jpg');
   background-position: center;
   background-size: cover;
 }
 
 #tools-agreements .agreements-showcase {
-  background-image: url('../images/tools/agreements.jpg');
+  background-image: url('../../public/images/tools/agreements.jpg');
   background-position: center;
   background-size: cover;
 }
