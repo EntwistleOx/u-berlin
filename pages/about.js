@@ -8,9 +8,9 @@ const About = () => {
   return (
     <Layout>
       <PagesHeader title={'nosotros'} />
-      <section id="about" className="showcase">
+      <section id="about">
         <Container>
-          <Row className="py-4">
+          <Row className="py-4 showcase">
             <Col lg={6} className="about-showcase showcase-img"></Col>
             <Col lg={6} className="d-flex align-items-center">
               <div className="text-justify p-2 ">
