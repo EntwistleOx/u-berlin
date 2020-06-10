@@ -19,7 +19,7 @@ const Layout = (props) => {
       </Helmet>
       <TopBar />
       <TopNav />
-      {props.children}
+      <div className="content-wraper">{props.children}</div>
       <Footer />
     </Fragment>
   );

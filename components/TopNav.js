@@ -11,7 +11,7 @@ const TopNav = () => {
   const router = useRouter();
 
   return (
-    <header>
+    <section id="topnav">
       <Navbar expand="md">
         <Container>
           <Navbar.Brand href="/">
@@ -107,7 +107,7 @@ const TopNav = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </header>
+    </section>
   );
 };
 

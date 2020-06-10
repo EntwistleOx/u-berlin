@@ -23,7 +23,7 @@ const Home = () => {
         </Container>
       </header>
 
-      <section className="tarrifs bg-light">
+      <section id="tarrifs" className="bg-light">
         <Container>
           <Row>
             {tariffs.map((tariff, index) => {

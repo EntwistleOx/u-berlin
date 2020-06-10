@@ -58,7 +58,7 @@ const ToolsAgreements = () => {
               </Row>
               <Row>
                 <Col md={12} className="text-justify mt-4">
-                  <table className="table table-striped">
+                  <table className="table table-striped table-sm">
                     <thead>
                       <tr>
                         <th>Parte signataria</th>

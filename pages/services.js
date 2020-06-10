@@ -16,7 +16,7 @@ const Services = () => {
           <Container>
             {/* Sea Cargo */}
             <Row className="pt-4 showcase">
-              <Col lg={6} className="service1-showcase"></Col>
+              <Col lg={6} className="service1-showcase showcase-img"></Col>
               <Col lg={6} className="d-flex align-items-center">
                 <div className="text-justify p-2 ">
                   <h3>
@@ -44,7 +44,11 @@ const Services = () => {
             </Row>
             {/* Air Cargo */}
             <Row className="showcase">
-              <Col lg={6} className="d-flex align-items-center">
+              <Col
+                lg={6}
+                className="order-lg-2 service2-showcase showcase-img"
+              ></Col>
+              <Col lg={6} className="order-lg-1 d-flex align-items-center">
                 <div className="text-justify p-2 ">
                   <h3>
                     Transporte <span className="text-color">Aereo</span>
@@ -73,11 +77,10 @@ const Services = () => {
                   </p>
                 </div>
               </Col>
-              <div className="col-lg-6 service2-showcase"></div>
             </Row>
             {/* Ground Cargo */}
             <Row className="showcase">
-              <Col lg={6} className="service3-showcase"></Col>
+              <Col lg={6} className="service3-showcase showcase-img"></Col>
               <Col lg={6} className="d-flex align-items-center">
                 <div className="text-justify p-2 ">
                   <h3>
@@ -132,7 +135,11 @@ const Services = () => {
             </Row>
             {/* Projects */}
             <Row className="pb-4 showcase">
-              <Col lg={6} className="d-flex align-items-center">
+              <Col
+                lg={6}
+                className="order-lg-2 service4-showcase showcase-img"
+              ></Col>
+              <Col lg={6} className="order-lg-1 d-flex align-items-center">
                 <div className="text-justify p-2 ">
                   <h3>
                     Cargas de <span className="text-color">Proyectos</span>
@@ -179,7 +186,6 @@ const Services = () => {
                   </ul>
                 </div>
               </Col>
-              <Col lg={6} className="service4-showcase"></Col>
             </Row>
           </Container>
         </section>

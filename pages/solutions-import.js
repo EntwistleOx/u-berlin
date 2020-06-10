@@ -34,7 +34,7 @@ const SolutionsImport = () => {
                       organismo.{' '}
                     </p>
 
-                    <table className="table table-striped">
+                    <table className="table table-striped table-sm">
                       <thead>
                         <tr>
                           <th>Mercancia</th>
@@ -488,8 +488,7 @@ const SolutionsImport = () => {
                       derecho ad valorem e IVA, los siguientes impuestos
                       adicionales, según producto:
                     </p>
-
-                    <table className="table table-striped">
+                    <table className="table table-striped table-sm">
                       <thead>
                         <tr>
                           <th>Producto</th>
@@ -523,7 +522,7 @@ const SolutionsImport = () => {
                       impuestos, según su variedad:
                     </p>
 
-                    <table className="table table-striped">
+                    <table className="table table-striped table-sm">
                       <thead>
                         <tr>
                           <th>Producto</th>

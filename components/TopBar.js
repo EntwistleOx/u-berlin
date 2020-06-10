@@ -18,7 +18,7 @@ const TopBar = () => {
         <Row className="topbar-row">
           <Col
             md={4}
-            className="top-icons align-self-center d-flex justify-content-start"
+            className="top-icons align-self-center d-flex justify-content-center justify-content-md-start"
           >
             <div className="mr-4">
               <a href="#" className="text-dark">
@@ -30,7 +30,7 @@ const TopBar = () => {
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </div>
-            <div className="mr-4">
+            <div className="mr-0">
               <a
                 href="https://u-berlin.netlify.app/admin"
                 className="text-dark"
@@ -72,7 +72,7 @@ const TopBar = () => {
 
           <Col
             md={4}
-            className="top-contact align-self-center d-flex justify-content-md-end justify-content-sm-center"
+            className="top-contact align-self-center d-flex justify-content-center justify-content-md-end"
           >
             <div className="ml-3">
               <a href="#" className="text-dark">
