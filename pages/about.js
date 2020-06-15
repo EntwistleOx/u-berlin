@@ -15,7 +15,7 @@ const About = () => {
             <Col lg={6} className="d-flex align-items-center">
               <div className="text-justify p-2 ">
                 <h3>
-                  Nuestra <span className="text-color">Compañia</span>
+                  Nuestra <span className="text-color">Empresa</span>
                 </h3>
                 <p>
                   U-Berlin nace de la visión de empresarios del sector que
