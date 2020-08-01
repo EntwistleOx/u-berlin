@@ -10,7 +10,6 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-
 }
 
 /* GENERAL */
@@ -102,9 +101,10 @@ a:hover {
 header.masthead {
   background-color: var(--secondary);
   position: relative;
-  background: url('../../public/images/header/header.jpg') no-repeat center center;
+  background: url('../../public/images/header/header.jpg') no-repeat center
+    center;
   padding-top: 5rem;
-  padding-bottom: 12rem;
+  padding-bottom: 10rem;
   height: 70vh;
   display: flex;
   align-items: center;
@@ -117,11 +117,18 @@ header.masthead .overlay {
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 header.masthead h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 300px) and (max-width: 767.98px) {
+  header.masthead h1 {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+  }
 }
 
 header.masthead p {
@@ -129,8 +136,12 @@ header.masthead p {
   color: var(--white);
 }
 
+#index-services h2 {
+  font-size: 40px;
+}
+
 #tarrifs {
-  margin-top: -150px;
+  /* margin-top: -150px; */
 }
 
 #tarrifs .card {
@@ -151,8 +162,6 @@ header.masthead p {
   margin: 'auto';
 }
 
-
-
 footer {
   background: var(--dark);
   font-size: 14px;
@@ -165,7 +174,7 @@ footer .footer-title {
 }
 
 footer a {
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 footer a:hover {
