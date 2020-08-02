@@ -10,7 +10,7 @@ import Clocks from '../components/Clocks';
 
 const SolutionsImport = () => {
   return (
-    <Layout>
+    <Layout pageTitle='U-Berlin | ¿Como Importar?'>
       <Fragment>
         <PagesHeader title={'¿Como Importar?'} />
         <Clocks />

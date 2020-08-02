@@ -9,7 +9,7 @@ import Image from 'react-bootstrap/Image';
 
 const ToolsIncoterms = () => {
   return (
-    <Layout>
+    <Layout pageTitle='U-Berlin | Incoterms'>
       <Fragment>
         <PagesHeader title={'Incoterms'} />
         <section id='incoterms' className='overflow-hidden'>

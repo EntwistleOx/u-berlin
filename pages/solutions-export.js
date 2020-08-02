@@ -10,7 +10,7 @@ import Clocks from '../components/Clocks';
 
 const SolutionsExport = () => {
   return (
-    <Layout>
+    <Layout pageTitle='U-Berlin | ¿Como Exportar?'>
       <Fragment>
         <PagesHeader title={'¿Como Exportar?'} />
 

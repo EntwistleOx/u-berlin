@@ -10,7 +10,7 @@ import Clocks from '../components/Clocks';
 
 const ToolsAgreements = () => {
   return (
-    <Layout>
+    <Layout pageTitle='U-Berlin | Acuerdos Internacionales'>
       <Fragment>
         <PagesHeader title={'Acuerdos Internacionales'} />
         <Clocks />

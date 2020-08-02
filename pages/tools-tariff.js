@@ -10,7 +10,7 @@ import Clocks from '../components/Clocks';
 
 const Tariff = () => {
   return (
-    <Layout>
+    <Layout pageTitle='U-Berlin | Arancel Aduanero'>
       <Fragment>
         <PagesHeader title={'Arancel Aduanero'} />
         <section id='tools-tariff'>

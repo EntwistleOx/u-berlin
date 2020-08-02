@@ -20,7 +20,7 @@ const Home = () => {
   } = attributes;
 
   return (
-    <Layout>
+    <Layout pageTitle='U-Berlin Logistics'>
       <header>
         <div className='hero'>
           <h1>{title}</h1>

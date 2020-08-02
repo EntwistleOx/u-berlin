@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,7 +9,7 @@ import Clocks from '../components/Clocks';
 
 const About = () => {
   return (
-    <Layout>
+    <Layout pageTitle='U-Berlin | Nosotros'>
       <PagesHeader title={'nosotros'} />
       <Clocks />
       <section id='about'>

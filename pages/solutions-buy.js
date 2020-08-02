@@ -11,7 +11,7 @@ import Image from 'react-bootstrap/Image';
 
 const SolutionsBuy = () => {
   return (
-    <Layout>
+    <Layout pageTitle='U-Berlin - Compras por Internet'>
       <Fragment>
         <PagesHeader title={'Compras por Internet'} />
         <section id='solutions-buy'>

@@ -9,7 +9,7 @@ import Image from 'react-bootstrap/Image';
 
 const ToolsContainers = () => {
   return (
-    <Layout>
+    <Layout pageTitle='U-Berlin | Contenedores'>
       <Fragment>
         <PagesHeader title={'Contenedores'} />
         <section id='containers' className='overflow-hidden'>

@@ -10,7 +10,7 @@ import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
 const Services = () => {
   return (
-    <Layout>
+    <Layout pageTitle='U-Berlin | Servicios'>
       <Fragment>
         <PagesHeader title={'Nuestros Servicios'} />
         <section id='services'>

@@ -63,7 +63,7 @@ const Contact = () => {
   };
 
   return (
-    <Layout>
+    <Layout pageTitle='U-Berlin | Contacto'>
       <Fragment>
         <PagesHeader title={'Contacto'} />
         <Clocks />

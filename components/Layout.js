@@ -1,5 +1,6 @@
+import Head from 'next/head';
 import { Fragment } from 'react';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import TopBar from './TopBar';
 import TopNav from './TopNav';
 import Footer from '../components/Footer';
@@ -7,9 +8,9 @@ import Footer from '../components/Footer';
 const Layout = (props) => {
   return (
     <Fragment>
-      <Helmet>
+      <Head>
         <html lang='en' amp />
-        <title>U-Berlin Logistics</title>
+        <title>{props.pageTitle}</title>
         <link
           rel='apple-touch-icon'
           sizes='57x57'
@@ -85,9 +86,39 @@ const Layout = (props) => {
         <meta name='theme-color' content='#ffffff'></meta>
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta name='description' content='U-Berlin Logistics' />
+        <meta
+          name='description'
+          content='U-Berlin Logistics, Nos especializamos en transporte marítimo, aéreo y terrestre.'
+        />
+        <meta property='og:title' content='U-Berlin Logistics' key='ogtitle' />
+        <meta
+          property='og:description'
+          content='U-Berlin Logistics, Nos especializamos en transporte marítimo, aéreo y terrestre.'
+          key='ogdesc'
+        />
+        {/* Twitter */}
+        <meta name='twitter:card' content='summary' key='twcard' />
+        <meta name='twitter:creator' content='Juan Díaz' key='twhandle' />
+        {/* Open Graph */}
+        <meta
+          property='og:url'
+          content='https://u-berlin.netlify.app/'
+          key='ogurl'
+        />
+        <meta
+          property='og:image'
+          content='https://u-berlin.netlify.app/images/preview.png'
+          key='ogimage'
+        />
+        <meta property='og:site_name' content='U-Berlin' key='ogsitename' />
+        <meta property='og:title' content='U-Berlin Logistics' key='ogtitle' />
+        <meta
+          property='og:description'
+          content='U-Berlin Logistics, Nos especializamos en transporte marítimo, aéreo y terrestre.'
+          key='ogdesc'
+        />
         <script src='https://identity.netlify.com/v1/netlify-identity-widget.js'></script>
-      </Helmet>
+      </Head>
       <TopBar />
       <TopNav />
       <div className='content-wraper'>{props.children}</div>
