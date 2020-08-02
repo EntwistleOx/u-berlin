@@ -108,7 +108,6 @@ const Contact = () => {
 
                 <Form
                   name='contact'
-                  data-netlify-recaptcha='true'
                   data-netlify='true'
                   onSubmit={handleForm}
                   // netlify-honeypot='bot-field'
