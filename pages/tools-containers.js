@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
+import Clocks from '../components/Clocks';
 import Image from 'react-bootstrap/Image';
 
 const ToolsContainers = () => {
@@ -11,12 +12,12 @@ const ToolsContainers = () => {
     <Layout>
       <Fragment>
         <PagesHeader title={'Contenedores'} />
-
-        <section id="containers" className="overflow-hidden">
-          <Container className="py-4">
+        <section id='containers' className='overflow-hidden'>
+          <Clocks />
+          <Container className='py-4'>
             <Row>
               <Col md={12}>
-                <Image fluid src="images/contenedores.jpg" alt="contenedores" />
+                <Image fluid src='images/contenedores.jpg' alt='contenedores' />
               </Col>
             </Row>
           </Container>

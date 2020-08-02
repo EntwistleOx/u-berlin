@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
+import Clocks from '../components/Clocks';
 import Image from 'react-bootstrap/Image';
 
 const SolutionsBuy = () => {
@@ -13,12 +14,13 @@ const SolutionsBuy = () => {
     <Layout>
       <Fragment>
         <PagesHeader title={'Compras por Internet'} />
-        <section id="solutions-buy">
-          <section className="py-4">
+        <section id='solutions-buy'>
+          <Clocks />
+          <section className='py-4'>
             <Container>
               <Row>
                 <Col md={12}>
-                  <div className="text-justify">
+                  <div className='text-justify'>
                     <p>
                       Cuando compras en el extranjero estás haciendo una
                       importación, por lo que tu compra debe cumplir las normas
@@ -142,8 +144,8 @@ const SolutionsBuy = () => {
                       <Col md={12}>
                         <Image
                           fluid
-                          src="images/compras_web.jpg"
-                          alt="internet"
+                          src='images/compras_web.jpg'
+                          alt='internet'
                         />
                       </Col>
                     </Row>

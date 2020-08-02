@@ -1,5 +1,3 @@
-import Clock from 'react-live-clock';
-import ReactCountryFlag from 'react-country-flag';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -39,36 +37,6 @@ const TopBar = () => {
               </a>
             </div>
           </Col>
-
-          {/* <Col
-            lg={4}
-            className='top-clocks align-self-center d-flex justify-content-around'
-          >
-            <div className='clocks'>
-              <ReactCountryFlag countryCode='CL' svg />
-              <Clock
-                format={'HH:mm'}
-                ticking={true}
-                timezone={'America/Santiago'}
-              />
-            </div>
-            <div className='clocks'>
-              <ReactCountryFlag countryCode='JP' svg />
-              <Clock format={'HH:mm'} ticking={true} timezone={'Asia/Tokyo'} />
-            </div>
-            <div className='clocks'>
-              <ReactCountryFlag countryCode='GB' svg />
-              <Clock
-                format={'HH:mm'}
-                ticking={true}
-                timezone={'Europe/London'}
-              />
-            </div>
-            <div className='clocks'>
-              <ReactCountryFlag countryCode='US' svg />
-              <Clock format={'HH:mm'} ticking={true} timezone={'US/Pacific'} />
-            </div>
-          </Col> */}
 
           <Col
             lg={6}

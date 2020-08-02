@@ -3,19 +3,21 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
+import Clocks from '../components/Clocks';
 
 const About = () => {
   return (
     <Layout>
       <PagesHeader title={'nosotros'} />
-      <section id="about">
+      <section id='about'>
+        <Clocks />
         <Container>
-          <Row className="py-4 showcase">
-            <Col lg={6} className="about-showcase showcase-img"></Col>
-            <Col lg={6} className="d-flex align-items-center">
-              <div className="text-justify p-2 ">
+          <Row className='py-4 showcase'>
+            <Col lg={6} className='about-showcase showcase-img'></Col>
+            <Col lg={6} className='d-flex align-items-center'>
+              <div className='text-justify p-2 '>
                 <h3>
-                  Nuestra <span className="text-color">Empresa</span>
+                  Nuestra <span className='text-color'>Empresa</span>
                 </h3>
                 <p>
                   U-Berlin nace de la visión de empresarios del sector que

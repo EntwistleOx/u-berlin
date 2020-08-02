@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
+import Clocks from '../components/Clocks';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -13,6 +14,7 @@ const Services = () => {
       <Fragment>
         <PagesHeader title={'Nuestros Servicios'} />
         <section id='services'>
+          <Clocks />
           <Container>
             {/* Sea Cargo */}
             <Row className='pt-4 showcase'>

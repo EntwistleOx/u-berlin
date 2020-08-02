@@ -6,19 +6,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
+import Clocks from '../components/Clocks';
 
 const ToolsAgreements = () => {
   return (
     <Layout>
       <Fragment>
         <PagesHeader title={'Acuerdos Internacionales'} />
-
-        <section id="tools-agreements">
+        <section id='tools-agreements'>
+          <Clocks />
           <Container>
-            <Row className="py-4 showcase">
-              <Col lg={6} className="agreements-showcase showcase-img"></Col>
+            <Row className='py-4 showcase'>
+              <Col lg={6} className='agreements-showcase showcase-img'></Col>
               <Col lg={6}>
-                <div className="text-justify p-2 ">
+                <div className='text-justify p-2 '>
                   <p>
                     Desde fines de la década de 1990, Chile se ha adherido a una
                     serie de tratados de libre comercio (TLC) y Acuerdos de
@@ -55,8 +56,8 @@ const ToolsAgreements = () => {
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="text-justify mt-4">
-                <table className="table table-striped table-sm">
+              <Col md={12} className='text-justify mt-4'>
+                <table className='table table-striped table-sm'>
                   <thead>
                     <tr>
                       <th>Parte signataria</th>

@@ -6,18 +6,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
+import Clocks from '../components/Clocks';
 
 const SolutionsImport = () => {
   return (
     <Layout>
       <Fragment>
         <PagesHeader title={'¿Como Importar?'} />
-        <section id="solutions-import">
-          <section className="py-4">
+        <section id='solutions-import'>
+          <Clocks />
+          <section className='py-4'>
             <Container>
               <Row>
                 <Col md={12}>
-                  <div className="text-justify">
+                  <div className='text-justify'>
                     <p>
                       Se puede importar cualquier mercancía, salvo aquellas que
                       se encuentren expresamente prohibidas por la legislación
@@ -34,7 +36,7 @@ const SolutionsImport = () => {
                       organismo.{' '}
                     </p>
 
-                    <table className="table table-striped table-sm">
+                    <table className='table table-striped table-sm'>
                       <thead>
                         <tr>
                           <th>Mercancia</th>
@@ -488,7 +490,7 @@ const SolutionsImport = () => {
                       derecho ad valorem e IVA, los siguientes impuestos
                       adicionales, según producto:
                     </p>
-                    <table className="table table-striped table-sm">
+                    <table className='table table-striped table-sm'>
                       <thead>
                         <tr>
                           <th>Producto</th>
@@ -522,7 +524,7 @@ const SolutionsImport = () => {
                       impuestos, según su variedad:
                     </p>
 
-                    <table className="table table-striped table-sm">
+                    <table className='table table-striped table-sm'>
                       <thead>
                         <tr>
                           <th>Producto</th>

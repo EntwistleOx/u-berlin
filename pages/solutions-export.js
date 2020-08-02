@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
+import Clocks from '../components/Clocks';
 
 const SolutionsExport = () => {
   return (
@@ -13,12 +14,13 @@ const SolutionsExport = () => {
       <Fragment>
         <PagesHeader title={'¿Como Exportar?'} />
 
-        <section id="solutions-export">
-          <section className="py-4">
+        <section id='solutions-export'>
+          <section className='py-4'>
+            <Clocks />
             <Container>
               <Row>
                 <Col md={12}>
-                  <div className="text-justify">
+                  <div className='text-justify'>
                     <p>
                       En Chile cualquier persona natural, jurídica o extranjeros
                       con residencia en nuestro país, puede constituirse como
