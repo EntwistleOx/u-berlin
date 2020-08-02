@@ -19,18 +19,30 @@ const TopBar = () => {
             className='top-icons align-self-center d-flex justify-content-center justify-content-md-start'
           >
             <div className='mr-4'>
-              <a href='#' className='text-dark'>
+              <a
+                href='#'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-dark'
+              >
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
             </div>
             <div className='mr-4'>
-              <a href='#' className='text-dark'>
+              <a
+                href='#'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-dark'
+              >
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </div>
             <div className='mr-0'>
               <a
                 href='https://u-berlin.netlify.app/admin'
+                target='_blank'
+                rel='noopener noreferrer'
                 className='text-dark'
               >
                 <FontAwesomeIcon icon={faUser} />
@@ -43,13 +55,13 @@ const TopBar = () => {
             className='top-contact align-self-center d-flex justify-content-center justify-content-md-end'
           >
             <div className='ml-3'>
-              <a href='#' className='text-dark'>
+              <a href='mailto:info@u-berlin.com' className='text-dark'>
                 <FontAwesomeIcon icon={faEnvelope} />
                 <span className='ml-2'>info@u-berlin.com</span>
               </a>
             </div>
             <div className='ml-3'>
-              <a href='#' className='text-dark'>
+              <a href='tel:+56229440554' className='text-dark'>
                 <FontAwesomeIcon icon={faPhoneAlt} />
                 <span className='ml-1'>+56 2 2944 0554</span>
               </a>

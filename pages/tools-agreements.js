@@ -13,13 +13,13 @@ const ToolsAgreements = () => {
     <Layout>
       <Fragment>
         <PagesHeader title={'Acuerdos Internacionales'} />
-        <section id='tools-agreements'>
-          <Clocks />
+        <Clocks />
+        <section id='tools-agreements' className='py-4'>
           <Container>
-            <Row className='py-4 showcase'>
+            <Row className='showcase'>
               <Col lg={6} className='agreements-showcase showcase-img'></Col>
               <Col lg={6}>
-                <div className='text-justify p-2 '>
+                <div className='text-justify p-2'>
                   <p>
                     Desde fines de la década de 1990, Chile se ha adherido a una
                     serie de tratados de libre comercio (TLC) y Acuerdos de

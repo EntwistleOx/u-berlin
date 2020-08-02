@@ -8,18 +8,17 @@ const Layout = (props) => {
   return (
     <Fragment>
       <Helmet>
+        <html lang='en' amp />
         <title>U-Berlin Logistics</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="U-Berlin Logistics" />
-        <link rel="stylesheet" href="css/bootstrap.css" />
-        <link rel="stylesheet" href="css/styles.css" />
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <link rel='icon' href='/favicon.ico' />
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name='description' content='U-Berlin Logistics' />
+        <script src='https://identity.netlify.com/v1/netlify-identity-widget.js'></script>
       </Helmet>
       <TopBar />
       <TopNav />
-      <div className="content-wraper">{props.children}</div>
+      <div className='content-wraper'>{props.children}</div>
       <Footer />
     </Fragment>
   );

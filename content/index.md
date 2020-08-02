@@ -1,8 +1,7 @@
 ---
 title: U-Berlin
 subtitle: >-
-  Nos especializamos en transporte marítimo, aéreo y terrestre, ademas de
-  cargas de proyectos específicos y su logística.
+  Nos especializamos en transporte marítimo, aéreo y terrestre.
 
 servicesTitle: Nuestros Servicios
 servicesSubtitle: >-

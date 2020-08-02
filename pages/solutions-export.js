@@ -15,8 +15,8 @@ const SolutionsExport = () => {
         <PagesHeader title={'¿Como Exportar?'} />
 
         <section id='solutions-export'>
+          <Clocks />
           <section className='py-4'>
-            <Clocks />
             <Container>
               <Row>
                 <Col md={12}>

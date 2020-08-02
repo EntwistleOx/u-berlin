@@ -45,20 +45,19 @@ const Home = () => {
             {services.map((service, index) => {
               return (
                 <Col xl={3} lg={6} md={6} key={index} className='text-center'>
-                  <div className='card mb-5 mx-auto'>
+                  <Card className='mb-5 mx-auto'>
                     <img src={service.img} className='card-img-top' alt='' />
-                    <div className='card-body'>
-                      <h5 className='card-title'>{service.title}</h5>
-                      <p className='card-text'>{service.description}</p>
-
+                    <Card.Body>
+                      <Card.Title>{service.title}</Card.Title>
+                      <Card.Text>{service.description}</Card.Text>
                       <Link href={service.link} passHref={true}>
                         <Card.Link>Leer mas...</Card.Link>
                       </Link>
                       <Link href='/contact' passHref={true}>
                         <Card.Link>Contactanos</Card.Link>
                       </Link>
-                    </div>
-                  </div>
+                    </Card.Body>
+                  </Card>
                 </Col>
               );
             })}
@@ -82,14 +81,18 @@ const Home = () => {
             {tariffs.map((tariff, index) => {
               return (
                 <Col lg={3} md={6} key={index} className='text-center'>
-                  <Card className='mb-5 mx-auto' style={{ maxWidth: '18rem' }}>
+                  <Card
+                    bg='light'
+                    className='mb-5 mx-auto'
+                    style={{ maxWidth: '18rem' }}
+                  >
                     <Card.Body>
                       <Card.Title className='mt-4'>{tariff.title}</Card.Title>
-                      <h4 className='card-text my-4'>
+                      <Card.Text className='card-text my-4'>
                         {' '}
                         {tariff.price}{' '}
                         <small className='text-muted'>{tariff.unit}</small>
-                      </h4>
+                      </Card.Text>
                       <Card.Text className='text-center'>
                         {tariff.description}
                       </Card.Text>

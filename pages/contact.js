@@ -52,7 +52,7 @@ const Contact = () => {
     setShowAlert(true);
     setTimeout(() => {
       setShowAlert(false);
-    }, 5000);
+    }, 10000);
 
     setFormData({
       name: '',
@@ -66,8 +66,8 @@ const Contact = () => {
     <Layout>
       <Fragment>
         <PagesHeader title={'Contacto'} />
+        <Clocks />
         <section id='contact'>
-          <Clocks />
           <Container className='py-4'>
             <Row>
               <Col lg={6} className='d-flex align-items-center'>
@@ -108,10 +108,10 @@ const Contact = () => {
 
                 <Form
                   name='contact'
-                  id='contact'
+                  onSubmit={handleForm}
                   data-netlify='true'
                   netlify-honeypot='bot-field'
-                  onSubmit={handleForm}
+                  data-netlify-recaptcha='true'
                 >
                   <div hidden aria-hidden='true'>
                     <label>
@@ -164,7 +164,7 @@ const Contact = () => {
                       style={{ resize: 'none' }}
                     ></textarea>
                   </div>
-
+                  <div data-netlify-recaptcha='true'></div>
                   <Button type='submit' variant='primary'>
                     Enviar
                   </Button>

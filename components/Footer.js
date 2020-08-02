@@ -1,23 +1,20 @@
+import Link from 'next/link';
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faEnvelope,
-  faPhoneAlt,
-  faTerminal,
-} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
-    <footer className="text-white-50">
+    <footer className='text-white-50'>
       <Container>
-        <Row className="pt-5">
-          <Col md={3} className="mb-4">
+        <Row className='pt-5'>
+          <Col md={3} className='mb-4'>
             <div>
-              <h5 className="footer-title">Contactate</h5>
+              <h3 className='footer-title'>Contactate</h3>
               <address>
                 U-Berlin Logistics
                 <br />
@@ -26,66 +23,100 @@ const Footer = () => {
                 of. 206, Pudahuel, Chile.
               </address>
               <div>
-                <FontAwesomeIcon icon={faPhoneAlt} />{' '}
-                <span className="ml-2">+56 2 2944 0554</span> <br />
-                <FontAwesomeIcon icon={faEnvelope} />{' '}
-                <span className="ml-2">info@u-berlin.co</span>m
+                <a href='tel:+56229440554'>
+                  <FontAwesomeIcon icon={faPhoneAlt} />{' '}
+                  <span className='ml-2'>+56 2 2944 0554</span> <br />
+                </a>
+                <a href='mailto:info@u-berlin.com'>
+                  <FontAwesomeIcon icon={faEnvelope} />{' '}
+                  <span className='ml-2'>info@u-berlin.com</span>
+                </a>
               </div>
             </div>
           </Col>
-          <Col md={3} className="mb-4">
-            <h5 className="footer-title">Links</h5>
+          <Col md={3} className='mb-4'>
+            <h3 className='footer-title'>Links</h3>
             <ul>
               <li>
-                <a href="https://www.aduana.cl/">Aduana de Chile</a>
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://www.aduana.cl/'
+                >
+                  Aduana de Chile
+                </a>
               </li>
               <li>
-                <a href="https://www.sag.gob.cl/">
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://www.sag.gob.cl/'
+                >
                   Servicio Agricola y Ganadero
                 </a>
               </li>
               <li>
-                <a href="http://www.dgmn.cl/">
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='http://www.dgmn.cl/'
+                >
                   Direccion General de Movilizacion Nacional
                 </a>
               </li>
               <li>
-                <a href="http://www.subpesca.cl/">Subpesca</a>
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='http://www.subpesca.cl/'
+                >
+                  Subpesca
+                </a>
               </li>
               <li>
-                <a href="https://www.subtel.cl/">Subtel</a>
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://www.subtel.cl/'
+                >
+                  Subtel
+                </a>
               </li>
             </ul>
           </Col>
-          <Col md={3} className="mb-4">
-            <div className="text-center">
-              <Image fluid src="images/footer/iatalogo.png" alt="Iata" />
+          <Col md={3} className='mb-4'>
+            <div className='text-center'>
+              <Image fluid src='images/footer/iatalogo.png' alt='Iata' />
             </div>
           </Col>
-          <Col md={3} className="mb-4">
-            <div className="text-center">
+          <Col md={3} className='mb-4'>
+            <div className='text-center'>
               <Image
                 fluid
-                src="images/footer/aduanachile.png"
-                alt="Aduana Chile"
+                src='images/footer/aduanachile.png'
+                alt='Aduana Chile'
               />
             </div>
           </Col>
         </Row>
 
-        <div className="subfooter">
-          <div className="d-flex align-items-center justify-content-between py-4">
+        <div className='subfooter'>
+          <div className='d-flex align-items-center justify-content-between py-4'>
             <div>
-              <FontAwesomeIcon icon={faTerminal} /> JDev{' '}
+              <img
+                src='images/jd-dark.png'
+                alt='Juan Díaz Web Developer'
+                width='50px'
+              />
             </div>
-            <div className="d-flex justify-content-end">
+            <div className='d-flex justify-content-end'>
               <div>
-                <a href="#">
+                <a target='_blank' rel='noopener noreferrer' href='#'>
                   <FontAwesomeIcon icon={faFacebookF} />
                 </a>
               </div>
-              <div className="ml-3">
-                <a href="#">
+              <div className='ml-3'>
+                <a target='_blank' rel='noopener noreferrer' href='#'>
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
               </div>

@@ -1,7 +1,7 @@
 :root {
   --primary: #05a3f2;
   --secondary: #53d5fb;
-  --dark: #013048;
+  --dark: #012030;
   --light: #dfe4e9;
   --gray: #596564;
   --white: #ffffff;
@@ -65,7 +65,8 @@ a:hover {
 }
 
 .alert-info {
-  background-color: var(--secondary) !important;
+  background-color: #cdecfc !important;
+  margin-bottom: 0rem;
 }
 
 #hours .clocks time {
@@ -114,7 +115,7 @@ a:hover {
 
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../public/images/header/02.jpg');
+    url('../../public/images/header/main-min.jpg');
   background-size: cover;
   height: 100vh;
 }

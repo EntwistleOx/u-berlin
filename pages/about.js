@@ -9,10 +9,10 @@ const About = () => {
   return (
     <Layout>
       <PagesHeader title={'nosotros'} />
+      <Clocks />
       <section id='about'>
-        <Clocks />
-        <Container>
-          <Row className='py-4 showcase'>
+        <Container className='py-4'>
+          <Row className='showcase'>
             <Col lg={6} className='about-showcase showcase-img'></Col>
             <Col lg={6} className='d-flex align-items-center'>
               <div className='text-justify p-2 '>
