@@ -108,17 +108,17 @@ const Contact = () => {
 
                 <Form
                   name='contact'
-                  onSubmit={handleForm}
-                  data-netlify='true'
-                  netlify-honeypot='bot-field'
                   data-netlify-recaptcha='true'
+                  data-netlify='true'
+                  onSubmit={handleForm}
+                  // netlify-honeypot='bot-field'
                 >
-                  <div hidden aria-hidden='true'>
+                  {/* <div hidden aria-hidden='true'>
                     <label>
                       Don’t fill this out if you're human:
                       <input name='bot-field' />
                     </label>
-                  </div>
+                  </div> */}
                   <div className='form-group'>
                     <label htmlFor='name'>Nombre</label>
                     <input
@@ -164,7 +164,9 @@ const Contact = () => {
                       style={{ resize: 'none' }}
                     ></textarea>
                   </div>
+
                   <div data-netlify-recaptcha='true'></div>
+
                   <Button type='submit' variant='primary'>
                     Enviar
                   </Button>
