@@ -106,18 +106,19 @@ const Contact = () => {
                   </Alert>
                 )}
 
-                <Form
+                <form
                   name='contact'
                   data-netlify='true'
+                  data-netlify-recaptcha='true'
                   onSubmit={handleForm}
-                  // netlify-honeypot='bot-field'
+                  netlify-honeypot='bot-field'
+                  netlify
                 >
-                  {/* <div hidden aria-hidden='true'>
+                  <div hidden aria-hidden='true'>
                     <label>
-                      Don’t fill this out if you're human:
                       <input name='bot-field' />
                     </label>
-                  </div> */}
+                  </div>
                   <div className='form-group'>
                     <label htmlFor='name'>Nombre</label>
                     <input
@@ -169,7 +170,7 @@ const Contact = () => {
                   <Button type='submit' variant='primary'>
                     Enviar
                   </Button>
-                </Form>
+                </form>
               </Col>
             </Row>
           </Container>
