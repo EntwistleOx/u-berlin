@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
-// import { Helmet } from 'react-helmet';
 import TopBar from './TopBar';
 import TopNav from './TopNav';
 import Footer from '../components/Footer';
@@ -9,7 +8,6 @@ const Layout = (props) => {
   return (
     <Fragment>
       <Head>
-        <html lang='en' amp />
         <title>{props.pageTitle}</title>
         <link
           rel='apple-touch-icon'

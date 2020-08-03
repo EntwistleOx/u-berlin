@@ -5,7 +5,6 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
-
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
 import Clocks from '../components/Clocks';
@@ -106,13 +105,12 @@ const Contact = () => {
                   </Alert>
                 )}
 
-                <form
+                <Form
                   name='contact'
                   data-netlify='true'
                   data-netlify-recaptcha='true'
                   onSubmit={handleForm}
                   netlify-honeypot='bot-field'
-                  netlify
                 >
                   <div hidden aria-hidden='true'>
                     <label>
@@ -170,7 +168,7 @@ const Contact = () => {
                   <Button type='submit' variant='primary'>
                     Enviar
                   </Button>
-                </form>
+                </Form>
               </Col>
             </Row>
           </Container>

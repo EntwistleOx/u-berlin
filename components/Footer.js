@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
