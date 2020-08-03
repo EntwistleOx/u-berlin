@@ -1,4 +1,4 @@
-import { useState, Fragment } from 'react';
+import React, { useState, Fragment } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,8 +8,17 @@ import Alert from 'react-bootstrap/Alert';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
 import Clocks from '../components/Clocks';
+import Recaptcha from 'react-google-recaptcha';
+
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
 
 const Contact = () => {
+  const recaptchaRef = React.createRef();
+
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -21,27 +30,29 @@ const Contact = () => {
 
   const { name, company, email, message } = formData;
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
-      )
-      .join('&');
-  };
-
   const handleOnChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
+
+  const handleRecaptcha = (e) => {
+    setFormData({ ...formData, 'g-recaptcha-response': e });
+  };
+
   const handleForm = async (e) => {
     e.preventDefault();
 
+    const recaptchaValue = recaptchaRef.current.getValue();
     const sendMsg = await fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...formData }),
+      body: encode({
+        'g-recaptcha-response': recaptchaValue,
+        'form-name': 'contact',
+        ...formData,
+      }),
     });
 
     if (!sendMsg.ok) {
@@ -162,8 +173,13 @@ const Contact = () => {
                       style={{ resize: 'none' }}
                     ></textarea>
                   </div>
+                  {/* 
+                  <div data-netlify-recaptcha='true'></div> */}
 
-                  <div data-netlify-recaptcha='true'></div>
+                  <Recaptcha
+                    ref={recaptchaRef}
+                    sitekey={process.env.NEXT_PUBLIC_SITE_RECAPTCHA_KEY}
+                  />
 
                   <Button type='submit' variant='primary'>
                     Enviar
