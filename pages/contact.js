@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import { useState, useRef, Fragment } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -17,8 +17,7 @@ const encode = (data) => {
 };
 
 const Contact = () => {
-  const recaptchaRef = React.createRef();
-
+  const recaptchaRef = useRef(null);
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -37,19 +36,20 @@ const Contact = () => {
     });
   };
 
-  const handleRecaptcha = (e) => {
-    setFormData({ ...formData, 'g-recaptcha-response': e });
+  const captchaOnChange = (e) => {
+    setFormData({
+      ...formData,
+      'g-recaptcha-response': e,
+    });
   };
 
   const handleForm = async (e) => {
     e.preventDefault();
 
-    const recaptchaValue = recaptchaRef.current.getValue();
     const sendMsg = await fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        'g-recaptcha-response': recaptchaValue,
         'form-name': 'contact',
         ...formData,
       }),
@@ -70,7 +70,10 @@ const Contact = () => {
       email: '',
       message: '',
     });
+    recaptchaRef.current.reset();
   };
+
+  console.log(formData);
 
   return (
     <Layout pageTitle='U-Berlin | Contacto'>
@@ -173,12 +176,11 @@ const Contact = () => {
                       style={{ resize: 'none' }}
                     ></textarea>
                   </div>
-                  {/* 
-                  <div data-netlify-recaptcha='true'></div> */}
 
                   <Recaptcha
                     ref={recaptchaRef}
                     sitekey={process.env.NEXT_PUBLIC_SITE_RECAPTCHA_KEY}
+                    onChange={captchaOnChange}
                   />
 
                   <Button type='submit' variant='primary'>
