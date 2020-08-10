@@ -117,7 +117,7 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../../public/images/header/main-min.jpg');
   background-size: cover;
-  background-position: center ;
+  background-position: center;
   height: 100vh;
 }
 
@@ -149,8 +149,8 @@ header {
   }
 
   .hero p {
-    margin-top:  1rem;
-    font-size: .9rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -174,7 +174,6 @@ header {
   height: '20rem';
 }
 
-
 #tarrifs h2 {
   font-size: 40px;
 }
@@ -197,6 +196,7 @@ footer {
 
 footer .footer-title {
   color: var(--primary);
+  font-size: 1.3rem;
 }
 
 footer a {
@@ -270,4 +270,8 @@ footer .subfooter {
 .dropdown-item.active,
 .dropdown-item:active {
   background-color: var(--primary);
+}
+
+label {
+  display: block;
 }

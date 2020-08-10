@@ -27,14 +27,14 @@ const TopNav = () => {
           <Navbar.Collapse id="navbar-nav">
             <Nav className="ml-auto">
               <Link href="/" passHref>
-                <Nav.Link className={router.pathname == '/' ? 'active' : ''}>
+                <Nav.Link className={router.pathname === '/' ? 'active' : ''}>
                   Home
                 </Nav.Link>
               </Link>
 
               <Link href="about" passHref>
                 <Nav.Link
-                  className={router.pathname == '/about' ? 'active' : ''}
+                  className={router.pathname === '/about' ? 'active' : ''}
                 >
                   Nosotros
                 </Nav.Link>
@@ -42,7 +42,7 @@ const TopNav = () => {
 
               <Link href="services" passHref>
                 <Nav.Link
-                  className={router.pathname == '/services' ? 'active' : ''}
+                  className={router.pathname === '/services' ? 'active' : ''}
                 >
                   Servicios
                 </Nav.Link>
@@ -52,9 +52,9 @@ const TopNav = () => {
                 title="Soluciones"
                 id="solutions-dropdown"
                 className={
-                  router.pathname == '/solutions-import' ||
-                  router.pathname == '/solutions-export' ||
-                  router.pathname == '/solutions-buy'
+                  router.pathname === '/solutions-import' ||
+                  router.pathname === '/solutions-export' ||
+                  router.pathname === '/solutions-buy'
                     ? 'active'
                     : ''
                 }
@@ -74,10 +74,10 @@ const TopNav = () => {
                 title="Herramientas"
                 id="tools-dropdown"
                 className={
-                  router.pathname == '/tools-tariff' ||
-                  router.pathname == '/tools-agreements' ||
-                  router.pathname == '/tools-containers' ||
-                  router.pathname == '/tools-incoterms'
+                  router.pathname === '/tools-tariff' ||
+                  router.pathname === '/tools-agreements' ||
+                  router.pathname === '/tools-containers' ||
+                  router.pathname === '/tools-incoterms'
                     ? 'active'
                     : ''
                 }
@@ -98,7 +98,7 @@ const TopNav = () => {
 
               <Link href="/contact" passHref>
                 <Nav.Link
-                  className={router.pathname == '/contact' ? 'active' : ''}
+                  className={router.pathname === '/contact' ? 'active' : ''}
                 >
                   Contacto
                 </Nav.Link>
