@@ -117,6 +117,7 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../../public/images/header/main-min.jpg');
   background-size: cover;
+  background-position: center ;
   height: 100vh;
 }
 
@@ -132,23 +133,24 @@ header {
 .hero h1 {
   text-transform: uppercase;
   margin: 0;
-  font-size: 4rem;
+  font-size: 7.5rem;
   white-space: nowrap;
+  font-weight: bold;
 }
 
 .hero p {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 @media (min-width: 280px) and (max-width: 767.98px) {
   .hero h1 {
-    font-size: 3rem;
+    font-size: 3.8rem;
   }
 
   .hero p {
-    margin: 0;
-    font-size: 1rem;
+    margin-top:  1rem;
+    font-size: .9rem;
   }
 }
 
@@ -171,6 +173,7 @@ header {
   max-width: '18rem';
   height: '20rem';
 }
+
 
 #tarrifs h2 {
   font-size: 40px;

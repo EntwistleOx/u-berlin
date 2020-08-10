@@ -26,7 +26,7 @@ const Home = () => {
           <h1>{title}</h1>
           <p>{subtitle}</p>
           <Link href='/contact'>
-            <a className='btn btn-light mt-3'>Contactanos!</a>
+            <a className='btn btn-light mt-4'>Contactanos!</a>
           </Link>
         </div>
       </header>
@@ -45,7 +45,7 @@ const Home = () => {
             {services.map((service, index) => {
               return (
                 <Col xl={3} lg={6} md={6} key={index} className='text-center'>
-                  <Card className='mb-5 mx-auto'>
+                  <Card className='mb-5 mx-auto bg-light'>
                     <img src={service.img} className='card-img-top' alt='' />
                     <Card.Body>
                       <Card.Title>{service.title}</Card.Title>
@@ -70,11 +70,6 @@ const Home = () => {
           <Row>
             <Col lg={12} className='text-center my-5'>
               <h2>{tariffsTitle}</h2>
-              {/* <p>
-                U-Berlin nace de la visión de empresarios del sector que vieron
-                una oportunidad y la necesidad de dar un servicio de calidad y
-                personalizado a sus clientes.
-              </p> */}
             </Col>
           </Row>
           <Row>
@@ -82,12 +77,11 @@ const Home = () => {
               return (
                 <Col lg={3} md={6} key={index} className='text-center'>
                   <Card
-                    bg='light'
-                    className='mb-5 mx-auto'
-                    style={{ maxWidth: '18rem' }}
+                    className='mb-5 mx-auto bg-white'
+
                   >
                     <Card.Body>
-                      <Card.Title className='mt-4'>{tariff.title}</Card.Title>
+                      <Card.Title style={{ fontSize: '2rem' }} className='mt-4'>{tariff.title}</Card.Title>
                       <Card.Text className='card-text my-4'>
                         {' '}
                         {tariff.price}{' '}
