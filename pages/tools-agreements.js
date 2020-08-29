@@ -28,7 +28,7 @@ const ToolsAgreements = () => (
                   acuerdos de comercio firmados, Chile actualmente posee libre
                   acceso a los principales mercados en el mundo, alcanzando más
                   de 4200 millones de personas distribuidas en los cinco
-                  continentes.{' '}
+                  continentes.
                 </p>
 
                 <p>
