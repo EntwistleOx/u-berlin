@@ -11,28 +11,28 @@ const TopNav = () => {
   const router = useRouter();
 
   return (
-    <section id="topnav">
-      <Navbar expand="md">
+    <section id='topnav'>
+      <Navbar expand='md'>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href='/'>
             <Image
-              alt="u-berlin"
-              src="images/logo.png"
-              className="d-inline-block align-top"
-              width="155"
+              alt='u-berlin'
+              src='images/logo.png'
+              className='d-inline-block align-top'
+              width='155'
             />
           </Navbar.Brand>
-          <NavbarToggle aria-controls="navbar-nav" />
+          <NavbarToggle aria-controls='navbar-nav' />
 
-          <Navbar.Collapse id="navbar-nav">
-            <Nav className="ml-auto">
-              <Link href="/" passHref>
+          <Navbar.Collapse id='navbar-nav'>
+            <Nav className='ml-auto'>
+              <Link href='/' passHref>
                 <Nav.Link className={router.pathname === '/' ? 'active' : ''}>
                   Home
                 </Nav.Link>
               </Link>
 
-              <Link href="about" passHref>
+              <Link href='about' passHref>
                 <Nav.Link
                   className={router.pathname === '/about' ? 'active' : ''}
                 >
@@ -40,7 +40,7 @@ const TopNav = () => {
                 </Nav.Link>
               </Link>
 
-              <Link href="services" passHref>
+              <Link href='services' passHref>
                 <Nav.Link
                   className={router.pathname === '/services' ? 'active' : ''}
                 >
@@ -49,8 +49,8 @@ const TopNav = () => {
               </Link>
 
               <NavDropdown
-                title="Soluciones"
-                id="solutions-dropdown"
+                title='Soluciones'
+                id='solutions-dropdown'
                 className={
                   router.pathname === '/solutions-import' ||
                   router.pathname === '/solutions-export' ||
@@ -59,20 +59,20 @@ const TopNav = () => {
                     : ''
                 }
               >
-                <Link href="solutions-import" passHref>
+                <Link href='solutions-import' passHref>
                   <NavDropdown.Item>¿Como Importar?</NavDropdown.Item>
                 </Link>
-                <Link href="solutions-export" passHref>
+                <Link href='solutions-export' passHref>
                   <NavDropdown.Item>¿Como Exportar?</NavDropdown.Item>
                 </Link>
-                <Link href="solutions-buy" passHref>
+                <Link href='solutions-buy' passHref>
                   <NavDropdown.Item>Compras por Internet</NavDropdown.Item>
                 </Link>
               </NavDropdown>
 
               <NavDropdown
-                title="Herramientas"
-                id="tools-dropdown"
+                title='Herramientas'
+                id='tools-dropdown'
                 className={
                   router.pathname === '/tools-tariff' ||
                   router.pathname === '/tools-agreements' ||
@@ -82,21 +82,21 @@ const TopNav = () => {
                     : ''
                 }
               >
-                <Link href="tools-tariff" passHref>
+                <Link href='tools-tariff' passHref>
                   <NavDropdown.Item>Arancel Aduanero</NavDropdown.Item>
                 </Link>
-                <Link href="tools-agreements" passHref>
+                <Link href='tools-agreements' passHref>
                   <NavDropdown.Item>Acuerdos Internacionales</NavDropdown.Item>
                 </Link>
-                <Link href="tools-containers" passHref>
+                <Link href='tools-containers' passHref>
                   <NavDropdown.Item>Contenedores</NavDropdown.Item>
                 </Link>
-                <Link href="tools-incoterms" passHref>
+                <Link href='tools-incoterms' passHref>
                   <NavDropdown.Item>Incoterms</NavDropdown.Item>
                 </Link>
               </NavDropdown>
 
-              <Link href="/contact" passHref>
+              <Link href='/contact' passHref>
                 <Nav.Link
                   className={router.pathname === '/contact' ? 'active' : ''}
                 >

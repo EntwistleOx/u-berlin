@@ -8,19 +8,19 @@ import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
 
 const Services = () => (
-  <Layout pageTitle="U-Berlin | Servicios">
+  <Layout pageTitle='U-Berlin | Servicios'>
     <>
-      <PagesHeader title="Nuestros Servicios" />
-      <section id="services">
+      <PagesHeader title='Nuestros Servicios' />
+      <section id='services'>
         <Clocks />
         <Container>
           {/* Sea Cargo */}
-          <Row className="pt-4 showcase">
-            <Col lg={6} className="service1-showcase showcase-img" />
-            <Col lg={6} className="d-flex align-items-center">
-              <div className="text-justify p-2 ">
+          <Row className='pt-4 showcase'>
+            <Col lg={6} className='service1-showcase showcase-img' />
+            <Col lg={6} className='d-flex align-items-center'>
+              <div className='text-justify p-2 '>
                 <h3>
-                  Transporte <span className="text-color">Maritimo</span>
+                  Transporte <span className='text-color'>Maritimo</span>
                 </h3>
                 <p>
                   El 90% del intercambio comercial chileno se realiza por vía
@@ -43,12 +43,12 @@ const Services = () => (
             </Col>
           </Row>
           {/* Air Cargo */}
-          <Row className="showcase">
-            <Col lg={6} className="order-lg-2 service2-showcase showcase-img" />
-            <Col lg={6} className="order-lg-1 d-flex align-items-center">
-              <div className="text-justify p-2 ">
+          <Row className='showcase'>
+            <Col lg={6} className='order-lg-2 service2-showcase showcase-img' />
+            <Col lg={6} className='order-lg-1 d-flex align-items-center'>
+              <div className='text-justify p-2 '>
                 <h3>
-                  Transporte <span className="text-color">Aereo</span>
+                  Transporte <span className='text-color'>Aereo</span>
                 </h3>
                 <p>
                   En U-Berlin entendemos perfectamente la urgencia de sus
@@ -75,12 +75,12 @@ const Services = () => (
             </Col>
           </Row>
           {/* Ground Cargo */}
-          <Row className="showcase">
-            <Col lg={6} className="service3-showcase showcase-img" />
-            <Col lg={6} className="d-flex align-items-center">
-              <div className="text-justify p-2 ">
+          <Row className='showcase'>
+            <Col lg={6} className='service3-showcase showcase-img' />
+            <Col lg={6} className='d-flex align-items-center'>
+              <div className='text-justify p-2 '>
                 <h3>
-                  Transporte <span className="text-color">Terrestre</span>
+                  Transporte <span className='text-color'>Terrestre</span>
                 </h3>
                 <p>
                   Damos soluciones en transporte de carga por via terrestre
@@ -91,7 +91,7 @@ const Services = () => (
                   carga incluyen:
                 </p>
 
-                <ul className="mb-3">
+                <ul className='mb-3'>
                   <li>
                     <FontAwesomeIcon icon={faAngleDoubleRight} /> Carga Suelta.
                   </li>
@@ -128,12 +128,12 @@ const Services = () => (
             </Col>
           </Row>
           {/* Projects */}
-          <Row className="pb-4 showcase">
-            <Col lg={6} className="order-lg-2 service4-showcase showcase-img" />
-            <Col lg={6} className="order-lg-1 d-flex align-items-center">
-              <div className="text-justify p-2 ">
+          <Row className='pb-4 showcase'>
+            <Col lg={6} className='order-lg-2 service4-showcase showcase-img' />
+            <Col lg={6} className='order-lg-1 d-flex align-items-center'>
+              <div className='text-justify p-2 '>
                 <h3>
-                  Cargas de <span className="text-color">Proyectos</span>
+                  Cargas de <span className='text-color'>Proyectos</span>
                 </h3>
                 <p>
                   U-Berlin le ayuda en los complejos requisitos logisticos que

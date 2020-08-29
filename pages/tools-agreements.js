@@ -8,16 +8,16 @@ import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
 
 const ToolsAgreements = () => (
-  <Layout pageTitle="U-Berlin | Acuerdos Internacionales">
+  <Layout pageTitle='U-Berlin | Acuerdos Internacionales'>
     <>
-      <PagesHeader title="Acuerdos Internacionales" />
+      <PagesHeader title='Acuerdos Internacionales' />
       <Clocks />
-      <section id="tools-agreements" className="py-4">
+      <section id='tools-agreements' className='py-4'>
         <Container>
-          <Row className="showcase">
-            <Col lg={6} className="agreements-showcase showcase-img" />
+          <Row className='showcase'>
+            <Col lg={6} className='agreements-showcase showcase-img' />
             <Col lg={6}>
-              <div className="text-justify p-2">
+              <div className='text-justify p-2'>
                 <p>
                   Desde fines de la década de 1990, Chile se ha adherido a una
                   serie de tratados de libre comercio (TLC) y Acuerdos de
@@ -54,8 +54,8 @@ const ToolsAgreements = () => (
             </Col>
           </Row>
           <Row>
-            <Col md={12} className="text-justify mt-4">
-              <table className="table table-striped table-sm">
+            <Col md={12} className='text-justify mt-4'>
+              <table className='table table-striped table-sm'>
                 <thead>
                   <tr>
                     <th>Parte signataria</th>

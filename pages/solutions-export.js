@@ -8,17 +8,17 @@ import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
 
 const SolutionsExport = () => (
-  <Layout pageTitle="U-Berlin | ¿Como Exportar?">
+  <Layout pageTitle='U-Berlin | ¿Como Exportar?'>
     <>
-      <PagesHeader title="¿Como Exportar?" />
+      <PagesHeader title='¿Como Exportar?' />
 
-      <section id="solutions-export">
+      <section id='solutions-export'>
         <Clocks />
-        <section className="py-4">
+        <section className='py-4'>
           <Container>
             <Row>
               <Col md={12}>
-                <div className="text-justify">
+                <div className='text-justify'>
                   <p>
                     En Chile cualquier persona natural, jurídica o extranjeros
                     con residencia en nuestro país, puede constituirse como

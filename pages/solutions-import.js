@@ -8,15 +8,15 @@ import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
 
 const SolutionsImport = () => (
-  <Layout pageTitle="U-Berlin | ¿Como Importar?">
+  <Layout pageTitle='U-Berlin | ¿Como Importar?'>
     <>
-      <PagesHeader title="¿Como Importar?" />
+      <PagesHeader title='¿Como Importar?' />
       <Clocks />
-      <section id="solutions-import">
-        <Container className="py-4">
+      <section id='solutions-import'>
+        <Container className='py-4'>
           <Row>
             <Col md={12}>
-              <div className="text-justify">
+              <div className='text-justify'>
                 <p>
                   Se puede importar cualquier mercancía, salvo aquellas que se
                   encuentren expresamente prohibidas por la legislación vigente,
@@ -32,7 +32,7 @@ const SolutionsImport = () => (
                   obtenerlo, en forma previa, ante el respectivo organismo.
                 </p>
 
-                <table className="table table-striped table-sm">
+                <table className='table table-striped table-sm'>
                   <thead>
                     <tr>
                       <th>Mercancia</th>
@@ -443,7 +443,7 @@ const SolutionsImport = () => (
                   derecho ad valorem e IVA, los siguientes impuestos
                   adicionales, según producto:
                 </p>
-                <table className="table table-striped table-sm">
+                <table className='table table-striped table-sm'>
                   <thead>
                     <tr>
                       <th>Producto</th>
@@ -475,7 +475,7 @@ const SolutionsImport = () => (
                   impuestos, según su variedad:
                 </p>
 
-                <table className="table table-striped table-sm">
+                <table className='table table-striped table-sm'>
                   <thead>
                     <tr>
                       <th>Producto</th>

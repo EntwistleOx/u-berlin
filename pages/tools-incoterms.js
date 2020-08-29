@@ -7,15 +7,15 @@ import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
 
 const ToolsIncoterms = () => (
-  <Layout pageTitle="U-Berlin | Incoterms">
+  <Layout pageTitle='U-Berlin | Incoterms'>
     <>
-      <PagesHeader title="Incoterms" />
-      <section id="incoterms" className="overflow-hidden">
+      <PagesHeader title='Incoterms' />
+      <section id='incoterms' className='overflow-hidden'>
         <Clocks />
-        <Container className="py-4">
+        <Container className='py-4'>
           <Row>
             <Col md={12}>
-              <Image fluid src="images/incoterms.png" alt="Incoterms" />
+              <Image fluid src='images/incoterms.png' alt='Incoterms' />
             </Col>
           </Row>
         </Container>

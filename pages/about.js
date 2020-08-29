@@ -6,17 +6,17 @@ import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
 
 const About = () => (
-  <Layout pageTitle="U-Berlin | Nosotros">
-    <PagesHeader title="nosotros" />
+  <Layout pageTitle='U-Berlin | Nosotros'>
+    <PagesHeader title='nosotros' />
     <Clocks />
-    <section id="about">
-      <Container className="py-4">
-        <Row className="showcase">
-          <Col lg={6} className="about-showcase showcase-img" />
-          <Col lg={6} className="d-flex align-items-center">
-            <div className="text-justify p-2 ">
+    <section id='about'>
+      <Container className='py-4'>
+        <Row className='showcase'>
+          <Col lg={6} className='about-showcase showcase-img' />
+          <Col lg={6} className='d-flex align-items-center'>
+            <div className='text-justify p-2 '>
               <h3>
-                Nuestra <span className="text-color">Empresa</span>
+                Nuestra <span className='text-color'>Empresa</span>
               </h3>
               <p>
                 U-Berlin nace de la visión de empresarios del sector que vieron
