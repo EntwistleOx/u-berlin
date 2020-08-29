@@ -1,14 +1,14 @@
-import { useState, useRef } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import { useRef, useState } from 'react';
 import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
 import Recaptcha from 'react-google-recaptcha';
+import Clocks from '../components/Clocks';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
-import Clocks from '../components/Clocks';
 
 const encode = (data) =>
   Object.keys(data)

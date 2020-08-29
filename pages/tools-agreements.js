@@ -1,11 +1,11 @@
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
+import Clocks from '../components/Clocks';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
-import Clocks from '../components/Clocks';
 
 const ToolsAgreements = () => (
   <Layout pageTitle="U-Berlin | Acuerdos Internacionales">

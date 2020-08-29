@@ -1,7 +1,7 @@
-import Container from 'react-bootstrap/Container';
-import Clock from 'react-live-clock';
-import ReactCountryFlag from 'react-country-flag';
 import Alert from 'react-bootstrap/Alert';
+import Container from 'react-bootstrap/Container';
+import ReactCountryFlag from 'react-country-flag';
+import Clock from 'react-live-clock';
 
 const Clocks = () => (
   <section id="hours">

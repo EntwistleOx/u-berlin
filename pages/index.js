@@ -1,11 +1,10 @@
 import Link from 'next/link';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Layout from '../components/Layout';
 import Clocks from '../components/Clocks';
-
+import Layout from '../components/Layout';
 import { attributes } from '../content/index.md';
 
 const Home = () => {
@@ -85,8 +84,7 @@ const Home = () => {
                       {tariff.title}
                     </Card.Title>
                     <Card.Text className="card-text my-4">
-                      {' '}
-                      {tariff.price}{' '}
+                      {tariff.price}
                       <small className="text-muted">{tariff.unit}</small>
                     </Card.Text>
                     <Card.Text className="text-center">

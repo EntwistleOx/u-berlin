@@ -1,11 +1,11 @@
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import Clocks from '../components/Clocks';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
-import Clocks from '../components/Clocks';
 
 const Tariff = () => (
   <Layout pageTitle="U-Berlin | Arancel Aduanero">
@@ -18,9 +18,8 @@ const Tariff = () => (
             <Col md={12}>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  {' '}
                   <p className="pt-3">
-                    <strong>SECCION 0</strong>{' '}
+                    <strong>SECCION 0</strong>
                     <a href="docs/Seccion0.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -29,7 +28,7 @@ const Tariff = () => (
                 </li>
                 <li className="list-group-item">
                   <p className="pt-3">
-                    <strong>SECCION I Capítulos 1 AL 5</strong>{' '}
+                    <strong>SECCION I Capítulos 1 AL 5</strong>
                     <a href="docs/Seccion1.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -37,9 +36,8 @@ const Tariff = () => (
                   <p>Animales vivos y productos del reino animal.</p>
                 </li>
                 <li className="list-group-item">
-                  {' '}
                   <p className="pt-3">
-                    <strong>SECCION II Capítulos 6 al 14</strong>{' '}
+                    <strong>SECCION II Capítulos 6 al 14</strong>
                     <a href="docs/Seccion2.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -47,9 +45,8 @@ const Tariff = () => (
                   <p>Productos del reino vegetal.</p>
                 </li>
                 <li className="list-group-item">
-                  {' '}
                   <p className="pt-3">
-                    <strong>SECCION III Capítulo 15</strong>{' '}
+                    <strong>SECCION III Capítulo 15</strong>
                     <a href="docs/Seccion3.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -61,9 +58,8 @@ const Tariff = () => (
                   </p>
                 </li>
                 <li className="list-group-item">
-                  {' '}
                   <p className="pt-3">
-                    <strong>SECCION IV Capítulos 16 al 24</strong>{' '}
+                    <strong>SECCION IV Capítulos 16 al 24</strong>
                     <a href="docs/Seccion4.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -74,9 +70,8 @@ const Tariff = () => (
                   </p>
                 </li>
                 <li className="list-group-item">
-                  {' '}
                   <p className="pt-3">
-                    <strong>SECCION V Capítulos 25 al 27</strong>{' '}
+                    <strong>SECCION V Capítulos 25 al 27</strong>
                     <a href="docs/Seccion5.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -84,9 +79,8 @@ const Tariff = () => (
                   <p>Productos Minerales.</p>
                 </li>
                 <li className="list-group-item">
-                  {' '}
                   <p className="pt-3">
-                    <strong>SECCION VI Capítulos 28 al 38</strong>{' '}
+                    <strong>SECCION VI Capítulos 28 al 38</strong>
                     <a href="docs/Seccion6.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -98,7 +92,7 @@ const Tariff = () => (
                 </li>
                 <li className="list-group-item">
                   <p className="pt-3">
-                    <strong>SECCION VII Capítulos 39 al 40</strong>{' '}
+                    <strong>SECCION VII Capítulos 39 al 40</strong>
                     <a href="docs/Seccion7.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -106,9 +100,8 @@ const Tariff = () => (
                   <p>Plástico y sus manufacturas; caucho y sus manufacturas.</p>
                 </li>
                 <li className="list-group-item">
-                  {' '}
                   <p className="pt-3">
-                    <strong>SECCION VIII Capítulos 41 al 43</strong>{' '}
+                    <strong>SECCION VIII Capítulos 41 al 43</strong>
                     <a href="docs/Seccion8.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -121,9 +114,8 @@ const Tariff = () => (
                   </p>
                 </li>
                 <li className="list-group-item">
-                  {' '}
                   <p className="pt-3">
-                    <strong>SECCION IX Capítulos 44 al 46</strong>{' '}
+                    <strong>SECCION IX Capítulos 44 al 46</strong>
                     <a href="docs/Seccion9.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -135,7 +127,7 @@ const Tariff = () => (
                 </li>
                 <li className="list-group-item">
                   <p className="pt-3">
-                    <strong>SECCION X Capítulos 47 al 49</strong>{' '}
+                    <strong>SECCION X Capítulos 47 al 49</strong>
                     <a href="docs/Seccion10.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -147,9 +139,8 @@ const Tariff = () => (
                   </p>
                 </li>
                 <li className="list-group-item">
-                  {' '}
                   <p className="pt-3">
-                    <strong>SECCION XI Capítulos 50 al 63</strong>{' '}
+                    <strong>SECCION XI Capítulos 50 al 63</strong>
                     <a href="docs/Seccion11.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -157,9 +148,8 @@ const Tariff = () => (
                   <p>Materias textiles y sus manufacturas.</p>
                 </li>
                 <li className="list-group-item">
-                  {' '}
                   <p className="pt-3">
-                    <strong>SECCION XII Capítulos 64 al 67</strong>{' '}
+                    <strong>SECCION XII Capítulos 64 al 67</strong>
                     <a href="docs/Seccion12.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -173,7 +163,7 @@ const Tariff = () => (
                 </li>
                 <li className="list-group-item">
                   <p className="pt-3">
-                    <strong>SECCION XIII Capítulos 68 al 70</strong>{' '}
+                    <strong>SECCION XIII Capítulos 68 al 70</strong>
                     <a href="docs/Seccion13.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -186,7 +176,7 @@ const Tariff = () => (
                 </li>
                 <li className="list-group-item">
                   <p className="pt-3">
-                    <strong>SECCION XIV Capítulo 71</strong>{' '}
+                    <strong>SECCION XIV Capítulo 71</strong>
                     <a href="docs/Seccion14.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -200,7 +190,7 @@ const Tariff = () => (
                 </li>
                 <li className="list-group-item">
                   <p className="pt-3">
-                    <strong>SECCION XV Capítulos 72 al 83</strong>{' '}
+                    <strong>SECCION XV Capítulos 72 al 83</strong>
                     <a href="docs/Seccion15.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -208,9 +198,8 @@ const Tariff = () => (
                   <p>Metales comunes y manufacturas de estos metales.</p>
                 </li>
                 <li className="list-group-item">
-                  {' '}
                   <p className="pt-3">
-                    <strong>SECCION XVI Capítulos 84 al 85</strong>{' '}
+                    <strong>SECCION XVI Capítulos 84 al 85</strong>
                     <a href="docs/Seccion16.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -224,7 +213,7 @@ const Tariff = () => (
                 </li>
                 <li className="list-group-item">
                   <p className="pt-3">
-                    <strong>SECCION XVII Capítulos 86 al 89</strong>{' '}
+                    <strong>SECCION XVII Capítulos 86 al 89</strong>
                     <a href="docs/Seccion17.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -232,9 +221,8 @@ const Tariff = () => (
                   <p>Material de transporte.</p>
                 </li>
                 <li className="list-group-item">
-                  {' '}
                   <p className="pt-3">
-                    <strong>SECCION XVIII Capítulos 90 al 92</strong>{' '}
+                    <strong>SECCION XVIII Capítulos 90 al 92</strong>
                     <a href="docs/Seccion18.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -248,9 +236,8 @@ const Tariff = () => (
                   </p>
                 </li>
                 <li className="list-group-item">
-                  {' '}
                   <p className="pt-3">
-                    <strong>SECCION XIX Capítulo 93</strong>{' '}
+                    <strong>SECCION XIX Capítulo 93</strong>
                     <a href="docs/Seccion19.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -259,7 +246,7 @@ const Tariff = () => (
                 </li>
                 <li className="list-group-item">
                   <p className="pt-3">
-                    <strong>SECCION XX Capítulos 94 al 96</strong>{' '}
+                    <strong>SECCION XX Capítulos 94 al 96</strong>
                     <a href="docs/Seccion20.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>
@@ -268,7 +255,7 @@ const Tariff = () => (
                 </li>
                 <li className="list-group-item">
                   <p className="pt-3">
-                    <strong>SECCION XXI Capítulos 97 al 99</strong>{' '}
+                    <strong>SECCION XXI Capítulos 97 al 99</strong>
                     <a href="docs/Seccion21.pdf" className="docs-download">
                       <FontAwesomeIcon icon={faFileDownload} />
                     </a>

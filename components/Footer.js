@@ -1,10 +1,10 @@
-import Image from 'react-bootstrap/Image';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
 
 const Footer = () => (
   <footer className="text-white-50">
@@ -23,14 +23,10 @@ const Footer = () => (
             <div>
               <a href="tel:+56229440554">
                 <FontAwesomeIcon icon={faPhoneAlt} />
-                {' '}
-                <span className="ml-2">+56 2 2944 0554</span> 
-                {' '}
-                <br />
+                <span className="ml-2">+56 2 2944 0554</span> <br />
               </a>
               <a href="mailto:info@u-berlin.com">
                 <FontAwesomeIcon icon={faEnvelope} />
-                {' '}
                 <span className="ml-2">info@u-berlin.com</span>
               </a>
             </div>

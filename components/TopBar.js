@@ -1,13 +1,13 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import {
-  faUser,
   faEnvelope,
   faPhoneAlt,
+  faUser,
 } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 const TopBar = () => (
   <section id="topbar">

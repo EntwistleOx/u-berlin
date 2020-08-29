@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import PropTypes from 'prop-types';
+import Footer from './Footer';
 import TopBar from './TopBar';
 import TopNav from './TopNav';
-import Footer from './Footer';
 
 const Layout = ({ children, pageTitle }) => (
   <>

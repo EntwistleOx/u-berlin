@@ -1,9 +1,9 @@
+import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Clocks from '../components/Clocks';
 import Layout from '../components/Layout';
 import PagesHeader from '../components/PagesHeader';
-import Clocks from '../components/Clocks';
 
 const About = () => (
   <Layout pageTitle="U-Berlin | Nosotros">
@@ -16,9 +16,7 @@ const About = () => (
           <Col lg={6} className="d-flex align-items-center">
             <div className="text-justify p-2 ">
               <h3>
-                Nuestra 
-                {' '}
-                <span className="text-color">Empresa</span>
+                Nuestra <span className="text-color">Empresa</span>
               </h3>
               <p>
                 U-Berlin nace de la visión de empresarios del sector que vieron
