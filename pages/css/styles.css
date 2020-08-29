@@ -99,11 +99,16 @@ a:hover {
   padding: 0;
 }
 
-#topnav .navbar-light .navbar-nav .nav-link {
+#topnav .navbar .navbar-nav .nav-link {
   padding: 1rem 0.7rem;
 }
 
-#topnav .navbar-light .navbar-nav .nav-link:hover {
+#topnav .navbar .navbar-nav .nav-link:hover {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+#topnav .navbar .navbar-nav .active {
   background: var(--primary);
   color: var(--white);
 }
