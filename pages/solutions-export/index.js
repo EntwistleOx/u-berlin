@@ -1,11 +1,9 @@
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Clocks from '../components/Clocks';
-import Layout from '../components/Layout';
-import PagesHeader from '../components/PagesHeader';
+import Clocks from '../../components/Clocks';
+import Layout from '../../components/Layout';
+import PagesHeader from '../../components/PagesHeader';
 
 const SolutionsExport = () => (
   <Layout pageTitle='U-Berlin | ¿Como Exportar?'>
@@ -89,28 +87,17 @@ const SolutionsExport = () => (
                   </p>
 
                   <ul>
+                    <li>Estudios de Mercado en un determinado país.</li>
+                    <li>Aranceles en el país de destino.</li>
                     <li>
-                      <FontAwesomeIcon icon={faAngleDoubleRight} /> Estudios de
-                      Mercado en un determinado país.
+                      Existencia de Preferencias arancelarias derivadas de
+                      acuerdos y/o barreras comerciales, normativas,
+                      homologaciones o requisitos específicos del mercado.
                     </li>
                     <li>
-                      <FontAwesomeIcon icon={faAngleDoubleRight} /> Aranceles en
-                      el país de destino.
+                      Información sobre agentes o distribuidores disponibles.
                     </li>
-                    <li>
-                      <FontAwesomeIcon icon={faAngleDoubleRight} /> Existencia
-                      de Preferencias arancelarias derivadas de acuerdos y/o
-                      barreras comerciales, normativas, homologaciones o
-                      requisitos específicos del mercado.
-                    </li>
-                    <li>
-                      <FontAwesomeIcon icon={faAngleDoubleRight} /> Información
-                      sobre agentes o distribuidores disponibles.
-                    </li>
-                    <li>
-                      <FontAwesomeIcon icon={faAngleDoubleRight} /> Costos
-                      involucrados en una exportación.
-                    </li>
+                    <li>Costos involucrados en una exportación.</li>
                   </ul>
 
                   <p>
@@ -161,28 +148,23 @@ const SolutionsExport = () => (
 
                   <ul>
                     <li>
-                      <FontAwesomeIcon icon={faAngleDoubleRight} /> Ley N°
-                      18.480 – Establece Sistema Simplificado de Reintegro a
-                      Exportadores.
+                      Ley N° 18.480 – Establece Sistema Simplificado de
+                      Reintegro a Exportadores.
                     </li>
                     <li>
-                      <FontAwesomeIcon icon={faAngleDoubleRight} /> Ley 18.634 –
-                      Pago Diferido de Derechos de Aduana, Crédito Fiscal y
-                      Otros Beneficios de Carácter Aduanero.
+                      Ley 18.634 – Pago Diferido de Derechos de Aduana, Crédito
+                      Fiscal y Otros Beneficios de Carácter Aduanero.
                     </li>
                     <li>
-                      <FontAwesomeIcon icon={faAngleDoubleRight} /> Ley Nº
-                      20.269 – Rebaja de los Aranceles para la Importación de
-                      Bienes de Capital.
+                      Ley Nº 20.269 – Rebaja de los Aranceles para la
+                      Importación de Bienes de Capital.
                     </li>
                     <li>
-                      <FontAwesomeIcon icon={faAngleDoubleRight} /> Ley 18.708 –
-                      Sistema de Reintegro de Derechos y Demás Gravámenes
-                      Aduaneros.
+                      Ley 18.708 – Sistema de Reintegro de Derechos y Demás
+                      Gravámenes Aduaneros.
                     </li>
                     <li>
-                      <FontAwesomeIcon icon={faAngleDoubleRight} /> Ley 825,
-                      Decreto 348 – Recuperación I.V.A. Exportador.
+                      Ley 825, Decreto 348 – Recuperación I.V.A. Exportador.
                     </li>
                   </ul>
                 </div>

@@ -6,9 +6,11 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Recaptcha from 'react-google-recaptcha';
-import Clocks from '../components/Clocks';
-import Layout from '../components/Layout';
-import PagesHeader from '../components/PagesHeader';
+import Clocks from '../../components/Clocks';
+import Envelope from '../../components/Icons/Envelope';
+import Phone from '../../components/Icons/Phone';
+import Layout from '../../components/Layout';
+import PagesHeader from '../../components/PagesHeader';
 
 const encode = (data) =>
   Object.keys(data)
@@ -90,11 +92,15 @@ const Contact = () => {
                   <strong>¿Como nos puedes contactar?</strong>
                   <br />
                   <p>
-                    <i className='icon-phone' />
-                    +56 2 2944 0554
-                    <br />
-                    <i className='icon-envelope-alt' />
-                    info@u-berlin.com
+                    <a
+                      href='mailto:info@u-berlin.com'
+                      className='mr-4 text-dark'
+                    >
+                      <Envelope />
+                    </a>
+                    <a href='tel:+56229440554' className='text-dark'>
+                      <Phone />
+                    </a>
                   </p>
                   <strong>¿Donde nos ubicamos?</strong>
                   <br />
@@ -197,7 +203,7 @@ const Contact = () => {
                     onChange={captchaOnChange}
                   />
 
-                  <Button type='submit' variant='primary'>
+                  <Button type='submit' variant='primary' className='mt-2'>
                     Enviar
                   </Button>
                 </Form>

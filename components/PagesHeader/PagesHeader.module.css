@@ -1,0 +1,11 @@
+/* Header for pages */
+.pagesHeader {
+  background: var(--dark);
+}
+
+.pageTitle {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}

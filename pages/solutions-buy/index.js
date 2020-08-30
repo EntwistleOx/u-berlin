@@ -1,12 +1,10 @@
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
-import Clocks from '../components/Clocks';
-import Layout from '../components/Layout';
-import PagesHeader from '../components/PagesHeader';
+import Clocks from '../../components/Clocks';
+import Layout from '../../components/Layout';
+import PagesHeader from '../../components/PagesHeader';
 
 const SolutionsBuy = () => (
   <Layout pageTitle='U-Berlin - Compras por Internet'>
@@ -78,24 +76,17 @@ const SolutionsBuy = () => (
                   <strong>¿Qué documentos necesito para la importación?</strong>
 
                   <ul>
+                    <li>La Guía Courier.</li>
                     <li>
-                      <FontAwesomeIcon icon={faAngleDoubleRight} /> La Guía
-                      Courier.
+                      La factura comercial, boleta de compraventa; facturas
+                      pro-forma o comprobante de transacción electrónica. En
+                      este tipo de documentos debe estar consignado el tipo,
+                      descripción, y cantidad de las mercancías, así como sus
+                      precios y todos los costos involucrados, incluidos los del
+                      envío. Ello permitirá a Aduanas realizar correctamente los
+                      cálculos de impuestos y gravámenes.
                     </li>
-                    <li>
-                      <FontAwesomeIcon icon={faAngleDoubleRight} /> La factura
-                      comercial, boleta de compraventa; facturas pro-forma o
-                      comprobante de transacción electrónica. En este tipo de
-                      documentos debe estar consignado el tipo, descripción, y
-                      cantidad de las mercancías, así como sus precios y todos
-                      los costos involucrados, incluidos los del envío. Ello
-                      permitirá a Aduanas realizar correctamente los cálculos de
-                      impuestos y gravámenes.
-                    </li>
-                    <li>
-                      <FontAwesomeIcon icon={faAngleDoubleRight} /> Vistos
-                      buenos o certificados cuando corresponda.
-                    </li>
+                    <li>Vistos buenos o certificados cuando corresponda.</li>
                   </ul>
 
                   <p>

@@ -1,11 +1,9 @@
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Clocks from '../components/Clocks';
-import Layout from '../components/Layout';
-import PagesHeader from '../components/PagesHeader';
+import Clocks from '../../components/Clocks';
+import Layout from '../../components/Layout';
+import PagesHeader from '../../components/PagesHeader';
 
 const SolutionsImport = () => (
   <Layout pageTitle='U-Berlin | ¿Como Importar?'>
@@ -185,32 +183,15 @@ const SolutionsImport = () => (
 
                 <ul>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Vehículos usados (sin perjuicio de las franquicias
                     establecidas en la normas vigentes).
                   </li>
+                  <li>Motos usadas.</li>
+                  <li>Neumáticos usados y recauchados.</li>
+                  <li>Asbesto en cualquiera de sus formas.</li>
+                  <li>Pornografía.</li>
+                  <li>Desechos industriales tóxicos.</li>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    Motos usadas.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    Neumáticos usados y recauchados.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    Asbesto en cualquiera de sus formas.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    Pornografía.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    Desechos industriales tóxicos.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Mercancías que sean peligrosas para los animales, para la
                     agricultura o la salud humana (por ejemplo; algunos
                     plaguicidas de uso agrícola, juguetes y artículos de uso
@@ -220,7 +201,6 @@ const SolutionsImport = () => (
                     Agricultura y otros organismos del Estado.
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Otras mercancías, que de acuerdo a la legislación vigente,
                     se encuentren con prohibición de importar.
                   </li>
@@ -246,24 +226,14 @@ const SolutionsImport = () => (
                 </p>
 
                 <ul>
+                  <li>Documento de transporte (BL, AWB o CRT).</li>
+                  <li>Factura comercial.</li>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    Documento de transporte (BL, AWB o CRT).
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    Factura comercial.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Poder notarial del dueño o consignatario para un despacho
                     determinado, en los casos en que la persona que trámite sea
                     un tercero.
                   </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    Vistos Buenos o Certificaciones si son necesarias.
-                  </li>
+                  <li>Vistos Buenos o Certificaciones si son necesarias.</li>
                 </ul>
 
                 <p>
@@ -285,23 +255,19 @@ const SolutionsImport = () => (
 
                 <ul>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Conocimiento de embarque original(BL), CRT o guía
                     aérea(AWB), que acredite el dominio de la mercancía por
                     parte del consignatario.
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Factura comercial original, que acredite la mercancía objeto
                     de compraventa y sus valores.
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Declaración Jurada del importador sobre el precio de las
                     mercancías, formulario que entrega el agente de aduanas.
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Mandato constituido por el sólo endoso del original del
                     conocimiento de embarque.
                   </li>
@@ -314,28 +280,23 @@ const SolutionsImport = () => (
 
                 <ul>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Certificado de Origen , en caso que la importación se acoja
                     a alguna preferencia arancelaria, en virtud de un Acuerdo
                     Comercial.
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Lista de empaque, cuando proceda, correspondiendo siempre en
                     caso de mercancías acondicionadas en contenedores.
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Certificado de seguros, cuando el valor de la prima no se
                     encuentre consignado en la factura comercial.
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Nota de Gastos, cuando éstos no estén incluidos en la
                     factura comercial.
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Permisos, visaciones, certificaciones o vistos buenos,
                     cuando proceda.
                   </li>
@@ -352,22 +313,10 @@ const SolutionsImport = () => (
                 <p>EJEMPLO DE CÁLCULO:</p>
 
                 <ul>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    Valor CIF US $1.000,00
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    Derecho ad valorem (6% de 1.000) US $ 60,00
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    IVA (19%) (sobre 1.060,00) US $ 201,40
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    TOTAL TRIBUTOS ADUANEROS US $ 261,40
-                  </li>
+                  <li>Valor CIF US $1.000,00</li>
+                  <li>Derecho ad valorem (6% de 1.000) US $ 60,00</li>
+                  <li>IVA (19%) (sobre 1.060,00) US $ 201,40</li>
+                  <li>TOTAL TRIBUTOS ADUANEROS US $ 261,40</li>
                 </ul>
 
                 <p>
@@ -399,32 +348,20 @@ const SolutionsImport = () => (
                 </p>
 
                 <ul>
+                  <li>Artículos de oro, platino y marfil.</li>
+                  <li>Joyas, piedras preciosas naturales o sintéticas.</li>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    Artículos de oro, platino y marfil.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    Joyas, piedras preciosas naturales o sintéticas.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Alfombras finas y tapices finos Alfombras finas, tapices
                     finos y cualquier otro artículo de similar naturaleza;
                     calificados como tales por el Servicio de Impuestos
                     Internos.
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Pieles finas, calificadas como tales por el Servicio de
                     Impuestos Internos, manufacturadas o no.
                   </li>
+                  <li>Conservas de caviar y sus sucedáneos.</li>
                   <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
-                    Conservas de caviar y sus sucedáneos.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} />
                     Armas de aire o gas comprimido, sus accesorios y
                     proyectiles, con excepción de las de caza submarina.
                   </li>

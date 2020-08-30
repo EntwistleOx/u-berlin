@@ -1,0 +1,55 @@
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../public/images/header/main-min.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 7.5rem;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 280px) and (max-width: 767.98px) {
+  .hero h1 {
+    font-size: 3.8rem;
+  }
+
+  .hero p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-device-width: 500px) and (max-device-width: 920px) {
+  .hero {
+    top: 65%;
+  }
+
+  .hero p {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+
+.services h2 {
+  font-size: 40px;
+}

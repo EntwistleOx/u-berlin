@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Clocks from '../components/Clocks';
 import Layout from '../components/Layout';
 import { attributes } from '../content/index.md';
+import styles from './index.module.css';
 
 const Home = () => {
   const {
@@ -20,19 +21,19 @@ const Home = () => {
 
   return (
     <Layout pageTitle='U-Berlin Logistics'>
-      <header>
-        <div className='hero'>
+      <header className={styles.header}>
+        <div className={styles.hero}>
           <h1>{title}</h1>
           <p>{subtitle}</p>
           <Link href='/contact' passHref>
-            <a className='btn btn-light mt-4'>Contactanos!</a>
+            <a className='btn btn-primary mt-4'>Contactanos!</a>
           </Link>
         </div>
       </header>
 
       <Clocks />
 
-      <section id='index-services'>
+      <section className={styles.services}>
         <Container>
           <Row>
             <Col lg={12} className='text-center my-5'>
@@ -54,13 +55,15 @@ const Home = () => {
                   <Card.Body>
                     <Card.Title>{service.title}</Card.Title>
                     <Card.Text>{service.description}</Card.Text>
+                  </Card.Body>
+                  <Card.Footer>
                     <Link href={service.link} passHref>
                       <Card.Link>Leer mas...</Card.Link>
                     </Link>
                     <Link href='/contact' passHref>
                       <Card.Link>Contactanos</Card.Link>
                     </Link>
-                  </Card.Body>
+                  </Card.Footer>
                 </Card>
               </Col>
             ))}
@@ -90,10 +93,12 @@ const Home = () => {
                     <Card.Text className='text-center'>
                       {tariff.description}
                     </Card.Text>
-                    <Link href='/contact'>
-                      <a className='btn btn-primary mt-3'>Contactanos!</a>
-                    </Link>
                   </Card.Body>
+                  <Card.Footer>
+                    <Link href='/contact' passHref>
+                      <Card.Link>Contactanos</Card.Link>
+                    </Link>
+                  </Card.Footer>
                 </Card>
               </Col>
             ))}

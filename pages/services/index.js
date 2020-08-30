@@ -1,11 +1,9 @@
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Clocks from '../components/Clocks';
-import Layout from '../components/Layout';
-import PagesHeader from '../components/PagesHeader';
+import Clocks from '../../components/Clocks';
+import Layout from '../../components/Layout';
+import PagesHeader from '../../components/PagesHeader';
 
 const Services = () => (
   <Layout pageTitle='U-Berlin | Servicios'>
@@ -92,37 +90,18 @@ const Services = () => (
                 </p>
 
                 <ul className='mb-3'>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Carga Suelta.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Contenedores.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Carga
-                    Refrigerada.
-                  </li>
+                  <li>Carga Suelta.</li>
+                  <li>Contenedores.</li>
+                  <li>Carga Refrigerada.</li>
                 </ul>
                 <p>Transporte internacional terrestre a:</p>
                 <ul>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Argentina.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Brazil
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Uruguay.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Paraguay.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Peru.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Bolivia.
-                  </li>
+                  <li>Argentina.</li>
+                  <li>Brazil</li>
+                  <li>Uruguay.</li>
+                  <li>Paraguay.</li>
+                  <li>Peru.</li>
+                  <li>Bolivia.</li>
                 </ul>
               </div>
             </Col>
@@ -152,28 +131,12 @@ const Services = () => (
                   industrias:
                 </p>
                 <ul>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Ingeniería,
-                    aprovisionamiento y construcción.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Industria
-                    química y del gas.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Energía
-                    eléctrica.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Proyectos de
-                    infraestructura.
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Mineria
-                  </li>
-                  <li>
-                    <FontAwesomeIcon icon={faAngleDoubleRight} /> Eventos.
-                  </li>
+                  <li>Ingeniería, aprovisionamiento y construcción.</li>
+                  <li>Industria química y del gas.</li>
+                  <li>Energía eléctrica.</li>
+                  <li>Proyectos de infraestructura.</li>
+                  <li>Mineria</li>
+                  <li>Eventos.</li>
                 </ul>
               </div>
             </Col>

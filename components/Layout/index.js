@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import Head from 'next/head';
-import Footer from './Footer';
-import TopBar from './TopBar';
-import TopNav from './TopNav';
+import Footer from '../Footer';
+import TopBar from '../TopBar';
+import TopNav from '../TopNav';
 
 const Layout = ({ children, pageTitle }) => (
   <>

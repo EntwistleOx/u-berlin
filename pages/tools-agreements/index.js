@@ -1,11 +1,9 @@
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Clocks from '../components/Clocks';
-import Layout from '../components/Layout';
-import PagesHeader from '../components/PagesHeader';
+import Clocks from '../../components/Clocks';
+import Layout from '../../components/Layout';
+import PagesHeader from '../../components/PagesHeader';
 
 const ToolsAgreements = () => (
   <Layout pageTitle='U-Berlin | Acuerdos Internacionales'>
@@ -232,30 +230,23 @@ const ToolsAgreements = () => (
               </table>
               <ul>
                 <li>
-                  <FontAwesomeIcon icon={faAngleDoubleRight} /> (1)
-                  Centroamérica: Costa Rica, El Salvador, Guatemala, Honduras y
-                  Nicaragua.
+                  (1) Centroamérica: Costa Rica, El Salvador, Guatemala,
+                  Honduras y Nicaragua.
+                </li>
+                <li>(2) EFTA: Islandia, Liechtenstein, Noruega y Suiza.</li>
+                <li>
+                  (3) Mercosur: Integrado por Argentina, Paraguay, Brasil y
+                  Uruguay. Chile participa como país asociado.
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faAngleDoubleRight} /> (2) EFTA:
-                  Islandia, Liechtenstein, Noruega y Suiza.
+                  (4) P4: Chile, Nueva Zelandia, Singapur y Brunei Darussalam.
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faAngleDoubleRight} /> (3) Mercosur:
-                  Integrado por Argentina, Paraguay, Brasil y Uruguay. Chile
-                  participa como país asociado.
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faAngleDoubleRight} /> (4) P4: Chile,
-                  Nueva Zelandia, Singapur y Brunei Darussalam.
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faAngleDoubleRight} /> (5) Unión
-                  Europea: Alemania, Austria, Bélgica, Bulgaria, Chipre,
-                  Croacia, Dinamarca, Eslovaquia, Eslovenia, España, Estonia,
-                  Finlandia, Francia, Grecia, Hungría, Irlanda, Italia, Letonia,
-                  Lituania, Luxemburgo, Malta, Países Bajos, Polonia, Portugal,
-                  Reino Unido, República Checa, Rumania, Suecia.
+                  (5) Unión Europea: Alemania, Austria, Bélgica, Bulgaria,
+                  Chipre, Croacia, Dinamarca, Eslovaquia, Eslovenia, España,
+                  Estonia, Finlandia, Francia, Grecia, Hungría, Irlanda, Italia,
+                  Letonia, Lituania, Luxemburgo, Malta, Países Bajos, Polonia,
+                  Portugal, Reino Unido, República Checa, Rumania, Suecia.
                 </li>
               </ul>
             </Col>

@@ -1,13 +1,15 @@
+/* eslint-disable react/no-danger */
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Clocks from '../components/Clocks';
-import Layout from '../components/Layout';
-import PagesHeader from '../components/PagesHeader';
+import Clocks from '../../components/Clocks';
+import Layout from '../../components/Layout';
+import PagesHeader from '../../components/PagesHeader';
+import { attributes, react as Content } from '../../content/about.md';
 
 const About = () => (
   <Layout pageTitle='U-Berlin | Nosotros'>
-    <PagesHeader title='nosotros' />
+    <PagesHeader title={attributes.title} />
     <Clocks />
     <section id='about'>
       <Container className='py-4'>
@@ -15,7 +17,8 @@ const About = () => (
           <Col lg={6} className='about-showcase showcase-img' />
           <Col lg={6} className='d-flex align-items-center'>
             <div className='text-justify p-2 '>
-              <h3>
+              <Content />
+              {/* <h3>
                 Nuestra <span className='text-color'>Empresa</span>
               </h3>
               <p>
@@ -43,7 +46,7 @@ const About = () => (
                 través de un equipo humano y profesional altamente capacitado en
                 cada una de las áreas de gestión y operaciones que permiten
                 entregar un servicio óptimo.
-              </p>
+              </p> */}
             </div>
           </Col>
         </Row>

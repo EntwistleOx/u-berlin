@@ -1,18 +1,20 @@
-import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
+import Envelope from '../Icons/Envelope';
+import Facebook from '../Icons/Facebook';
+import Linkedin from '../Icons/Linkedin';
+import Phone from '../Icons/Phone';
+import styles from './Footer.module.css';
 
 const Footer = () => (
-  <footer className='text-white-50'>
+  <footer className={`${styles.footer} text-white-50`}>
     <Container>
       <Row className='pt-5'>
         <Col md={3} className='mb-4'>
           <div>
-            <h3 className='footer-title'>Contactate</h3>
+            <h3 className={styles.title}>Contactate</h3>
             <address>
               U-Berlin Logistics
               <br />
@@ -21,19 +23,17 @@ const Footer = () => (
               of. 206, Pudahuel, Chile.
             </address>
             <div>
-              <a href='tel:+56229440554'>
-                <FontAwesomeIcon icon={faPhoneAlt} />
-                <span className='ml-2'>+56 2 2944 0554</span> <br />
+              <a href='mailto:info@u-berlin.com' className='mr-4'>
+                <Envelope />
               </a>
-              <a href='mailto:info@u-berlin.com'>
-                <FontAwesomeIcon icon={faEnvelope} />
-                <span className='ml-2'>info@u-berlin.com</span>
+              <a href='tel:+56229440554'>
+                <Phone />
               </a>
             </div>
           </div>
         </Col>
         <Col md={3} className='mb-4'>
-          <h3 className='footer-title'>Links</h3>
+          <h3 className={styles.title}>Links</h3>
           <ul>
             <li>
               <a
@@ -98,7 +98,7 @@ const Footer = () => (
         </Col>
       </Row>
 
-      <div className='subfooter'>
+      <div className={styles.subFooter}>
         <div className='d-flex align-items-center justify-content-between py-4'>
           <div>
             <img
@@ -110,12 +110,12 @@ const Footer = () => (
           <div className='d-flex justify-content-end'>
             <div>
               <a target='_blank' rel='noopener noreferrer' href='!#'>
-                <FontAwesomeIcon icon={faFacebookF} />
+                <Facebook />
               </a>
             </div>
             <div className='ml-3'>
               <a target='_blank' rel='noopener noreferrer' href='!#'>
-                <FontAwesomeIcon icon={faLinkedinIn} />
+                <Linkedin />
               </a>
             </div>
           </div>

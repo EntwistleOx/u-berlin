@@ -11,7 +11,7 @@ const TopNav = () => {
   const router = useRouter();
 
   return (
-    <section id='topnav'>
+    <section>
       <Navbar expand='md'>
         <Container>
           <Navbar.Brand href='/'>
@@ -19,7 +19,7 @@ const TopNav = () => {
               alt='u-berlin'
               src='images/logo.png'
               className='d-inline-block align-top'
-              width='155'
+              width='150'
             />
           </Navbar.Brand>
           <NavbarToggle aria-controls='navbar-nav' />
