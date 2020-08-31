@@ -16,8 +16,14 @@ collections:
         file: content/index.md
         fields:
           - { label: 'Slogan', name: 'slogan', widget: 'text' }
+          - name: 'services'
+            label: 'Servicios'
+            widget: list
+            fields:
+              - { label: 'Titulo', name: 'title', widget: 'string' }
+              - { label: 'Descripcion', name: 'description', widget: 'text' }
           - name: 'tariffs'
-            label: 'Tariffs'
+            label: 'Tarifas'
             widget: list
             fields:
               - { label: 'Titulo', name: 'title', widget: 'string' }
