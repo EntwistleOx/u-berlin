@@ -15,7 +15,6 @@ collections:
         description: 'Aca puedes editar los elementos del Home.'
         file: content/index.md
         fields:
-          - { label: 'Titulo', name: 'title', widget: 'string' }
           - { label: 'Slogan', name: 'slogan', widget: 'text' }
           - name: 'tariffs'
             label: 'Tariffs'
@@ -30,7 +29,6 @@ collections:
         description: 'Aca puedes editar los datos de contacto.'
         file: content/contact.md
         fields:
-          - { label: 'Titulo', name: 'title', widget: 'string' }
           - { label: 'Direccion', name: 'address', widget: 'text' }
           - { label: 'Telefono', name: 'phone', widget: 'text' }
           - { label: 'Email', name: 'email', widget: 'text' }
