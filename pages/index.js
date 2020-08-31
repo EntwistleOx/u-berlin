@@ -57,7 +57,7 @@ const Home = () => {
                     <Card.Text>{service.description}</Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <Link href={service.link} passHref>
+                    <Link href='/services' passHref>
                       <Card.Link>Leer mas...</Card.Link>
                     </Link>
                     <Link href='/contact' passHref>
