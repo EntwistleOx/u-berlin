@@ -4,16 +4,22 @@ import Row from 'react-bootstrap/Row';
 import Clocks from '../../components/Clocks';
 import Layout from '../../components/Layout';
 import PagesHeader from '../../components/PagesHeader';
+import { attributes } from '../../content/tool-agreement.md';
+import styles from './agreements.module.css';
 
-const ToolsAgreements = () => (
-  <Layout pageTitle='U-Berlin | Acuerdos Internacionales'>
-    <>
-      <PagesHeader title='Acuerdos Internacionales' />
+const ToolsAgreements = () => {
+  const { title } = attributes;
+  return (
+    <Layout pageTitle={`U-Berlin | ${title}`}>
+      <PagesHeader title={title} />
       <Clocks />
       <section id='tools-agreements' className='py-4'>
         <Container>
           <Row className='showcase'>
-            <Col lg={6} className='agreements-showcase showcase-img' />
+            <Col
+              lg={6}
+              className={`${styles.agreementsShowcase} showcase-img`}
+            />
             <Col lg={6}>
               <div className='text-justify p-2'>
                 <p>
@@ -28,7 +34,6 @@ const ToolsAgreements = () => (
                   de 4200 millones de personas distribuidas en los cinco
                   continentes.
                 </p>
-
                 <p>
                   Además de los tratados de libre comercio, y los acuerdos de
                   asociación económica —que apuntan hacia la apertura
@@ -45,7 +50,7 @@ const ToolsAgreements = () => (
                   alcance parcial se refieren a medidas arancelarias para
                   denominados productos, y se considera una primera etapa para
                   un tratado de mayor alcance; Chile tiene acuerdos de este tipo
-                  con Cuba (firmado en 1999 y ratificado en 2008) e India
+                  con Cuba (firmado en 1999 y ratificado en 2008. e India
                   (firmado en 2006 y ratificado en 2007).
                 </p>
               </div>
@@ -253,8 +258,8 @@ const ToolsAgreements = () => (
           </Row>
         </Container>
       </section>
-    </>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
 export default ToolsAgreements;

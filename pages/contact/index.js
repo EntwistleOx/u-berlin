@@ -11,6 +11,8 @@ import Envelope from '../../components/Icons/Envelope';
 import Phone from '../../components/Icons/Phone';
 import Layout from '../../components/Layout';
 import PagesHeader from '../../components/PagesHeader';
+import { attributes as contact } from '../../content/contact.md';
+import styles from './contact.module.css';
 
 const encode = (data) =>
   Object.keys(data)
@@ -85,30 +87,23 @@ const Contact = () => {
             <Row>
               <Col lg={6} className='d-flex align-items-center'>
                 <div className='text-justify'>
-                  <h3>
-                    Contactate
-                    <span className='text-color'> con Nosotros</span>
-                  </h3>
+                  <h3 className='text-primary'>Contactate con Nosotros</h3>
                   <strong>¿Como nos puedes contactar?</strong>
                   <br />
                   <p>
                     <a
-                      href='mailto:info@u-berlin.com'
+                      href={`mailto:${contact.email}`}
                       className='mr-4 text-dark'
                     >
                       <Envelope />
                     </a>
-                    <a href='tel:+56229440554' className='text-dark'>
+                    <a href={`tel:${contact.phone}`} className='text-dark'>
                       <Phone />
                     </a>
                   </p>
                   <strong>¿Donde nos ubicamos?</strong>
                   <br />
-                  <p>
-                    Av. Americo Vespucio #1309,
-                    <br />
-                    of. 206, Pudahuel, Chile.
-                  </p>
+                  <p>{contact.address}</p>
                 </div>
               </Col>
               <Col lg={6} className='embed-responsive embed-responsive-16by9'>
@@ -140,7 +135,7 @@ const Contact = () => {
                     </label>
                   </div>
                   <div className='form-group'>
-                    <label htmlFor='name'>
+                    <label htmlFor='name' className={styles.label}>
                       Nombre
                       <input
                         type='text'
@@ -154,7 +149,7 @@ const Contact = () => {
                     </label>
                   </div>
                   <div className='form-group'>
-                    <label htmlFor='company'>
+                    <label htmlFor='company' className={styles.label}>
                       Empresa
                       <input
                         type='text'
@@ -168,7 +163,7 @@ const Contact = () => {
                     </label>
                   </div>
                   <div className='form-group'>
-                    <label htmlFor='email'>
+                    <label htmlFor='email' className={styles.label}>
                       Email
                       <input
                         type='email'
@@ -182,7 +177,7 @@ const Contact = () => {
                     </label>
                   </div>
                   <div className='form-group'>
-                    <label htmlFor='message'>
+                    <label htmlFor='message' className={styles.label}>
                       Mensaje
                       <textarea
                         name='message'
@@ -196,14 +191,15 @@ const Contact = () => {
                       />
                     </label>
                   </div>
+                  <div className='form-group'>
+                    <Recaptcha
+                      ref={recaptchaRef}
+                      sitekey={process.env.NEXT_PUBLIC_SITE_RECAPTCHA_KEY}
+                      onChange={captchaOnChange}
+                    />
+                  </div>
 
-                  <Recaptcha
-                    ref={recaptchaRef}
-                    sitekey={process.env.NEXT_PUBLIC_SITE_RECAPTCHA_KEY}
-                    onChange={captchaOnChange}
-                  />
-
-                  <Button type='submit' variant='primary' className='mt-2'>
+                  <Button type='submit' variant='primary'>
                     Enviar
                   </Button>
                 </Form>

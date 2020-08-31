@@ -4,22 +4,24 @@ import Row from 'react-bootstrap/Row';
 import Clocks from '../../components/Clocks';
 import Layout from '../../components/Layout';
 import PagesHeader from '../../components/PagesHeader';
+import { attributes } from '../../content/services.md';
+import styles from './services.module.css';
 
-const Services = () => (
-  <Layout pageTitle='U-Berlin | Servicios'>
-    <>
-      <PagesHeader title='Nuestros Servicios' />
+const Services = () => {
+  const { title } = attributes;
+
+  return (
+    <Layout pageTitle={`U-Berlin | ${title}`}>
+      <PagesHeader title={title} />
+      <Clocks />
       <section id='services'>
-        <Clocks />
-        <Container>
+        <Container className='py-4'>
           {/* Sea Cargo */}
-          <Row className='pt-4 showcase'>
-            <Col lg={6} className='service1-showcase showcase-img' />
+          <Row>
+            <Col lg={6} className={`${styles.seaShowcase} showcase-img`} />
             <Col lg={6} className='d-flex align-items-center'>
               <div className='text-justify p-2 '>
-                <h3>
-                  Transporte <span className='text-color'>Maritimo</span>
-                </h3>
+                <h3 className='text-primary'>Transporte Maritimo</h3>
                 <p>
                   El 90% del intercambio comercial chileno se realiza por vía
                   marítima, lo que lo convierte en el principal medio de
@@ -41,13 +43,14 @@ const Services = () => (
             </Col>
           </Row>
           {/* Air Cargo */}
-          <Row className='showcase'>
-            <Col lg={6} className='order-lg-2 service2-showcase showcase-img' />
+          <Row>
+            <Col
+              lg={6}
+              className={`${styles.airShowcase} order-lg-2 showcase-img`}
+            />
             <Col lg={6} className='order-lg-1 d-flex align-items-center'>
               <div className='text-justify p-2 '>
-                <h3>
-                  Transporte <span className='text-color'>Aereo</span>
-                </h3>
+                <h3 className='text-primary'>Transporte Aereo</h3>
                 <p>
                   En U-Berlin entendemos perfectamente la urgencia de sus
                   envios, diseñando soluciones flexibles a su medida mediante
@@ -73,13 +76,11 @@ const Services = () => (
             </Col>
           </Row>
           {/* Ground Cargo */}
-          <Row className='showcase'>
-            <Col lg={6} className='service3-showcase showcase-img' />
+          <Row>
+            <Col lg={6} className={`${styles.groundShowcase} showcase-img`} />
             <Col lg={6} className='d-flex align-items-center'>
               <div className='text-justify p-2 '>
-                <h3>
-                  Transporte <span className='text-color'>Terrestre</span>
-                </h3>
+                <h3 className='text-primary'>Transporte Terrestre</h3>
                 <p>
                   Damos soluciones en transporte de carga por via terrestre
                   tanto a nivel nacional como internacional. Cumplimos con sus
@@ -88,63 +89,65 @@ const Services = () => (
                   entregamos en la bodega de destino. Nuestros servicios de
                   carga incluyen:
                 </p>
-
-                <ul className='mb-3'>
-                  <li>Carga Suelta.</li>
-                  <li>Contenedores.</li>
-                  <li>Carga Refrigerada.</li>
-                </ul>
+                <ol>
+                  <li>Carga Suelta</li>
+                  <li>Contenedores</li>
+                  <li>Carga Refrigerada</li>
+                </ol>
                 <p>Transporte internacional terrestre a:</p>
-                <ul>
-                  <li>Argentina.</li>
+                <ol>
+                  <li>Argentina</li>
                   <li>Brazil</li>
-                  <li>Uruguay.</li>
-                  <li>Paraguay.</li>
-                  <li>Peru.</li>
-                  <li>Bolivia.</li>
-                </ul>
+                  <li>Uruguay</li>
+                  <li>Paraguay</li>
+                  <li>Peru</li>
+                  <li>Bolivia</li>
+                </ol>
               </div>
             </Col>
           </Row>
           {/* Projects */}
-          <Row className='pb-4 showcase'>
-            <Col lg={6} className='order-lg-2 service4-showcase showcase-img' />
+          <Row>
+            <Col
+              lg={6}
+              className={`${styles.cargoShowcase} order-lg-2 showcase-img`}
+            />
             <Col lg={6} className='order-lg-1 d-flex align-items-center'>
               <div className='text-justify p-2 '>
-                <h3>
-                  Cargas de <span className='text-color'>Proyectos</span>
-                </h3>
+                <h3 className='text-primary'>Cargas de Proyectos</h3>
                 <p>
                   U-Berlin le ayuda en los complejos requisitos logisticos que
                   implican el transporte de equipos pesados y de gran magnitud.
                   Le ofrecemos un servicio de transportes y gestion de proyectos
                   integrados, con el fin de garantizar que su carga llegue a su
-                  destino de acuerdo a lo planificado. Nuestro equipo de trabajo
-                  cuenta con el pensamiento creativo necesarios para generar e
-                  implementar soluciones eficientes y eficaces. Creamos un plan
-                  de transporte personalizado a cada caso, con sus costes de
-                  transporte, garantizando que se cumpla el itinerario y los
-                  medios de transporte adecuados.
+                  destino de acuerdo a lo planificado.
+                </p>
+                <p>
+                  Nuestro equipo de trabajo cuenta con el pensamiento creativo
+                  necesarios para generar e implementar soluciones eficientes y
+                  eficaces. Creamos un plan de transporte personalizado a cada
+                  caso, con sus costes de transporte, garantizando que se cumpla
+                  el itinerario y los medios de transporte adecuados.
                 </p>
                 <p>
                   Diseñamos e implementamos soluciones adaptadas a diferentes
                   industrias:
                 </p>
-                <ul>
-                  <li>Ingeniería, aprovisionamiento y construcción.</li>
-                  <li>Industria química y del gas.</li>
-                  <li>Energía eléctrica.</li>
-                  <li>Proyectos de infraestructura.</li>
+                <ol>
+                  <li>Ingeniería, aprovisionamiento y construcción</li>
+                  <li>Industria química y del gas</li>
+                  <li>Energía eléctrica</li>
+                  <li>Proyectos de infraestructura</li>
                   <li>Mineria</li>
-                  <li>Eventos.</li>
-                </ul>
+                  <li>Eventos</li>
+                </ol>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
-    </>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
 export default Services;

@@ -15,73 +15,7 @@ a:hover {
   text-decoration: none;
 }
 
-#tarrifs .card {
-  max-width: '18rem';
-  height: '20rem';
-}
-
-#tarrifs h2 {
-  font-size: 40px;
-}
-
-#tarrifs small {
-  font-size: 17px;
-}
-
-#tarrifs .tariff-content {
-  max-width: '8rem';
-  margin: 'auto';
-}
-
-.text-color {
-  color: var(--primary);
-}
-
-.showcase .showcase-img {
+.showcase-img {
   min-height: 30rem;
   background-size: cover;
-}
-
-#about .about-showcase {
-  background-image: url('../public/images/about/about.jpg');
-  background-position: center;
-  background-size: cover;
-}
-
-#services .showcase {
-  min-height: 480px;
-}
-
-#services .service1-showcase {
-  background-image: url('../public/images/services/service1.jpg');
-  background-position: center;
-  background-size: cover;
-}
-
-#services .service2-showcase {
-  background-image: url('../public/images/services/service2.jpg');
-  background-position: center;
-  background-size: cover;
-}
-
-#services .service3-showcase {
-  background-image: url('../public/images/services/service3.jpg');
-  background-position: center;
-  background-size: cover;
-}
-
-#services .service4-showcase {
-  background-image: url('../public/images/services/service4.jpg');
-  background-position: center;
-  background-size: cover;
-}
-
-#tools-agreements .agreements-showcase {
-  background-image: url('../public/images/tools/agreements.jpg');
-  background-position: center;
-  background-size: cover;
-}
-
-label {
-  display: block;
 }

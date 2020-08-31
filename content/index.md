@@ -1,10 +1,8 @@
 ---
-title: U-Berlin
-subtitle: >-
-  Nos especializamos en transporte marítimo, aéreo y terrestre.
-
+title: Home
+slogan: Nos especializamos en transporte marítimo, aéreo y terrestre.
 servicesTitle: Nuestros Servicios
-servicesSubtitle: >-
+servicesSubtitle:
   U-Berlin nace de la visión de empresarios del sector que vieron
   una oportunidad y la necesidad de dar un servicio de calidad y
   personalizado a sus clientes. Conoce nuestros servicios!

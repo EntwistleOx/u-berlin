@@ -19,7 +19,7 @@ const TopNav = () => {
               alt='u-berlin'
               src='images/logo.png'
               className='d-inline-block align-top'
-              width='150'
+              width='180'
             />
           </Navbar.Brand>
           <NavbarToggle aria-controls='navbar-nav' />

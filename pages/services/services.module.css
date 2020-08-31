@@ -1,0 +1,23 @@
+.seaShowcase {
+  background: url('../../public/images/services/service1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.airShowcase {
+  background-image: url('../../public/images/services/service2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.groundShowcase {
+  background-image: url('../../public/images/services/service3.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.cargoShowcase {
+  background-image: url('../../public/images/services/service4.jpg');
+  background-position: center;
+  background-size: cover;
+}

@@ -1,4 +1,5 @@
 import Container from 'react-bootstrap/Container';
+import { attributes as contact } from '../../content/contact.md';
 import Envelope from '../Icons/Envelope';
 import Facebook from '../Icons/Facebook';
 import Linkedin from '../Icons/Linkedin';
@@ -29,12 +30,12 @@ const TopBar = () => (
         </a>
       </div>
       <div className='mr-4'>
-        <a href='mailto:info@u-berlin.com' className='text-gray'>
+        <a href={`mailto:${contact.email}`} className='text-gray'>
           <Envelope />
         </a>
       </div>
       <div>
-        <a href='tel:+56229440554' className='text-gray'>
+        <a href={`tel:${contact.phone}`} className='text-gray'>
           <Phone />
         </a>
       </div>

@@ -4,14 +4,15 @@ import Row from 'react-bootstrap/Row';
 import Clocks from '../../components/Clocks';
 import Layout from '../../components/Layout';
 import PagesHeader from '../../components/PagesHeader';
+import { attributes } from '../../content/solutions-exports.md';
 
-const SolutionsExport = () => (
-  <Layout pageTitle='U-Berlin | ¿Como Exportar?'>
-    <>
-      <PagesHeader title='¿Como Exportar?' />
-
+const SolutionsExport = () => {
+  const { title } = attributes;
+  return (
+    <Layout pageTitle={`U-Berlin | ${title}`}>
+      <PagesHeader title={title} />
+      <Clocks />
       <section id='solutions-export'>
-        <Clocks />
         <section className='py-4'>
           <Container>
             <Row>
@@ -173,8 +174,8 @@ const SolutionsExport = () => (
           </Container>
         </section>
       </section>
-    </>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
 export default SolutionsExport;

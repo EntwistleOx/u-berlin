@@ -5,13 +5,15 @@ import Row from 'react-bootstrap/Row';
 import Clocks from '../../components/Clocks';
 import Layout from '../../components/Layout';
 import PagesHeader from '../../components/PagesHeader';
+import { attributes } from '../../content/solutions-buy.md';
 
-const SolutionsBuy = () => (
-  <Layout pageTitle='U-Berlin - Compras por Internet'>
-    <>
-      <PagesHeader title='Compras por Internet' />
+const SolutionsBuy = () => {
+  const { title } = attributes;
+  return (
+    <Layout pageTitle={`U-Berlin | ${title}`}>
+      <PagesHeader title={title} />
+      <Clocks />
       <section id='solutions-buy'>
-        <Clocks />
         <section className='py-4'>
           <Container>
             <Row>
@@ -140,8 +142,8 @@ const SolutionsBuy = () => (
           </Container>
         </section>
       </section>
-    </>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
 export default SolutionsBuy;

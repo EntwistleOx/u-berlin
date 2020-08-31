@@ -4,11 +4,13 @@ import Row from 'react-bootstrap/Row';
 import Clocks from '../../components/Clocks';
 import Layout from '../../components/Layout';
 import PagesHeader from '../../components/PagesHeader';
+import { attributes } from '../../content/solutions-imports.md';
 
-const SolutionsImport = () => (
-  <Layout pageTitle='U-Berlin | ¿Como Importar?'>
-    <>
-      <PagesHeader title='¿Como Importar?' />
+const SolutionsImport = () => {
+  const { title } = attributes;
+  return (
+    <Layout pageTitle={`U-Berlin | ${title}`}>
+      <PagesHeader title={title} />
       <Clocks />
       <section id='solutions-import'>
         <Container className='py-4'>
@@ -475,8 +477,8 @@ const SolutionsImport = () => (
           </Row>
         </Container>
       </section>
-    </>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
 export default SolutionsImport;

@@ -2,6 +2,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
+import { attributes as contact } from '../../content/contact.md';
 import Envelope from '../Icons/Envelope';
 import Facebook from '../Icons/Facebook';
 import Linkedin from '../Icons/Linkedin';
@@ -18,15 +19,13 @@ const Footer = () => (
             <address>
               U-Berlin Logistics
               <br />
-              Av. Americo Vespucio #1309,
-              <br />
-              of. 206, Pudahuel, Chile.
+              {contact.address}
             </address>
             <div>
-              <a href='mailto:info@u-berlin.com' className='mr-4'>
+              <a href={`mailto:${contact.email}`} className='mr-4'>
                 <Envelope />
               </a>
-              <a href='tel:+56229440554'>
+              <a href={`tel:${contact.phone}`}>
                 <Phone />
               </a>
             </div>

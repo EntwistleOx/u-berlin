@@ -5,13 +5,15 @@ import Row from 'react-bootstrap/Row';
 import Clocks from '../../components/Clocks';
 import Layout from '../../components/Layout';
 import PagesHeader from '../../components/PagesHeader';
+import { attributes } from '../../content/tool-tariff.md';
 
-const ToolsContainers = () => (
-  <Layout pageTitle='U-Berlin | Contenedores'>
-    <>
-      <PagesHeader title='Contenedores' />
+const ToolsContainers = () => {
+  const { title } = attributes;
+  return (
+    <Layout pageTitle={`U-Berlin | ${title}`}>
+      <PagesHeader title={title} />
+      <Clocks />
       <section id='containers' className='overflow-hidden'>
-        <Clocks />
         <Container className='py-4'>
           <Row>
             <Col md={12}>
@@ -20,8 +22,8 @@ const ToolsContainers = () => (
           </Row>
         </Container>
       </section>
-    </>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
 export default ToolsContainers;

@@ -11,7 +11,7 @@ import styles from './index.module.css';
 const Home = () => {
   const {
     title,
-    subtitle,
+    slogan,
     servicesTitle,
     servicesSubtitle,
     services,
@@ -20,11 +20,11 @@ const Home = () => {
   } = attributes;
 
   return (
-    <Layout pageTitle='U-Berlin Logistics'>
+    <Layout pageTitle={`U-Berlin | ${title}`}>
       <header className={styles.header}>
         <div className={styles.hero}>
-          <h1>{title}</h1>
-          <p>{subtitle}</p>
+          <h1>U-Berlin</h1>
+          <p>{slogan}</p>
           <Link href='/contact' passHref>
             <a className='btn btn-primary mt-4'>Contactanos!</a>
           </Link>
@@ -71,7 +71,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section id='tarrifs' className='bg-light'>
+      <section id='tarrifs' className={`${styles.tariffs} bg-light`}>
         <Container>
           <Row>
             <Col lg={12} className='text-center my-5'>
@@ -83,7 +83,7 @@ const Home = () => {
               <Col lg={3} md={6} key={tariff.id} className='text-center'>
                 <Card className='mb-5 mx-auto bg-white'>
                   <Card.Body>
-                    <Card.Title style={{ fontSize: '2rem' }} className='mt-4'>
+                    <Card.Title style={{ fontSize: '3rem' }} className='mt-4'>
                       {tariff.title}
                     </Card.Title>
                     <Card.Text className='card-text my-4'>
