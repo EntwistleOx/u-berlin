@@ -15,14 +15,27 @@ collections:
         description: 'Aca puedes editar los elementos del Home.'
         file: content/index.md
         fields:
+          - { label: 'Titulo', name: 'title', widget: 'string' }
           - { label: 'Slogan', name: 'slogan', widget: 'text' }
+          - {
+              label: 'Titulo Servicios',
+              name: 'servicesTitle',
+              widget: 'string',
+            }
+          - {
+              label: 'Subtitulo Servicios',
+              name: 'servicesSubtitle',
+              widget: 'text',
+            }
           - name: 'services'
             label: 'Servicios'
             widget: list
             fields:
               - { label: 'Titulo', name: 'title', widget: 'string' }
               - { label: 'Descripcion', name: 'description', widget: 'text' }
-              - { label: 'Titulo', name: 'title', widget: 'string' }
+              - { label: 'Titulo', name: 'img', widget: 'string' }
+              - { label: 'Imagen', name: 'title', widget: 'string' }
+          - { label: 'Titulo Tarifas', name: 'tariffsTitle', widget: 'string' }
           - name: 'tariffs'
             label: 'Tarifas'
             widget: list
