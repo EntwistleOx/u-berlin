@@ -1,6 +1,9 @@
 ---
 title: Home
 slogan: 'Nos especializamos en transporte marítimo, aéreo y terrestre.'
+servicesTitle: Nuestros Servicios
+servicesSubtitle: Tenemos amplia experiencia lo que nos permite ofrecer un servicio de calidad, ayudando en la tramitación y documentación necesarias tanto en importación como exportación.
+tariffsTitle: Revisa Nuestras Tarifas
 services:
   - description: Tenemos amplia experiencia en transporte marítimo internacional de cargas.
     title: Transporte Maritimo
