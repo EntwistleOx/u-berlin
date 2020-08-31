@@ -1,24 +1,38 @@
 backend:
   name: git-gateway
   branch: master
-media_folder: 'public/uploads'
-public_folder: '/uploads'
+media_folder: 'public/images/uploads'
+public_folder: '/images/uploads'
 site_url: https://u-berlin.netlify.app/
 display_url: https://u-berlin.netlify.app/
 logo_url: https://u-berlin.netlify.app/images/logo.png
 collections:
-  - name: 'home'
-    label: 'Home'
-    description: 'Aca puedes editar los elementos del index de la pagina.'
-    file: content/index.md
-    fields:
-      - { label: 'Titulo', name: 'title', widget: 'string' }
-      - { label: 'Subtitulo', name: 'subtitle', widget: 'text' }
-      - name: 'tariffs'
-        label: 'Tariffs'
-        widget: list
+  - name: 'pages'
+    label: 'Paginas'
+    files:
+      - name: 'index'
+        label: 'Index'
+        description: 'Aca puedes editar los elementos del Home.'
+        file: content/index.md
         fields:
           - { label: 'Titulo', name: 'title', widget: 'string' }
-          - { label: 'Descripcion', name: 'description', widget: 'text' }
-          - { label: 'Precio', name: 'price', widget: 'string' }
-          - { label: 'Unidad', name: 'unit', widget: 'string' }
+          - { label: 'Subtitulo', name: 'subtitle', widget: 'text' }
+          - name: 'tariffs'
+            label: 'Tariffs'
+            widget: list
+            fields:
+              - { label: 'Titulo', name: 'title', widget: 'string' }
+              - { label: 'Descripcion', name: 'description', widget: 'text' }
+              - { label: 'Precio', name: 'price', widget: 'string' }
+              - { label: 'Unidad', name: 'unit', widget: 'string' }
+      - name: 'contact'
+        label: 'Contacto'
+        description: 'Aca puedes editar los datos de contacto.'
+        file: content/contact.md
+        fields:
+          - { label: 'Titulo', name: 'title', widget: 'string' }
+          - { label: 'Direccion', name: 'address', widget: 'text' }
+          - { label: 'Telefono', name: 'phone', widget: 'text' }
+          - { label: 'Email', name: 'email', widget: 'text' }
+          - { label: 'Facebook', name: 'facebook', widget: 'text' }
+          - { label: 'Linkedin', name: 'linkedin', widget: 'text' }
