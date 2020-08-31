@@ -10,13 +10,13 @@ collections:
   - name: 'pages'
     label: 'Paginas'
     files:
-      - name: 'index'
-        label: 'Index'
+      - name: 'home'
+        label: 'Home'
         description: 'Aca puedes editar los elementos del Home.'
         file: content/index.md
         fields:
           - { label: 'Titulo', name: 'title', widget: 'string' }
-          - { label: 'Subtitulo', name: 'subtitle', widget: 'text' }
+          - { label: 'Slogan', name: 'slogan', widget: 'text' }
           - name: 'tariffs'
             label: 'Tariffs'
             widget: list
