@@ -25,7 +25,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # backend config
-config.yml
+# config.yml
 
 # Eslint
 .eslintcache
