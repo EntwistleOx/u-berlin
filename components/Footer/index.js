@@ -108,12 +108,20 @@ const Footer = () => (
           </div>
           <div className='d-flex justify-content-end'>
             <div>
-              <a target='_blank' rel='noopener noreferrer' href='!#'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href={contact.facebook}
+              >
                 <Facebook />
               </a>
             </div>
             <div className='ml-3'>
-              <a target='_blank' rel='noopener noreferrer' href='!#'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href={contact.linkedin}
+              >
                 <Linkedin />
               </a>
             </div>

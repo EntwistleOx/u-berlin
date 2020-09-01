@@ -11,7 +11,7 @@ const TopBar = () => (
     <Container className='d-flex align-items-center justify-content-center justify-content-md-start py-1'>
       <div className='mr-4'>
         <a
-          href='!#'
+          href={contact.facebook}
           target='_blank'
           rel='noopener noreferrer'
           className='text-gray'
@@ -21,7 +21,7 @@ const TopBar = () => (
       </div>
       <div className='mr-4'>
         <a
-          href='!#'
+          href={contact.linkedin}
           target='_blank'
           rel='noopener noreferrer'
           className='text-gray'
