@@ -48,22 +48,46 @@ const Contact = () => {
     const token = await recaptchaRef.current.executeAsync();
     recaptchaRef.current.reset();
 
-    const captchaResponse = await fetch('/api/validate', {
+    // const captchaResponse = await fetch('/api/validate', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify({
+    //     token,
+    //   }),
+    // });
+    // console.log('cap', captchaResponse);
+    // if (!captchaResponse.ok) {
+    //   const data = await captchaResponse.json();
+    //   console.log('entro');
+    //   console.log(data);
+    //   setAlert({
+    //     msg: data.errors,
+    //     type: 'error',
+    //   });
+    //   setShowAlert(true);
+    //   setTimeout(() => {
+    //     setShowAlert(false);
+    //     setAlert({
+    //       msg: '',
+    //       type: '',
+    //     });
+    //   }, 10000);
+    // } else {
+    const response = await fetch('/', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        token,
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': 'contact-form',
+        'g-recaptcha-response': token,
+        ...formData,
       }),
     });
-    console.log('cap', captchaResponse);
-    if (!captchaResponse.ok) {
-      const data = await captchaResponse.json();
-      console.log('entro');
-      console.log(data);
+
+    if (!response.ok) {
       setAlert({
-        msg: data.errors,
+        msg: 'Ha ocurrido un error, intenta nuevamente.',
         type: 'error',
       });
       setShowAlert(true);
@@ -75,48 +99,26 @@ const Contact = () => {
         });
       }, 10000);
     } else {
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({
-          'form-name': 'contact-form',
-          ...formData,
-        }),
+      setAlert({
+        msg: 'Gracias por escribirnos, no contactaremos a brevedad.',
+        type: 'success',
       });
-      if (!response.ok) {
+      setShowAlert(true);
+      setTimeout(() => {
+        setShowAlert(false);
         setAlert({
-          msg: 'Ha ocurrido un error, intenta nuevamente.',
-          type: 'error',
+          msg: '',
+          type: '',
         });
-        setShowAlert(true);
-        setTimeout(() => {
-          setShowAlert(false);
-          setAlert({
-            msg: '',
-            type: '',
-          });
-        }, 10000);
-      } else {
-        setAlert({
-          msg: 'Gracias por escribirnos, no contactaremos a brevedad.',
-          type: 'success',
-        });
-        setShowAlert(true);
-        setTimeout(() => {
-          setShowAlert(false);
-          setAlert({
-            msg: '',
-            type: '',
-          });
-        }, 10000);
-        setFormData({
-          name: '',
-          company: '',
-          email: '',
-          message: '',
-        });
-      }
+      }, 10000);
+      setFormData({
+        name: '',
+        company: '',
+        email: '',
+        message: '',
+      });
     }
+    // }
   };
 
   return (
