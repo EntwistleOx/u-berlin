@@ -20,7 +20,7 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^8.0.0",
     "jimp": "^0.16.1",
-    "next": "^9.5.2",
+    "next": "^9.5.5",
     "next-connect": "^0.6.0",
     "next-optimized-images": "^2.6.2",
     "next-session": "^3.0.1",

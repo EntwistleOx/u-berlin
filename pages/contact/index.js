@@ -20,14 +20,9 @@ const encode = (data) =>
     .join('&');
 
 const Contact = () => {
-  const recaptchaRef = useRef(null);
-  const [formData, setFormData] = useState({
-    name: '',
-    company: '',
-    email: '',
-    message: '',
-  });
-
+  const recaptchaRef = useRef();
+  const [formData, setFormData] = useState({});
+  const [alert, setAlert] = useState({ msg: '', type: '' });
   const [showAlert, setShowAlert] = useState(false);
 
   const { name, company, email, message } = formData;
@@ -39,42 +34,87 @@ const Contact = () => {
     });
   };
 
-  const captchaOnChange = (e) => {
-    setFormData({
-      ...formData,
-      'g-recaptcha-response': e,
-    });
-  };
+  // const captchaOnChange = (e) => {
+  //   console.log(e);
+  //   setFormData({
+  //     ...formData,
+  //     'g-recaptcha-response': e,
+  //   });
+  // };
 
   const handleForm = async (e) => {
     e.preventDefault();
 
-    const sendMsg = await fetch('/', {
+    const token = await recaptchaRef.current.executeAsync();
+    recaptchaRef.current.reset();
+
+    const captchaResponse = await fetch('/api/validate', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': 'contact',
-        ...formData,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        token,
       }),
     });
 
-    if (!sendMsg.ok) {
-      // eslint-disable-next-line no-console
-      console.log(sendMsg.error);
+    if (!captchaResponse.ok) {
+      const data = await captchaResponse.json();
+      setAlert({
+        msg: data.errors,
+        type: 'error',
+      });
+      setShowAlert(true);
+      setTimeout(() => {
+        setShowAlert(false);
+        setAlert({
+          msg: '',
+          type: '',
+        });
+      }, 10000);
+    } else {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+          'form-name': 'contact-form',
+          ...formData,
+        }),
+      });
+      if (!response.ok) {
+        setAlert({
+          msg: 'Ha ocurrido un error, intenta nuevamente.',
+          type: 'error',
+        });
+        setShowAlert(true);
+        setTimeout(() => {
+          setShowAlert(false);
+          setAlert({
+            msg: '',
+            type: '',
+          });
+        }, 10000);
+      } else {
+        setAlert({
+          msg: 'Gracias por escribirnos, no contactaremos a brevedad.',
+          type: 'success',
+        });
+        setShowAlert(true);
+        setTimeout(() => {
+          setShowAlert(false);
+          setAlert({
+            msg: '',
+            type: '',
+          });
+        }, 10000);
+        setFormData({
+          name: '',
+          company: '',
+          email: '',
+          message: '',
+        });
+      }
     }
-
-    setShowAlert(true);
-    setTimeout(() => {
-      setShowAlert(false);
-    }, 10000);
-
-    setFormData({
-      name: '',
-      company: '',
-      email: '',
-      message: '',
-    });
-    recaptchaRef.current.reset();
   };
 
   return (
@@ -116,18 +156,19 @@ const Contact = () => {
 
             <Row>
               <Col md={12} className='mt-4'>
-                {showAlert && (
-                  <Alert variant='success'>
-                    Gracias por escribirnos, no contactaremos a brevedad.
-                  </Alert>
-                )}
+                {showAlert && <Alert variant={alert.type}>{alert.msg}</Alert>}
 
+                <Recaptcha
+                  ref={recaptchaRef}
+                  sitekey={process.env.NEXT_PUBLIC_SITE_RECAPTCHA_KEY}
+                  size='invisible'
+                />
                 <Form
-                  name='contact'
+                  name='contact-form'
                   data-netlify='true'
                   data-netlify-recaptcha='true'
-                  onSubmit={handleForm}
                   netlify-honeypot='bot-field'
+                  onSubmit={handleForm}
                 >
                   <div hidden aria-hidden='true'>
                     <label htmlFor='bot-field'>
@@ -190,13 +231,6 @@ const Contact = () => {
                         style={{ resize: 'none' }}
                       />
                     </label>
-                  </div>
-                  <div className='form-group'>
-                    <Recaptcha
-                      ref={recaptchaRef}
-                      sitekey={process.env.NEXT_PUBLIC_SITE_RECAPTCHA_KEY}
-                      onChange={captchaOnChange}
-                    />
                   </div>
 
                   <Button type='submit' variant='primary'>
