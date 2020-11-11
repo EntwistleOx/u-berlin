@@ -57,7 +57,7 @@ const Contact = () => {
         token,
       }),
     });
-
+    console.log('cap', captchaResponse);
     if (!captchaResponse.ok) {
       const data = await captchaResponse.json();
       setAlert({
