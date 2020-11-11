@@ -60,6 +60,8 @@ const Contact = () => {
     console.log('cap', captchaResponse);
     if (!captchaResponse.ok) {
       const data = await captchaResponse.json();
+      console.log('entro');
+      console.log(data);
       setAlert({
         msg: data.errors,
         type: 'error',
