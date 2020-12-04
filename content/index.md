@@ -37,9 +37,5 @@ tariffs:
     price: 'USD 5,00'
     title: Lorem
     unit: / KG
-  - description: Una descripcion de tarifa
-    price: '666'
-    title: FOB2
-    unit: / KG
 ---
 
