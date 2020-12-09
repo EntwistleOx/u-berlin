@@ -37,9 +37,5 @@ tariffs:
     price: 'USD 5,00'
     title: Lorem
     unit: / KG
-  - description: descripcion
-    price: un precio
-    title: Bla
-    unit: '9798'
 ---
 
