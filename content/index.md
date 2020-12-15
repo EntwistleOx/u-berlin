@@ -21,10 +21,10 @@ services:
     title: Cargas de Proyectos
 tariffsTitle: Revisa Nuestras Tarifas
 tariffs:
-  - description: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
-    price: 'USD 3,55'
-    title: FOB
-    unit: / KV
+  - description: Obtén tu dirección postal en U.S.A. y compra lo que quieras.
+    price: REGISTRATE
+    title: CASILLA MIAMI
+    unit: GRATIS
   - description: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
     price: 'USD 3,55'
     title: Ipsum
