@@ -22,9 +22,9 @@ services:
 tariffsTitle: Revisa Nuestras Tarifas
 tariffs:
   - description: Obtén tu dirección postal en U.S.A. y compra lo que quieras.
-    price: REGISTRATE
+    price: REGISTRATE GRATIS
     title: CASILLA MIAMI
-    unit: GRATIS
+    unit: "\_"
   - description: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
     price: 'USD 3,55'
     title: Ipsum
