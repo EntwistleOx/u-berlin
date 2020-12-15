@@ -22,7 +22,7 @@ services:
 tariffsTitle: Revisa Nuestras Tarifas
 tariffs:
   - description: Obtén tu dirección postal en U.S.A. y compra lo que quieras.
-    price: REGISTRATE GRATIS
+    price: '<a href="https://www.openskypost.com/register.php"> REGISTRATE GRATIS</a>'
     title: CASILLA MIAMI
     unit: "\_"
   - description: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
