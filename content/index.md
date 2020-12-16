@@ -28,19 +28,19 @@ tariffs:
   - description: |-
       Flete Marítimo Importación
       MEXICO/MANZANILLO - CHILE/SAN ANTONIO
-      Transito 14 Dias / Ruta Directa
+      Transito 14 Dias / Ruta Directa / Salidas Semanales
       USD 50,00 x W/M (CMB)
     price: 'USD 50,00'
     title: LCL / CONSOLIDADO MARITIMO
     unit: x W/M
   - description: |-
       Flete Marítimo Importación
-      MEXICO/MANZANILLO - CHILE/SAN ANTONIO
-      Transito 14 Dias / Ruta Directa
-      USD 50,00 x W/M (CMB)
-    price: 'USD 3,55'
+      BELGICA/AMBERES - CHILE/SAN ANTONIO
+      Transito 28 Días / Ruta Directa / Salidas Semanales
+      USD 60,00 x W/M (CMB)
+    price: 'USD 60,0'
     title: LCL / CONSOLIDADO MARITIMO
-    unit: / KV
+    unit: x W/M (CMB)
   - description: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
     price: 'USD 5,00'
     title: Lorem
