@@ -63,5 +63,9 @@ tariffs:
     price: "\_"
     title: TARIFA ASIA
     unit: "\_"
+  - description: "\_"
+    price: "\_"
+    title: TARIFA INDIA
+    unit: "\_"
 ---
 
