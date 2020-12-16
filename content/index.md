@@ -21,7 +21,11 @@ services:
     title: Cargas de Proyectos
 tariffsTitle: Revisa Nuestras Tarifas
 tariffs:
-  - description: Obtén tu dirección postal en U.S.A. y compra lo que quieras.
+  - description: >-
+      Obtén tu dirección postal en U.S.A. y compra lo que quieras.
+
+      Nosotros notificamos a Ud., de la llegada de sus productos y procederemos
+      a llevarlos a su casa u oficina.
     price: "\_REGISTRATE GRATIS"
     title: CASILLA MIAMI
     unit: "\_"
