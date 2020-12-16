@@ -25,13 +25,20 @@ tariffs:
     price: "\_REGISTRATE GRATIS"
     title: CASILLA MIAMI
     unit: "\_"
-  - description: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
+  - description: |-
+      Flete Marítimo Importación
+      MEXICO/MANZANILLO - CHILE/SAN ANTONIO
+      USD 50,00 x W/M (CMB)
+    price: 'USD 50,00'
+    title: LCL / CONSOLIDADO MARITIMO
+    unit: x W/M
+  - description: |-
+      Flete Marítimo Importación
+      MEXICO/MANZANILLO - CHILE/SAN ANTONIO
+      Transito 14 Dias / Ruta Directa
+      USD 50,00 x W/M (CMB)
     price: 'USD 3,55'
-    title: Ipsum
-    unit: / KV
-  - description: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
-    price: 'USD 3,55'
-    title: FOB
+    title: LCL / CONSOLIDADO MARITIMO
     unit: / KV
   - description: 'Flete Aereo ciudad-ciudad USD 3,55 x KV (+100 kg)'
     price: 'USD 5,00'
