@@ -31,18 +31,24 @@ tariffs:
       MANZANILLO - SAN ANTONIO
       Transito 14 Dias / Ruta Directa / Salidas Semanales
       USD 50,00 x W/M (CMB)
+
+      Desconsolidación
+      CLP $10.000. x W/L (CMB) + IVA
     price: 'USD 50,00'
     title: TARIFA MEXICO
-    unit: x W/M
+    unit: "\_x W/M (CMB)"
   - description: |-
       Flete Marítimo Importación
       LCL CONSOLIDADO
       AMBERES - SAN ANTONIO
       Transito 28 Días / Ruta Directa / Salidas Semanales
       USD 60,00 x W/M (CMB)
+
+      Desconsolidación
+      CLP $10.000. x W/L (CMB) + IVA
     price: 'USD 60,0'
     title: TARIFA BELGICA
-    unit: x W/M (CMB)
+    unit: "\_x W/M (CMB)"
   - description: |
       Flete Marítimo Importación 
       LCL CONSOLIDADO
