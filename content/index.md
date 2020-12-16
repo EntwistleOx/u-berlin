@@ -28,6 +28,7 @@ tariffs:
   - description: |-
       Flete Marítimo Importación
       MEXICO/MANZANILLO - CHILE/SAN ANTONIO
+      Transito 14 Dias / Ruta Directa
       USD 50,00 x W/M (CMB)
     price: 'USD 50,00'
     title: LCL / CONSOLIDADO MARITIMO
