@@ -28,19 +28,22 @@ tariffs:
       a llevarlos a su casa u oficina.
 
 
-      ![](/images/uploads/register-now.png)(https://www.openskypost.com/register.php)
+      ![](/images/uploads/register-now.png)
     price: "\_REGISTRATE GRATIS"
     title: CASILLA MIAMI
     unit: "\_"
   - description: |-
-      Flete Marítimo Importación
-      LCL CONSOLIDADO
+      Flete Marítimo Importación\
+      LCL CONSOLIDADO\
       MANZANILLO - SAN ANTONIO
-      Transito 14 Dias / Ruta Directa / Salidas Semanales
+
+      * Transito 14 Dias
+      * Ruta Directa
+      * Salidas Semanales
 
       USD 50,00 x W/M (CMB)
 
-      Desconsolidación
+      Desconsolidación\
       CLP $10.000. x W/L (CMB) + IVA
     price: 'USD 50,00'
     title: TARIFA MEXICO
