@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
@@ -42,8 +43,8 @@ const Home = () => {
             </Col>
           </Row>
           <Row>
-            {services.map((service) => (
-              <Col sm={6} md={3} key={service.id} className='text-center'>
+            {services.map((service, i) => (
+              <Col sm={6} md={3} key={i} className='text-center'>
                 <Card className='mb-5 mx-auto bg-light'>
                   <img src={service.img} className='card-img-top' alt='' />
                   <Card.Body>
@@ -73,20 +74,22 @@ const Home = () => {
             </Col>
           </Row>
           <Row>
-            {tariffs.map((tariff) => (
-              <Col sm={6} md={4} key={tariff.id} className='text-center'>
+            {tariffs.map((tariff, i) => (
+              <Col sm={6} md={4} key={i} className='text-center'>
                 <Card className='mb-5 mx-auto bg-white'>
                   <Card.Body>
-                    <Card.Title style={{ fontSize: '1.8rem' }} className='mt-0'>
+                    <Card.Title style={{ fontSize: '1.8rem' }} className='mt-2'>
                       {tariff.title}
                     </Card.Title>
-                    <Card.Text className='card-text my-4'>
-                      {tariff.price}
-                      <small className='text-muted'>{tariff.unit}</small>
-                    </Card.Text>
-                    <Card.Text className='text-center'>
-                      {tariff.description}
-                    </Card.Text>
+                    {tariff.price.trim() !== '' && (
+                      <Card.Text className='card-text my-4'>
+                        {tariff.price}
+                        <small className='text-muted'>{tariff.unit}</small>
+                      </Card.Text>
+                    )}
+                    <div className='text-center card-text'>
+                      <ReactMarkdown source={tariff.description} />
+                    </div>
                   </Card.Body>
                   {
                     // <Card.Footer>
