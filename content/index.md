@@ -29,7 +29,7 @@ tariffs:
 
 
       [![](/images/uploads/register-now.png)](https://www.openskypost.com/register.php)
-    price: "\_REGISTRATE GRATIS"
+    price: "\_"
     title: CASILLA MIAMI
     unit: "\_"
   - description: |-
@@ -45,9 +45,9 @@ tariffs:
 
       Desconsolidación\
       CLP $10.000. x W/L (CMB) + IVA
-    price: 'USD 50,00'
+    price: "\_"
     title: TARIFA MEXICO
-    unit: "\_x W/M (CMB)"
+    unit: "\_"
   - description: |-
       Flete Marítimo Importación\
       LCL CONSOLIDADO\
@@ -61,13 +61,16 @@ tariffs:
 
       Desconsolidación\
       CLP $10.000. x W/L (CMB) + IVA
-    price: 'USD 60,0'
+    price: "\_"
     title: TARIFA BELGICA
-    unit: "\_x W/M (CMB)"
+    unit: "\_"
   - description: |-
-      Flete Marítimo Importación 
+      Flete Marítimo Importación\
       LCL CONSOLIDADO
-      Transito 28 Días / Ruta Directa / Salidas Semanales
+
+      * Transito 28 Días
+      * Ruta Directa
+      * Salidas Semanales
 
       BUSAN - VALPARAISO\
       SHANGAI - VALPARAISO\
@@ -77,22 +80,6 @@ tariffs:
       GUANGZHOU - SAN ANTONIO
     price: "\_"
     title: TARIFA ASIA
-    unit: "\_"
-  - description: |-
-      # Titulo
-
-      ## Subtitulo
-
-      * Lista 1
-      * Lista 2
-
-      _Texto cursiva_
-
-      **Texto Negrita**
-
-      - - -
-    price: "\_"
-    title: Tarifa Prueba
     unit: "\_"
 ---
 
