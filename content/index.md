@@ -26,6 +26,9 @@ tariffs:
 
       Nosotros notificamos a Ud., de la llegada de sus productos y procederemos
       a llevarlos a su casa u oficina.
+
+
+      ![](/images/uploads/register-now.png)(https://www.openskypost.com/register.php)
     price: "\_REGISTRATE GRATIS"
     title: CASILLA MIAMI
     unit: "\_"
