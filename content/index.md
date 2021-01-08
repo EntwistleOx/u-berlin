@@ -22,10 +22,21 @@ services:
 tariffsTitle: Revisa Nuestras Tarifas
 tariffs:
   - description: >-
-      Obtén tu dirección postal en U.S.A. y compra lo que quieras.
+      Obtén tu dirección postal en U.S.A. y compra lo que quieras. Nosotros
+      procederemos a llevarlos a su casa u oficina.
 
-      Nosotros notificamos a Ud., de la llegada de sus productos y procederemos
-      a llevarlos a su casa u oficina.
+
+      1. Crear una Cuenta
+
+      2. Obtenga su dirección postal en U.S.A
+
+      3. Compre sus productos.
+
+      4. Checkout
+
+      5. Envio y Delivery
+
+
 
 
       [![](/images/uploads/register-now.png)](https://www.openskypost.com/register.php)
