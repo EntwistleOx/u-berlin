@@ -49,13 +49,17 @@ tariffs:
     title: TARIFA MEXICO
     unit: "\_x W/M (CMB)"
   - description: |-
-      Flete Marítimo Importación
-      LCL CONSOLIDADO
+      Flete Marítimo Importación\
+      LCL CONSOLIDADO\
       AMBERES - SAN ANTONIO
-      Transito 28 Días / Ruta Directa / Salidas Semanales
+
+      * Transito 28 Días
+      * Ruta Directa
+      * Salidas Semanales
+
       USD 60,00 x W/M (CMB)
 
-      Desconsolidación
+      Desconsolidación\
       CLP $10.000. x W/L (CMB) + IVA
     price: 'USD 60,0'
     title: TARIFA BELGICA
