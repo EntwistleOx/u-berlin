@@ -79,11 +79,7 @@ tariffs:
 
       **Texto Negrita**
 
-      ****[**www.google.com**](www.google.com)****
-
-      __
-
-      ****
+      - - -
     price: "\_"
     title: Tarifa Prueba
     unit: "\_"
