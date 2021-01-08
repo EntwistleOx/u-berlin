@@ -59,16 +59,11 @@ tariffs:
       LCL CONSOLIDADO
       Transito 28 Días / Ruta Directa / Salidas Semanales
 
-      BUSAN - VALPARAISO
-
-      SHANGAI - VALPARAISO
-
-      HONG KONG - SAN ANTONIO
-
-      SHENZHEN - SAN ANTONIO
-
-      NINGBO - VALPARAISO
-
+      BUSAN - VALPARAISO\
+      SHANGAI - VALPARAISO\
+      HONG KONG - SAN ANTONIO\
+      SHENZHEN - SAN ANTONIO\
+      NINGBO - VALPARAISO\
       GUANGZHOU - SAN ANTONIO
     price: "\_"
     title: TARIFA ASIA
