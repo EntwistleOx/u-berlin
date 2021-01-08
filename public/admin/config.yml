@@ -40,7 +40,7 @@ collections:
             widget: list
             fields:
               - { label: 'Titulo', name: 'title', widget: 'string' }
-              - { label: 'Descripcion', name: 'description', widget: 'text' }
+              - { label: 'Descripcion', name: 'description', widget: 'markdown' }
               - { label: 'Precio', name: 'price', widget: 'string' }
               - { label: 'Unidad', name: 'unit', widget: 'string' }
       - name: 'contact'

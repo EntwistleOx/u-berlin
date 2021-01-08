@@ -43,13 +43,7 @@ const Home = () => {
           </Row>
           <Row>
             {services.map((service) => (
-              <Col
-                xl={3}
-                lg={6}
-                md={6}
-                key={service.id}
-                className='text-center'
-              >
+              <Col sm={6} md={3} key={service.id} className='text-center'>
                 <Card className='mb-5 mx-auto bg-light'>
                   <img src={service.img} className='card-img-top' alt='' />
                   <Card.Body>
@@ -80,10 +74,10 @@ const Home = () => {
           </Row>
           <Row>
             {tariffs.map((tariff) => (
-              <Col lg={3} md={6} key={tariff.id} className='text-center'>
+              <Col sm={6} md={4} key={tariff.id} className='text-center'>
                 <Card className='mb-5 mx-auto bg-white'>
                   <Card.Body>
-                    <Card.Title style={{ fontSize: '3rem' }} className='mt-4'>
+                    <Card.Title style={{ fontSize: '1.8rem' }} className='mt-0'>
                       {tariff.title}
                     </Card.Title>
                     <Card.Text className='card-text my-4'>
@@ -94,11 +88,13 @@ const Home = () => {
                       {tariff.description}
                     </Card.Text>
                   </Card.Body>
-                  <Card.Footer>
-                    <Link href='/contact' passHref>
-                      <Card.Link>Contactanos</Card.Link>
-                    </Link>
-                  </Card.Footer>
+                  {
+                    // <Card.Footer>
+                    // <Link href='/contact' passHref>
+                    // <Card.Link>Contactanos</Card.Link>
+                    // </Link>
+                    // </Card.Footer>
+                  }
                 </Card>
               </Col>
             ))}
