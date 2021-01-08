@@ -54,11 +54,11 @@
   font-size: 40px;
 }
 
-.tariffs .card-text h2 {
-  font-size: 30px;
+.tariffs h2 {
+  font-size: 40px;
 }
 
-.card.tariffs .card-text img {
+.tariffMd img {
   max-width: 100%;
   height: auto;
 }

@@ -88,7 +88,10 @@ const Home = () => {
                       </Card.Text>
                     )}
                     <div className='text-center card-text'>
-                      <ReactMarkdown source={tariff.description} />
+                      <ReactMarkdown
+                        className={`${styles.tariffMd}`}
+                        source={tariff.description}
+                      />
                     </div>
                   </Card.Body>
                   {
