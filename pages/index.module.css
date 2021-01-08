@@ -57,3 +57,7 @@
 .tariffs .card-text h2 {
   font-size: 30px;
 }
+
+.card.tariffs .card-text img {
+  width: 100%;
+}
