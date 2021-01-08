@@ -53,7 +53,7 @@ tariffs:
     price: 'USD 60,0'
     title: TARIFA BELGICA
     unit: "\_x W/M (CMB)"
-  - description: |
+  - description: |-
       Flete Marítimo Importación 
       LCL CONSOLIDADO
       Transito 28 Días / Ruta Directa / Salidas Semanales
@@ -67,9 +67,25 @@ tariffs:
     price: "\_"
     title: TARIFA ASIA
     unit: "\_"
-  - description: "\_"
+  - description: |-
+      # Titulo
+
+      ## Subtitulo
+
+      * Lista 1
+      * Lista 2
+
+      _Texto cursiva_
+
+      **Texto Negrita**
+
+      ****[**www.google.com**](www.google.com)****
+
+      __
+
+      ****
     price: "\_"
-    title: TARIFA INDIA
+    title: Tarifa Prueba
     unit: "\_"
 ---
 
