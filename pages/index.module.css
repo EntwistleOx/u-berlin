@@ -54,6 +54,6 @@
   font-size: 40px;
 }
 
-.tariffs h2 {
-  font-size: 40px;
+.tariffs .card-text h2 {
+  font-size: 30px;
 }
