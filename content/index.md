@@ -34,6 +34,7 @@ tariffs:
       LCL CONSOLIDADO
       MANZANILLO - SAN ANTONIO
       Transito 14 Dias / Ruta Directa / Salidas Semanales
+
       USD 50,00 x W/M (CMB)
 
       Desconsolidación
@@ -58,11 +59,11 @@ tariffs:
       LCL CONSOLIDADO
       Transito 28 Días / Ruta Directa / Salidas Semanales
 
-      BUSAN - VALPARAISO
-      SHANGAI - VALPARAISO
-      HONG KONG - SAN ANTONIO
-      SHENZHEN - SAN ANTONIO
-      NINGBO - VALPARAISO
+      BUSAN - VALPARAISO\
+      SHANGAI - VALPARAISO\
+      HONG KONG - SAN ANTONIO\
+      SHENZHEN - SAN ANTONIO\
+      NINGBO - VALPARAISO\
       GUANGZHOU - SAN ANTONIO
     price: "\_"
     title: TARIFA ASIA
@@ -79,11 +80,7 @@ tariffs:
 
       **Texto Negrita**
 
-      ****[**www.google.com**](www.google.com)****
-
-      __
-
-      ****
+      - - -
     price: "\_"
     title: Tarifa Prueba
     unit: "\_"
