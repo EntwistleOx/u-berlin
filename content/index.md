@@ -36,9 +36,6 @@ tariffs:
 
       5. Envio y Delivery
 
-
-
-
       [![](/images/uploads/register-now.png)](https://www.openskypost.com/register.php)
     price: "\_"
     title: CASILLA MIAMI
@@ -93,4 +90,3 @@ tariffs:
     title: TARIFA ASIA
     unit: "\_"
 ---
-
