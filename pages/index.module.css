@@ -58,6 +58,10 @@
   font-size: 40px;
 }
 
+.tariffs ol {
+  list-style-position: inside;
+}
+
 .tariffMd img {
   max-width: 100%;
   height: auto;
